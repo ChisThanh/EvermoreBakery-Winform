@@ -1,0 +1,23 @@
+services:
+    mysql:
+        image: mysql
+        ports:
+            - "3307:3306"
+        # volumes:
+        #     - ./Docker/mysql:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: EvermoreBakery
+            MYSQL_ROOT_PASSWORD: root1
+    
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
+            UPLOAD_LIMIT: 200M
+        ports:
+            - "9099:80"
+
+networks:
+    networks-c-sharp:
+        driver: bridge
