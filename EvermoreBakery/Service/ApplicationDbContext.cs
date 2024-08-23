@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DotNetEnv;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,12 +11,26 @@ namespace EvermoreBakery.Service
 {
     public class ApplicationDbContext : DbContext
     {
-        static readonly string connectionString = 
-            "Server=localhost; " +
-            "Port=3307; " +
-            "User ID=root; " +
-            "Password=root1; " +
-            "Database=EvermoreBakery";
+        private readonly string connectionString;
+
+        public ApplicationDbContext()
+        {
+            Env.TraversePath().Load();
+            string dbHost = Env.GetString("DB_HOST");
+            string dbPort = Env.GetString("DB_PORT");
+            string dbUser = Env.GetString("DB_USER");
+            string dbPass = Env.GetString("DB_PASS");
+            string dbName = Env.GetString("DB_NAME");
+
+            connectionString =
+                $"Server={dbHost}; " +
+                $"Port={dbPort}; " +
+                $"User ID={dbUser}; " +
+                $"Password={dbPass}; " +
+                $"Database={dbName}";
+
+            Database.EnsureCreated();
+        }
 
         public DbSet<Users> Users { get; set; }
 
@@ -28,7 +43,7 @@ namespace EvermoreBakery.Service
             catch (Exception ex)
             {
                 Console.WriteLine($"An error occurred while configuring the database: {ex.Message}");
-                throw; 
+                throw;
             }
         }
 
