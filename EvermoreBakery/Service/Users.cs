@@ -11,11 +11,18 @@ namespace EvermoreBakery.Service
     [Table("users")]
     public class Users
     {
-        [Key]
         public int Id { set; get; }
-
-        [Required]
-        [StringLength(50)]
         public string Name { set; get; }
+        public string Email { set; get; }
+        public string Password { set; get; }
+
+        [Column("remember_token")]
+        public string? RememberToken { set; get; }
+
+        [Column("created_at")]
+        public DateTime? CreatedAt { set; get; }
+
+        [Column("updated_at")]
+        public DateTime? UpdateAt { set; get; }
     }
 }
