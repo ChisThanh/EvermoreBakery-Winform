@@ -1,4 +1,5 @@
-using EvermoreBakery.Service;
+﻿using EvermoreBakery.Service;
+using System.Data;
 
 namespace EvermoreBakery
 {
@@ -11,14 +12,9 @@ namespace EvermoreBakery
             using (var context = new ApplicationDbContext())
             {
                 var users = context.Users.ToList();
+                var user = users[0].HasPermissions("all-create");
+                var getPermissions = users[1].GetPermissions();
                 dataGridView1.DataSource = users;
-
-                //string str = "";
-                //foreach (var item in users)
-                //{
-                //    str += item.Name + "\n";
-                //}
-                //MessageBox.Show(str);
             }
         }
     }

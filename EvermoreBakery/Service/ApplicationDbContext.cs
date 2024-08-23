@@ -12,6 +12,9 @@ namespace EvermoreBakery.Service
     public class ApplicationDbContext : DbContext
     {
         private readonly string connectionString;
+        public DbSet<Users> Users { get; set; }
+        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<Role> Role { get; set; }
 
         public ApplicationDbContext()
         {
@@ -31,9 +34,7 @@ namespace EvermoreBakery.Service
 
             Database.EnsureCreated();
         }
-
-        public DbSet<Users> Users { get; set; }
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             try
@@ -46,10 +47,12 @@ namespace EvermoreBakery.Service
                 throw;
             }
         }
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
         }
+
+        
     }
 }
