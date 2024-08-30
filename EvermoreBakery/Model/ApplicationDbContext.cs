@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,11 +41,12 @@ namespace EvermoreBakery.Service
         {
             try
             {
-                optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+                //optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+                optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
+                  .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred while configuring the database: {ex.Message}");
                 throw;
             }
         }
@@ -51,8 +54,7 @@ namespace EvermoreBakery.Service
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Users>().HasQueryFilter(u => u.DeletedAt == null);
         }
-
-        
     }
 }

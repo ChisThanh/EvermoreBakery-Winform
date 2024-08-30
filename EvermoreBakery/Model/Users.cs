@@ -20,6 +20,9 @@ namespace EvermoreBakery.Service
         [Column("updated_at")]
         public DateTime? UpdateAt { set; get; }
 
+        [Column("deleted_at")]
+        public DateTime? DeletedAt { set; get; }
+
         [NotMapped]
         public virtual List<string> Permissions { get; set; } = new List<string>();
 
