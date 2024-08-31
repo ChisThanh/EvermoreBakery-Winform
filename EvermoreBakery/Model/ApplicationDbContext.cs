@@ -45,7 +45,7 @@ namespace EvermoreBakery.Service
                 optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
                   .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

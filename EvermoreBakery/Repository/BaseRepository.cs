@@ -10,15 +10,27 @@ namespace EvermoreBakery.Service
     public abstract class BaseRepository<T> where T : class
     {
         protected readonly ApplicationDbContext _context;
+        public DbSet<T> repo;
 
         public BaseRepository()
         {
             _context = new ApplicationDbContext();
+            repo = _context.Set<T>();
         }
 
         public virtual List<T> GetAll()
         {
             return _context.Set<T>().ToList();
+        }
+
+        public virtual List<T> GetAllSearch<TKey>(string key, TKey value)
+        {
+            var query = _context.Set<T>().AsQueryable();
+            if (typeof(TKey) == typeof(string))
+                query = query.Where(e => EF.Property<string>(e, key).Contains(value.ToString()));
+            else
+                query = query.Where(e => EF.Property<TKey>(e, key).Equals(value));
+            return query.ToList();
         }
 
         public virtual T GetById(int id)
@@ -27,6 +39,24 @@ namespace EvermoreBakery.Service
             if (entity == null)
                 throw new KeyNotFoundException($"Entity with ID {id} not found.");
             return entity;
+        }
+
+        public virtual T GetByKeyValue<TKey>(string keyName, TKey keyValue)
+        {
+            var entity = _context.Set<T>().FirstOrDefault(e => EF.Property<TKey>(e, keyName).Equals(keyValue));
+            if (entity == null)
+                throw new KeyNotFoundException($"Entity with {keyName} = {keyValue} not found.");
+            return entity;
+        }
+
+        public virtual bool ExistById(int id)
+        {
+            return _context.Set<T>().Any(e => EF.Property<int>(e, "Id") == id);
+        }
+
+        public virtual bool ExistByKeyValue<TKey>(string keyName, TKey keyValue)
+        {
+            return _context.Set<T>().Any(e => EF.Property<TKey>(e, keyName).Equals(keyValue));
         }
 
         public virtual T Add(T entity)
@@ -73,6 +103,32 @@ namespace EvermoreBakery.Service
             _context.SaveChanges();
             return true;
         }
+        public virtual bool DeleteByKeyValue<TKey>(string keyName, TKey keyValue)
+        {
+            var entity = _context.Set<T>()
+                .FirstOrDefault(e => EF.Property<TKey>(e, keyName).Equals(keyValue));
+            if (entity == null)
+                return false;
+            _context.Set<T>().Remove(entity);
+            _context.SaveChanges();
+            return true;
+        }
+
+        public virtual bool DeleteIds(params int[] ids)
+        {
+            var entities = ids
+                .Where(id => ExistById(id))
+                .Select(id => _context.Set<T>().Find(id))
+                .Where(entity => entity != null)
+                .ToList();
+
+            if (!entities.Any())
+                return false;
+
+            _context.Set<T>().RemoveRange(entities);
+            _context.SaveChanges();
+            return true;
+        }
 
         public virtual bool SoftDelete(int id)
         {
@@ -90,6 +146,35 @@ namespace EvermoreBakery.Service
             _context.SaveChanges();
             return true;
         }
-
+        public List<object> GetListFromSqlRaw(string sqlQuery, params object[] parameters)
+        {
+            var result = new List<object>();
+            using (var command = _context.Database.GetDbConnection().CreateCommand())
+            {
+                command.CommandText = sqlQuery;
+                command.CommandType = System.Data.CommandType.Text;
+                if (parameters != null)
+                {
+                    for (int i = 0; i < parameters.Length; i++)
+                    {
+                        var parameter = command.CreateParameter();
+                        parameter.ParameterName = $"@p{i}";
+                        parameter.Value = parameters[i];
+                        command.Parameters.Add(parameter);
+                    }
+                }
+                _context.Database.OpenConnection();
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var values = new object[reader.FieldCount];
+                        reader.GetValues(values);
+                        result.Add(values);
+                    }
+                }
+            }
+            return result;
+        }
     }
 }
