@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.11.35208.52
+VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvermoreBakery", "EvermoreBakery\EvermoreBakery.csproj", "{C645FB1A-1A66-4AE9-840B-885D356C14B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvermoreBakery", "EvermoreBakery.csproj", "{BFBA669C-F377-4925-8B44-84F75E33358C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C645FB1A-1A66-4AE9-840B-885D356C14B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C645FB1A-1A66-4AE9-840B-885D356C14B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C645FB1A-1A66-4AE9-840B-885D356C14B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C645FB1A-1A66-4AE9-840B-885D356C14B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFBA669C-F377-4925-8B44-84F75E33358C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFBA669C-F377-4925-8B44-84F75E33358C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFBA669C-F377-4925-8B44-84F75E33358C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFBA669C-F377-4925-8B44-84F75E33358C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {67ECF51C-7234-42E6-93DA-B67F59CA0E6F}
+		SolutionGuid = {A626373A-31BB-42F6-9102-10FED9161673}
 	EndGlobalSection
 EndGlobal
