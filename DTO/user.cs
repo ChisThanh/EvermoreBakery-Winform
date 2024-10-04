@@ -5,6 +5,7 @@ namespace DTO
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Linq;
 
     public partial class user
     {
@@ -53,5 +54,45 @@ namespace DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<product_reviews> product_reviews { get; set; }
+
+        [NotMapped]
+        public virtual List<string> Permissions { get; set; } = new List<string>();
+
+        public bool HasPermissions(string permissionName)
+        {
+            if (Permissions == null || !Permissions.Any())
+            {
+                Permissions = GetPermissions();
+            }
+
+            return Permissions.Contains(permissionName);
+        }
+
+        public List<string> GetPermissions()
+        {
+            using (var context = new EvermoreBakeryContext())
+            {
+                string sql = @"
+                    SELECT permission_name
+                    FROM (
+                        SELECT ps.name AS permission_name
+                        FROM users us
+                        JOIN role_user ru ON ru.user_id = us.id
+                        JOIN permission_role pr ON ru.role_id = pr.role_id
+                        JOIN permissions ps ON pr.permission_id = ps.id
+                        WHERE us.id = @p0
+                        UNION ALL
+                        SELECT ps.name AS permission_name
+                        FROM users us
+                        JOIN permission_user pu ON us.id = pu.user_id
+                        JOIN permissions ps ON ps.id = pu.permission_id
+                        WHERE us.id = @p0
+                    ) AS tb";
+
+                return context.Database
+                              .SqlQuery<string>(sql, id)
+                              .ToList();
+            }
+        }
     }
 }
