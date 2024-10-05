@@ -58,6 +58,19 @@ namespace DTO
         [NotMapped]
         public virtual List<string> Permissions { get; set; } = new List<string>();
 
+        [NotMapped]
+        public virtual string Roles { get; set; } = string.Empty;
+
+        public bool HasRoles(string roleName)
+        {
+            if (Roles == null || string.IsNullOrWhiteSpace(Roles))
+            {
+                Roles = GetRoles();
+            }
+
+            return Roles.Contains(roleName);
+        }
+
         public bool HasPermissions(string permissionName)
         {
             if (Permissions == null || !Permissions.Any())
@@ -66,6 +79,21 @@ namespace DTO
             }
 
             return Permissions.Contains(permissionName);
+        }
+
+        public string GetRoles()
+        {
+            using (var context = new EvermoreBakeryContext())
+            {
+                string sql = @"
+                    SELECT r.name FROM role_user ru
+                    JOIN roles r ON ru.role_id = r.id
+                    WHERE ru.user_id = @p0";
+
+                return context.Database
+                              .SqlQuery<string>(sql, id)
+                              .FirstOrDefault();
+            }
         }
 
         public List<string> GetPermissions()

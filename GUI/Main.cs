@@ -9,21 +9,43 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BLL;
+using GUI.Auth;
 
 namespace GUI
 {
     public partial class Main : Form
     {
         BLL_User bll_user = new BLL_User();
+        Frm_Login loginForm = new Frm_Login();
         public Main()
         {
             InitializeComponent();
-            this.Load += Main_Load;
+            btnLogout.Click += BtnLogout_Click;
+            ShowLoginForm();
         }
 
-        private void Main_Load(object sender, EventArgs e)
+
+        private void BtnLogout_Click(object sender, EventArgs e)
         {
-            //chia nhỏ công việc ra các tiểu trình
+            Logout();
+        }
+
+        private void ShowLoginForm()
+        {
+            loginForm.LoginSuccess += LoginForm_LoginSuccess;
+            loginForm.ShowDialog();
+        }
+
+        private void LoginForm_LoginSuccess(object sender, EventArgs e)
+        {
+            this.Show();
+            LoadData();
+            loginForm.Hide();
+        }
+
+        private void LoadData()
+        {
+            // Chia nhỏ công việc ra các tiểu trình
             BackgroundWorker worker = new BackgroundWorker();
             worker.DoWork += (s, args) =>
             {
@@ -39,7 +61,15 @@ namespace GUI
             };
 
             worker.RunWorkerAsync();
-
         }
+
+        private void Logout()
+        {
+            this.Hide();
+            loginForm = new Frm_Login(); 
+            loginForm.LoginSuccess += LoginForm_LoginSuccess; 
+            loginForm.ShowDialog();
+        }
+
     }
 }
