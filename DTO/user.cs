@@ -13,9 +13,11 @@ namespace DTO
         public user()
         {
             bills = new HashSet<bill>();
+            carts = new HashSet<cart>();
             chats = new HashSet<chat>();
             chats1 = new HashSet<chat>();
             product_reviews = new HashSet<product_reviews>();
+            coupons = new HashSet<coupon>();
         }
 
         public long id { get; set; }
@@ -47,6 +49,9 @@ namespace DTO
         public virtual ICollection<bill> bills { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<cart> carts { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<chat> chats { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -54,6 +59,9 @@ namespace DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<product_reviews> product_reviews { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<coupon> coupons { get; set; }
 
         [NotMapped]
         public virtual List<string> Permissions { get; set; } = new List<string>();

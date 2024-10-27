@@ -14,6 +14,8 @@ namespace DTO
         [StringLength(20)]
         public string ip_address { get; set; }
 
+        public int? user_id { get; set; }
+
         public long product_id { get; set; }
 
         [Required]

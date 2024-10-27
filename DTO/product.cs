@@ -11,10 +11,10 @@ namespace DTO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public product()
         {
+            bill_details = new HashSet<bill_details>();
+            cart_details = new HashSet<cart_details>();
             product_interactions = new HashSet<product_interactions>();
             product_reviews = new HashSet<product_reviews>();
-            product_translations = new HashSet<product_translations>();
-            bill_details = new HashSet<bill_details>();
         }
 
         public long id { get; set; }
@@ -29,6 +29,8 @@ namespace DTO
 
         public long price_sale { get; set; }
 
+        public string description { get; set; }
+
         [Required]
         [StringLength(255)]
         public string image { get; set; }
@@ -41,6 +43,12 @@ namespace DTO
 
         public DateTime? deleted_at { get; set; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<bill_details> bill_details { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<cart_details> cart_details { get; set; }
+
         public virtual category category { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -48,11 +56,5 @@ namespace DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<product_reviews> product_reviews { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<product_translations> product_translations { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<bill_details> bill_details { get; set; }
     }
 }

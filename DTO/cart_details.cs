@@ -6,12 +6,12 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class bill_details
+    public partial class cart_details
     {
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long bill_id { get; set; }
+        public long cart_id { get; set; }
 
         [Key]
         [Column(Order = 1)]
@@ -22,7 +22,7 @@ namespace DTO
 
         public double price { get; set; }
 
-        public virtual bill bill { get; set; }
+        public virtual cart cart { get; set; }
 
         public virtual product product { get; set; }
     }
