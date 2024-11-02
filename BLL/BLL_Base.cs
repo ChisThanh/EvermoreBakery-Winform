@@ -10,56 +10,37 @@ using DTO;
 
 namespace BLL
 {
-    public class BLL_Base<T> where T : class
+    public class BLL_Base<TEntity> where TEntity : class
     {
-        private static BLL_Base<T> _instance;
-        private static readonly object _lock = new object();
-
-        public DAL_Base<T> _dal = DAL_Base<T>.Instance;
-        public BLL_Base() { }
-
-        public static BLL_Base<T> Instance
+        protected DAL_Base<TEntity> _dal;
+        public BLL_Base()
         {
-            get
-            {
-                lock (_lock)
-                {
-                    if (_instance == null)
-                    {
-                        _instance = new BLL_Base<T>();
-                    }
-                    return _instance;
-                }
-            }
         }
 
-        public virtual List<T> GetList()
+        public virtual List<TEntity> GetList()
         {
             return _dal.GetAll();
         }
 
-
-        public virtual T GetByID(int id)
+        public virtual TEntity GetByID(int id)
         {
             return _dal.GetById(id);
         }
 
-        public virtual List<T> GetAllSearch<TKey>(string key, TKey value)
+        public virtual List<TEntity> GetAllSearch<TKey>(string key, TKey value)
         {
             return _dal.GetAllSearch(key, value);
         }
 
-        public virtual T GetById(int id)
+        public virtual TEntity GetById(int id)
         {
             return _dal.GetById(id);
         }
 
-        public virtual T GetByKeyValue<TKey>(string keyName, TKey keyValue)
+        public virtual TEntity GetByKeyValue<TKey>(string keyName, TKey keyValue)
         {
             return _dal.GetByKeyValue(keyName, keyValue);
         }
-
-
         public virtual bool ExistById(int id)
         {
             return _dal.ExistById(id);
@@ -69,13 +50,12 @@ namespace BLL
         {
             return _dal.ExistByKeyValue(keyName, keyValue);
         }
-
-        public virtual T Add(T entity)
+        public virtual TEntity Add(TEntity entity)
         {
             return _dal.Add(entity);
         }
 
-        public virtual T Update(int id, T entity)
+        public virtual TEntity Update(int id, TEntity entity)
         {
             return _dal.Update(id, entity);
         }

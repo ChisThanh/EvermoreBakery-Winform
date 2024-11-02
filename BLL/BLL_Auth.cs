@@ -5,35 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
-using System.Diagnostics.SymbolStore;
 using BCrypt.Net;
-
 
 namespace BLL
 {
-    public class BLL_Auth 
+    public class BLL_Auth
     {
-        private static BLL_Auth _instance;
-        private static readonly object _lock = new object();
-
-        DAL_User users = new DAL_User();
-
-        public static BLL_Auth Instance
-        {
-            get
-            {
-                lock (_lock)
-                {
-                    if (_instance == null)
-                        _instance = new BLL_Auth();
-                    return _instance;
-                }
-            }
-        }
+        private static DAL_User dalUsers = new DAL_User();
+        public BLL_Auth() { }
 
         public static user Login(string account, string password)
         {
-            var user = DAL_User.Instance._dto.FirstOrDefault(x => x.email == account);
+            var user = dalUsers._dto.FirstOrDefault(x => x.email == account);
             if (user == null)
                 throw new Exception("Tài khoản không tồn tại");
 
@@ -44,7 +27,7 @@ namespace BLL
             if (!isPasswordCorrect)
                 throw new Exception("Mật khẩu không đúng");
 
-            if(!user.HasRoles("admin") || !user.HasRoles("sadmin"))
+            if (!user.HasRoles("admin") && !user.HasRoles("sadmin"))
                 throw new Exception("Tài khoản không có quyền truy cập");
 
             return user;
@@ -52,7 +35,7 @@ namespace BLL
 
         public static async Task<user> LoginAsync(string account, string password)
         {
-            var user = await Task.Run(() => DAL_User.Instance._dto.FirstOrDefault(x => x.email == account));
+            var user = await Task.Run(() => dalUsers._dto.FirstOrDefault(x => x.email == account));
 
             if (user == null)
                 throw new Exception("Tài khoản không tồn tại");
@@ -64,13 +47,10 @@ namespace BLL
             if (!isPasswordCorrect)
                 throw new Exception("Mật khẩu không đúng");
 
-            if (!user.HasRoles("admin") && !user.HasRoles("sadmin")) 
+            if (!user.HasRoles("admin") && !user.HasRoles("sadmin"))
                 throw new Exception("Tài khoản không có quyền truy cập");
 
             return user;
         }
-
-
-        public BLL_Auth() { }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using GUI.Auth;
+using GUI.AccessManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
+            //Application.Run(new Frm_AddPermission());
         }
     }
 }

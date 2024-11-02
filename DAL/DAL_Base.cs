@@ -9,9 +9,6 @@ namespace DAL
 {
     public class DAL_Base<T> where T : class
     {
-        private static DAL_Base<T> _instance;
-        private static readonly object _lock = new object();
-
         protected readonly EvermoreBakeryContext _context;
         public DbSet<T> _dto;
 
@@ -20,27 +17,14 @@ namespace DAL
             _context = EvermoreBakeryContext.Instance;
             _dto = _context.Set<T>();
         }
-
-        public static DAL_Base<T> Instance
+        public DbSet<T> GetDto()
         {
-            get
-            {
-                lock (_lock)
-                {
-                    if (_instance == null)
-                    {
-                        _instance = new DAL_Base<T>();
-                    }
-                    return _instance;
-                }
-            }
+            return _dto;
         }
-
         public virtual List<T> GetAll()
         {
             return _context.Set<T>().ToList();
         }
-
 
         public virtual List<T> GetAllSearch<TKey>(string key, TKey value)
         {
@@ -52,13 +36,9 @@ namespace DAL
                 throw new ArgumentException($"Property '{key}' does not exist on type '{typeof(T)}'.");
 
             if (typeof(TKey) == typeof(string))
-            {
                 query = query.Where(e => propertyInfo.GetValue(e).ToString().Contains(value.ToString()));
-            }
             else
-            {
                 query = query.Where(e => propertyInfo.GetValue(e).Equals(value));
-            }
 
             return query.ToList();
         }
@@ -238,7 +218,6 @@ namespace DAL
                         result.Add(values);
                     }
                 }
-
                 _context.Database.Connection.Close();
             }
 

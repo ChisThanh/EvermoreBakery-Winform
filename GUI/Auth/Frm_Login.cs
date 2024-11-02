@@ -8,7 +8,7 @@ namespace GUI.Auth
     public partial class Frm_Login : Form
     {
 
-        private BLL_Auth _bllAuth = BLL_Auth.Instance;
+        private BLL_Auth _bllAuth = new BLL_Auth();
         private string account;
         private string password;
 

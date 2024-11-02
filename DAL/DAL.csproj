@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_Base.cs" />
+    <Compile Include="DAL_Permission.cs" />
     <Compile Include="DAL_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
