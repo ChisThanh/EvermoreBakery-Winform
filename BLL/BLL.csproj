@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="BLL_Base.cs" />
     <Compile Include="BLL_Auth.cs" />
+    <Compile Include="BLL_Permission.cs" />
     <Compile Include="BLL_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
