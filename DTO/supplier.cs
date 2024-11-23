@@ -6,12 +6,12 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class category
+    public partial class supplier
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public category()
+        public supplier()
         {
-            products = new HashSet<product>();
+            purchase_orders = new HashSet<purchase_orders>();
         }
 
         public long id { get; set; }
@@ -22,19 +22,21 @@ namespace DTO
 
         [Required]
         [StringLength(255)]
-        public string description { get; set; }
+        public string contact_number { get; set; }
 
         [Required]
         [StringLength(255)]
-        public string slug { get; set; }
+        public string email { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public string address { get; set; }
 
         public DateTime? created_at { get; set; }
 
         public DateTime? updated_at { get; set; }
 
-        public DateTime? deleted_at { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<product> products { get; set; }
+        public virtual ICollection<purchase_orders> purchase_orders { get; set; }
     }
 }

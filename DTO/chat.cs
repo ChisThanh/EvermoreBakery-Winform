@@ -10,19 +10,22 @@ namespace DTO
     {
         public long id { get; set; }
 
-        public long sender_id { get; set; }
-
-        public long receiver_id { get; set; }
-
+        [Required]
         [StringLength(255)]
+        public string chat_id { get; set; }
+
+        [Column(TypeName = "ntext")]
+        [Required]
         public string message { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public string user_name { get; set; }
+
+        public bool is_customer { get; set; }
 
         public DateTime? created_at { get; set; }
 
         public DateTime? updated_at { get; set; }
-
-        public virtual user user { get; set; }
-
-        public virtual user user1 { get; set; }
     }
 }

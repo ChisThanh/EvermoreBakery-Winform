@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{80FF304C-30C0-4D5A-831C-D7B7B580A162}</ProjectGuid>
+    <ProjectGuid>{4183BFDD-80C0-49A9-ADD5-175C7F194C5A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DTO</RootNamespace>
@@ -13,8 +13,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -190,6 +188,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
@@ -201,7 +200,6 @@
     <Compile Include="bill.cs" />
     <Compile Include="bill_details.cs" />
     <Compile Include="cart.cs" />
-    <Compile Include="cart_details.cs" />
     <Compile Include="category.cs" />
     <Compile Include="chat.cs" />
     <Compile Include="config.cs" />
@@ -216,6 +214,17 @@
     <Compile Include="role.cs" />
     <Compile Include="role_user.cs" />
     <Compile Include="user.cs" />
+    <Compile Include="event_products.cs" />
+    <Compile Include="event.cs" />
+    <Compile Include="bill_address.cs" />
+    <Compile Include="image.cs" />
+    <Compile Include="ingredient_product.cs" />
+    <Compile Include="ingredient.cs" />
+    <Compile Include="nutrition.cs" />
+    <Compile Include="nutrition_product.cs" />
+    <Compile Include="purchase_order_details.cs" />
+    <Compile Include="purchase_orders.cs" />
+    <Compile Include="supplier.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

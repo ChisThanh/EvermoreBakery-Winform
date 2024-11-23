@@ -6,6 +6,7 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
     using System.Linq;
+    using System.Runtime.InteropServices.WindowsRuntime;
 
     public partial class user
     {
@@ -14,10 +15,10 @@ namespace DTO
         {
             bills = new HashSet<bill>();
             carts = new HashSet<cart>();
-            chats = new HashSet<chat>();
-            chats1 = new HashSet<chat>();
+            permission_user = new HashSet<permission_user>();
             product_reviews = new HashSet<product_reviews>();
-            coupons = new HashSet<coupon>();
+            role_user = new HashSet<role_user>();
+            products = new HashSet<product>();
         }
 
         public long id { get; set; }
@@ -36,6 +37,11 @@ namespace DTO
         [StringLength(255)]
         public string password { get; set; }
 
+        public bool is_chatbot { get; set; }
+
+        [StringLength(255)]
+        public string chat_id { get; set; }
+
         [StringLength(100)]
         public string remember_token { get; set; }
 
@@ -52,16 +58,16 @@ namespace DTO
         public virtual ICollection<cart> carts { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<chat> chats { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<chat> chats1 { get; set; }
+        public virtual ICollection<permission_user> permission_user { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<product_reviews> product_reviews { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<coupon> coupons { get; set; }
+        public virtual ICollection<role_user> role_user { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<product> products { get; set; }
 
         [NotMapped]
         public virtual List<string> Permissions { get; set; } = new List<string>();
@@ -71,12 +77,17 @@ namespace DTO
 
         public bool HasRoles(string roleName)
         {
-            if (Roles == null || string.IsNullOrWhiteSpace(Roles))
+            try
             {
-                Roles = GetRoles();
-            }
+                if (Roles == null || string.IsNullOrWhiteSpace(Roles))
+                    Roles = GetRoles();
 
-            return Roles.Contains(roleName);
+                return Roles.Contains(roleName);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public bool HasPermissions(string permissionName)

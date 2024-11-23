@@ -6,25 +6,28 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class product_interactions
+    public partial class nutrition_product
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long id { get; set; }
 
-        [Required]
-        [StringLength(255)]
-        public string cookie_id { get; set; }
+        [Key]
+        [Column(Order = 0)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public long nutrition_id { get; set; }
 
-        public int? user_id { get; set; }
-
+        [Key]
+        [Column(Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long product_id { get; set; }
-
-        [Required]
-        [StringLength(10)]
-        public string type { get; set; }
 
         public DateTime? created_at { get; set; }
 
         public DateTime? updated_at { get; set; }
+
+        public byte? quantity { get; set; }
+
+        public virtual nutrition nutrition { get; set; }
 
         public virtual product product { get; set; }
     }

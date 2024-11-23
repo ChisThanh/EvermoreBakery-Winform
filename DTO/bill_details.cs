@@ -18,9 +18,11 @@ namespace DTO
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long product_id { get; set; }
 
-        public int quantity { get; set; }
+        public byte quantity { get; set; }
 
         public double price { get; set; }
+
+        public bool review { get; set; }
 
         public virtual bill bill { get; set; }
 

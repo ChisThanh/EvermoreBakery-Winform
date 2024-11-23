@@ -6,12 +6,13 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class category
+    [Table("events")]
+    public partial class _event
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public category()
+        public _event()
         {
-            products = new HashSet<product>();
+            event_products = new HashSet<event_products>();
         }
 
         public long id { get; set; }
@@ -24,17 +25,13 @@ namespace DTO
         [StringLength(255)]
         public string description { get; set; }
 
-        [Required]
-        [StringLength(255)]
-        public string slug { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime start_date { get; set; }
 
-        public DateTime? created_at { get; set; }
-
-        public DateTime? updated_at { get; set; }
-
-        public DateTime? deleted_at { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime end_date { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<product> products { get; set; }
+        public virtual ICollection<event_products> event_products { get; set; }
     }
 }

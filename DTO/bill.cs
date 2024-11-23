@@ -19,22 +19,33 @@ namespace DTO
         public long user_id { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime delivery_date { get; set; }
+        public DateTime? delivery_date { get; set; }
 
-        public long total { get; set; }
+        public double total { get; set; }
 
-        public int payment_status { get; set; }
+        public byte payment_status { get; set; }
 
-        public int payment_method { get; set; }
+        public byte payment_method { get; set; }
 
-        public int status { get; set; }
+        public byte status { get; set; }
 
         public DateTime? created_at { get; set; }
 
         public DateTime? updated_at { get; set; }
 
+        public long? coupon_id { get; set; }
+
+        public string note { get; set; }
+
+        [StringLength(255)]
+        public string id_payment { get; set; }
+
+        public virtual bill_address bill_address { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<bill_details> bill_details { get; set; }
+
+        public virtual coupon coupon { get; set; }
 
         public virtual user user { get; set; }
     }

@@ -24,5 +24,7 @@ namespace DTO
         public string user_type { get; set; }
 
         public virtual permission permission { get; set; }
+
+        public virtual user user { get; set; }
     }
 }

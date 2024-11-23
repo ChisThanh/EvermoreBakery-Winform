@@ -46,34 +46,43 @@ namespace DTO
             }
         }
 
+        public virtual DbSet<bill_address> bill_address { get; set; }
+        public virtual DbSet<bill_details> bill_details { get; set; }
         public virtual DbSet<bill> bills { get; set; }
-        public virtual DbSet<cart_details> cart_details { get; set; }
         public virtual DbSet<cart> carts { get; set; }
         public virtual DbSet<category> categories { get; set; }
         public virtual DbSet<chat> chats { get; set; }
         public virtual DbSet<coupon> coupons { get; set; }
+        public virtual DbSet<event_products> event_products { get; set; }
+        public virtual DbSet<_event> events { get; set; }
+        public virtual DbSet<image> images { get; set; }
+        public virtual DbSet<ingredient_product> ingredient_product { get; set; }
+        public virtual DbSet<ingredient> ingredients { get; set; }
+        public virtual DbSet<nutrition> nutritions { get; set; }
+        public virtual DbSet<nutrition_product> nutrition_product { get; set; }
         public virtual DbSet<permission_user> permission_user { get; set; }
         public virtual DbSet<permission> permissions { get; set; }
         public virtual DbSet<product_interactions> product_interactions { get; set; }
         public virtual DbSet<product_reviews> product_reviews { get; set; }
         public virtual DbSet<product> products { get; set; }
+        public virtual DbSet<purchase_order_details> purchase_order_details { get; set; }
+        public virtual DbSet<purchase_orders> purchase_orders { get; set; }
         public virtual DbSet<role_user> role_user { get; set; }
         public virtual DbSet<role> roles { get; set; }
+        public virtual DbSet<supplier> suppliers { get; set; }
         public virtual DbSet<user> users { get; set; }
         public virtual DbSet<config> configs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<bill>()
+                .HasOptional(e => e.bill_address)
+                .WithRequired(e => e.bill);
+
+            modelBuilder.Entity<bill>()
                 .HasMany(e => e.bill_details)
                 .WithRequired(e => e.bill)
                 .HasForeignKey(e => e.bill_id)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<cart>()
-                .HasMany(e => e.cart_details)
-                .WithRequired(e => e.cart)
-                .HasForeignKey(e => e.cart_id)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<category>()
@@ -83,9 +92,33 @@ namespace DTO
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<coupon>()
-                .HasMany(e => e.users)
-                .WithMany(e => e.coupons)
-                .Map(m => m.ToTable("coupon_user"));
+                .HasMany(e => e.bills)
+                .WithOptional(e => e.coupon)
+                .HasForeignKey(e => e.coupon_id);
+
+            modelBuilder.Entity<_event>()
+                .HasMany(e => e.event_products)
+                .WithRequired(e => e._event)
+                .HasForeignKey(e => e.event_id)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ingredient>()
+                .HasMany(e => e.ingredient_product)
+                .WithRequired(e => e.ingredient)
+                .HasForeignKey(e => e.ingredient_id)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ingredient>()
+                .HasMany(e => e.purchase_order_details)
+                .WithRequired(e => e.ingredient)
+                .HasForeignKey(e => e.ingredient_id)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<nutrition>()
+                .HasMany(e => e.nutrition_product)
+                .WithRequired(e => e.nutrition)
+                .HasForeignKey(e => e.nutrition_id)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<permission>()
                 .HasMany(e => e.permission_user)
@@ -104,7 +137,19 @@ namespace DTO
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<product>()
-                .HasMany(e => e.cart_details)
+                .HasMany(e => e.event_products)
+                .WithRequired(e => e.product)
+                .HasForeignKey(e => e.product_id)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<product>()
+                .HasMany(e => e.ingredient_product)
+                .WithRequired(e => e.product)
+                .HasForeignKey(e => e.product_id)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<product>()
+                .HasMany(e => e.nutrition_product)
                 .WithRequired(e => e.product)
                 .HasForeignKey(e => e.product_id)
                 .WillCascadeOnDelete(false);
@@ -121,10 +166,27 @@ namespace DTO
                 .HasForeignKey(e => e.product_id)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<product>()
+                .HasMany(e => e.users)
+                .WithMany(e => e.products)
+                .Map(m => m.ToTable("likes"));
+
+            modelBuilder.Entity<purchase_orders>()
+                .HasMany(e => e.purchase_order_details)
+                .WithRequired(e => e.purchase_orders)
+                .HasForeignKey(e => e.purchase_order_id)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<role>()
                 .HasMany(e => e.role_user)
                 .WithRequired(e => e.role)
                 .HasForeignKey(e => e.role_id);
+
+            modelBuilder.Entity<supplier>()
+                .HasMany(e => e.purchase_orders)
+                .WithRequired(e => e.supplier)
+                .HasForeignKey(e => e.supplier_id)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<user>()
                 .HasMany(e => e.bills)
@@ -134,24 +196,23 @@ namespace DTO
 
             modelBuilder.Entity<user>()
                 .HasMany(e => e.carts)
+                .WithOptional(e => e.user)
+                .HasForeignKey(e => e.user_id);
+
+            modelBuilder.Entity<user>()
+                .HasMany(e => e.permission_user)
                 .WithRequired(e => e.user)
                 .HasForeignKey(e => e.user_id)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<user>()
-                .HasMany(e => e.chats)
-                .WithRequired(e => e.user)
-                .HasForeignKey(e => e.receiver_id)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<user>()
-                .HasMany(e => e.chats1)
-                .WithRequired(e => e.user1)
-                .HasForeignKey(e => e.sender_id)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<user>()
                 .HasMany(e => e.product_reviews)
+                .WithRequired(e => e.user)
+                .HasForeignKey(e => e.user_id)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<user>()
+                .HasMany(e => e.role_user)
                 .WithRequired(e => e.user)
                 .HasForeignKey(e => e.user_id)
                 .WillCascadeOnDelete(false);

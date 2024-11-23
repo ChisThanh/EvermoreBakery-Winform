@@ -6,26 +6,21 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class product_interactions
+    public partial class image
     {
         public long id { get; set; }
 
         [Required]
         [StringLength(255)]
-        public string cookie_id { get; set; }
+        public string url { get; set; }
 
-        public int? user_id { get; set; }
+        [StringLength(255)]
+        public string imageable_type { get; set; }
 
-        public long product_id { get; set; }
-
-        [Required]
-        [StringLength(10)]
-        public string type { get; set; }
+        public long? imageable_id { get; set; }
 
         public DateTime? created_at { get; set; }
 
         public DateTime? updated_at { get; set; }
-
-        public virtual product product { get; set; }
     }
 }

@@ -6,12 +6,13 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class category
+    [Table("nutrition")]
+    public partial class nutrition
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public category()
+        public nutrition()
         {
-            products = new HashSet<product>();
+            nutrition_product = new HashSet<nutrition_product>();
         }
 
         public long id { get; set; }
@@ -21,12 +22,12 @@ namespace DTO
         public string name { get; set; }
 
         [Required]
-        [StringLength(255)]
-        public string description { get; set; }
+        [StringLength(50)]
+        public string unit { get; set; }
 
         [Required]
         [StringLength(255)]
-        public string slug { get; set; }
+        public string description { get; set; }
 
         public DateTime? created_at { get; set; }
 
@@ -35,6 +36,6 @@ namespace DTO
         public DateTime? deleted_at { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<product> products { get; set; }
+        public virtual ICollection<nutrition_product> nutrition_product { get; set; }
     }
 }

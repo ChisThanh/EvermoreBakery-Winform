@@ -6,35 +6,39 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class category
+    public partial class purchase_orders
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public category()
+        public purchase_orders()
         {
-            products = new HashSet<product>();
+            purchase_order_details = new HashSet<purchase_order_details>();
         }
 
         public long id { get; set; }
 
-        [Required]
-        [StringLength(255)]
-        public string name { get; set; }
+        public long supplier_id { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime order_date { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime delivery_date { get; set; }
 
         [Required]
         [StringLength(255)]
-        public string description { get; set; }
+        public string status { get; set; }
 
-        [Required]
-        [StringLength(255)]
-        public string slug { get; set; }
+        public double total { get; set; }
+
+        public byte is_pay { get; set; }
 
         public DateTime? created_at { get; set; }
 
         public DateTime? updated_at { get; set; }
 
-        public DateTime? deleted_at { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<product> products { get; set; }
+        public virtual ICollection<purchase_order_details> purchase_order_details { get; set; }
+
+        public virtual supplier supplier { get; set; }
     }
 }

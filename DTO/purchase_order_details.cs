@@ -6,24 +6,24 @@ namespace DTO
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class cart_details
+    public partial class purchase_order_details
     {
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long cart_id { get; set; }
+        public long purchase_order_id { get; set; }
 
         [Key]
         [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long product_id { get; set; }
+        public long ingredient_id { get; set; }
 
         public int quantity { get; set; }
 
         public double price { get; set; }
 
-        public virtual cart cart { get; set; }
+        public virtual ingredient ingredient { get; set; }
 
-        public virtual product product { get; set; }
+        public virtual purchase_orders purchase_orders { get; set; }
     }
 }
