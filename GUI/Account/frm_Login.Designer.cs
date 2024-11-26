@@ -1,6 +1,6 @@
 ﻿namespace GUI.Auth
 {
-    partial class Frm_Login
+    partial class frm_Login
     {
         /// <summary>
         /// Required designer variable.

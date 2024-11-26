@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace GUI.Auth
 {
-    public partial class Frm_Login : Form
+    public partial class frm_Login : Form
     {
         private string account;
         private string password;
@@ -13,7 +13,7 @@ namespace GUI.Auth
         public delegate void LoginSuccessEventHandler(object sender, EventArgs e);
         public event LoginSuccessEventHandler LoginSuccess;
 
-        public Frm_Login()
+        public frm_Login()
         {
             InitializeComponent();
             btnSubmit.Click += BtnSubmit_Click;

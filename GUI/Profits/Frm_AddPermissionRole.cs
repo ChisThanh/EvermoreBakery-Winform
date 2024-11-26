@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI.AccessManagement
+namespace GUI.Profits
 {
     public partial class Frm_AddPermissionRole : Form
     {

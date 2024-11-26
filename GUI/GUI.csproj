@@ -65,29 +65,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessManagement\Frm_AddPermissionUser.cs">
+    <Compile Include="Account\frm_Account.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccessManagement\Frm_AddPermissionUser.Designer.cs">
-      <DependentUpon>Frm_AddPermissionUser.cs</DependentUpon>
+    <Compile Include="Account\frm_Account.Designer.cs">
+      <DependentUpon>frm_Account.cs</DependentUpon>
     </Compile>
-    <Compile Include="AccessManagement\Frm_AddPermissionRole.cs">
+    <Compile Include="Account\frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccessManagement\Frm_AddPermissionRole.Designer.cs">
+    <Compile Include="Account\frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Container.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Container.Designer.cs">
+      <DependentUpon>Container.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profits\Frm_AddPermissionRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profits\Frm_AddPermissionRole.Designer.cs">
       <DependentUpon>Frm_AddPermissionRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="AccessManagement\Frm_ChangeRoleUser.cs">
+    <Compile Include="Profits\Frm_AddPermissionUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccessManagement\Frm_ChangeRoleUser.Designer.cs">
+    <Compile Include="Profits\Frm_AddPermissionUser.Designer.cs">
+      <DependentUpon>Frm_AddPermissionUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profits\Frm_ChangeRoleUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profits\Frm_ChangeRoleUser.Designer.cs">
       <DependentUpon>Frm_ChangeRoleUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Auth\Frm_Login.cs">
+    <Compile Include="Profits\frm_Invoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Auth\Frm_Login.Designer.cs">
-      <DependentUpon>Frm_Login.cs</DependentUpon>
+    <Compile Include="Profits\frm_Invoice.Designer.cs">
+      <DependentUpon>frm_Invoice.cs</DependentUpon>
     </Compile>
     <Compile Include="Bills\Frm_Bills.cs">
       <SubType>Form</SubType>
@@ -101,31 +119,58 @@
     <Compile Include="Bills\Frm_Bill_Details.Designer.cs">
       <DependentUpon>Frm_Bill_Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
-    </Compile>
     <Compile Include="ProductReview\Frm_ProductReview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ProductReview\Frm_ProductReview.Designer.cs">
       <DependentUpon>Frm_ProductReview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Profits\frm_Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profits\frm_Statistic.Designer.cs">
+      <DependentUpon>frm_Statistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AccessManagement\Frm_AddPermissionUser.resx">
+    <Compile Include="Sales\frm_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frm_Event.Designer.cs">
+      <DependentUpon>frm_Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frm_Ingredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frm_Ingredient.Designer.cs">
+      <DependentUpon>frm_Ingredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frm_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frm_Product.Designer.cs">
+      <DependentUpon>frm_Product.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account\frm_Account.resx">
+      <DependentUpon>frm_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Container.resx">
+      <DependentUpon>Container.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profits\Frm_AddPermissionUser.resx">
       <DependentUpon>Frm_AddPermissionUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AccessManagement\Frm_AddPermissionRole.resx">
+    <EmbeddedResource Include="Profits\Frm_AddPermissionRole.resx">
       <DependentUpon>Frm_AddPermissionRole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AccessManagement\Frm_ChangeRoleUser.resx">
+    <EmbeddedResource Include="Profits\Frm_ChangeRoleUser.resx">
       <DependentUpon>Frm_ChangeRoleUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Auth\Frm_Login.resx">
-      <DependentUpon>Frm_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Profits\frm_Invoice.resx">
+      <DependentUpon>frm_Invoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bills\Frm_Bills.resx">
       <DependentUpon>Frm_Bills.cs</DependentUpon>
@@ -133,11 +178,11 @@
     <EmbeddedResource Include="Bills\Frm_Bill_Details.resx">
       <DependentUpon>Frm_Bill_Details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ProductReview\Frm_ProductReview.resx">
       <DependentUpon>Frm_ProductReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profits\frm_Statistic.resx">
+      <DependentUpon>frm_Statistic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,9 +192,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include=".env.exemple" />
     <None Include=".env" />
+    <None Include=".env.example" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -173,6 +219,90 @@
       <Project>{4183bfdd-80c0-49a9-add5-175c7f194c5a}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Component\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\event_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\event_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flour_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flour_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistic_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistic_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuteDog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_red.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

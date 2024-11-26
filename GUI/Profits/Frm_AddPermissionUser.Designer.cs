@@ -1,4 +1,4 @@
-﻿namespace GUI.AccessManagement
+﻿namespace GUI.Profits
 {
     partial class Frm_AddPermissionUser
     {
