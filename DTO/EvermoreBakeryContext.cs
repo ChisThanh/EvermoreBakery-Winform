@@ -16,6 +16,7 @@ namespace DTO
         public EvermoreBakeryContext() : base()
         {
             Database.Connection.ConnectionString = _connectionString.Value;
+            RefreshContext();
         }
 
         public static EvermoreBakeryContext Instance => _instance.Value;
@@ -38,13 +39,24 @@ namespace DTO
                     throw new InvalidOperationException("Database connection information is incomplete.");
                 }
 
-                return $@"data source={dbHost};initial catalog={dbName};persist security info=True;user id={dbUser};password={dbPass};encrypt=False;MultipleActiveResultSets=True;App=EntityFramework";
+                return $@"data source={dbHost};initial catalog={dbName};persist security info=True;user id={dbUser};password={dbPass};encrypt=False;MultipleActiveResultSets=True;App=EntityFramework;Pooling=False";
             }
             catch (Exception ex)
             {
                 throw new InvalidOperationException("Failed to create the connection string.", ex);
             }
         }
+
+        private void RefreshContext()
+        {
+            foreach (var entry in this.ChangeTracker.Entries().ToList())
+            {
+                entry.State = EntityState.Detached;
+            }
+            this.Database.Connection.Close();
+            this.Database.Connection.Open();
+        }
+
 
         public virtual DbSet<bill_address> bill_address { get; set; }
         public virtual DbSet<bill_details> bill_details { get; set; }
@@ -61,6 +73,7 @@ namespace DTO
         public virtual DbSet<nutrition> nutritions { get; set; }
         public virtual DbSet<nutrition_product> nutrition_product { get; set; }
         public virtual DbSet<permission_user> permission_user { get; set; }
+        public virtual DbSet<permission_role> permission_role { get; set; }
         public virtual DbSet<permission> permissions { get; set; }
         public virtual DbSet<product_interactions> product_interactions { get; set; }
         public virtual DbSet<product_reviews> product_reviews { get; set; }

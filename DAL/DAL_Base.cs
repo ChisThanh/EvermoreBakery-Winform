@@ -4,6 +4,7 @@ using System.Linq;
 using DTO;
 using System.Data.Entity;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace DAL
 {
@@ -17,13 +18,15 @@ namespace DAL
             _context = EvermoreBakeryContext.Instance;
             _dto = _context.Set<T>();
         }
-        public DbSet<T> GetDto()
-        {
-            return _dto;
-        }
+       
         public virtual List<T> GetAll()
         {
             return _context.Set<T>().ToList();
+        }
+
+        public virtual async Task<List<T>> GetAllAsync()
+        {
+            return await _context.Set<T>().ToListAsync();
         }
 
         public virtual List<T> GetAllSearch<TKey>(string key, TKey value)
@@ -43,7 +46,7 @@ namespace DAL
             return query.ToList();
         }
 
-        public virtual T GetById(int id)
+        public virtual T GetById(long id)
         {
             var entity = _context.Set<T>().Find(id);
             if (entity == null)
@@ -93,8 +96,34 @@ namespace DAL
             return entity;
         }
 
+        //public virtual T Update(long id, T entity)
+        //{
+        //    var existingEntity = _context.Set<T>().Find(id);
+        //    if (existingEntity == null)
+        //        throw new KeyNotFoundException($"Entity with ID {id} not found.");
 
-        public virtual T Update(int id, T entity)
+        //    var entry = _context.Entry(existingEntity);
+        //    var properties = typeof(T).GetProperties();
+
+        //    foreach (var property in properties)
+        //    {
+        //        if (property.Name != "id" || property.Name != "Id")
+        //        {
+        //            var newValue = property.GetValue(entity);
+        //            property.SetValue(existingEntity, newValue);
+        //        }
+        //    }
+
+        //    entry.State = EntityState.Modified;
+        //    _context.SaveChanges();
+
+        //    var updatedEntity = _context.Set<T>().Find(id);
+        //    if (updatedEntity == null)
+        //        throw new Exception($"Entity with ID {id} not found after update.");
+        //    return updatedEntity;
+        //}
+
+        public virtual T Update(long id, T entity)
         {
             var existingEntity = _context.Set<T>().Find(id);
             if (existingEntity == null)
@@ -105,9 +134,15 @@ namespace DAL
 
             foreach (var property in properties)
             {
-                if (property.Name != "Id")
+                if (property.Name.Equals("Id", StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                var newValue = property.GetValue(entity);
+
+                if (newValue != null &&
+                (!(newValue is ValueType) ||
+                 IsValidComparableValue(newValue)))
                 {
-                    var newValue = property.GetValue(entity);
                     property.SetValue(existingEntity, newValue);
                 }
             }
@@ -118,8 +153,10 @@ namespace DAL
             var updatedEntity = _context.Set<T>().Find(id);
             if (updatedEntity == null)
                 throw new Exception($"Entity with ID {id} not found after update.");
+
             return updatedEntity;
         }
+
 
         public virtual bool Delete(int id)
         {
@@ -222,6 +259,17 @@ namespace DAL
             }
 
             return result;
+        }
+
+        private bool IsValidComparableValue(object value)
+        {
+            if (value is int || value is long || value is short || value is decimal || value is double || value is float)
+                return Convert.ToDecimal(value) > 0;
+
+            if (value is DateTime dateTimeValue)
+                return dateTimeValue > DateTime.MinValue; // Kiểm tra DateTime hợp lệ, bạn có thể thay bằng điều kiện khác nếu cần
+
+            return true; // Các kiểu không phải ValueType hoặc không phải số, không cần kiểm tra so sánh
         }
     }
 }

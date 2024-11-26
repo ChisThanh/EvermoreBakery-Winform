@@ -7,8 +7,6 @@ namespace GUI.Auth
 {
     public partial class Frm_Login : Form
     {
-
-        private BLL_Auth _bllAuth = new BLL_Auth();
         private string account;
         private string password;
 
@@ -44,6 +42,7 @@ namespace GUI.Auth
                 stopwatch.Start();
 
                 var user = await BLL_Auth.LoginAsync(account, password); 
+                Program.userAuth = user;
 
                 stopwatch.Stop(); 
 

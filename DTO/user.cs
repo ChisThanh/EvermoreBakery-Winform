@@ -92,12 +92,19 @@ namespace DTO
 
         public bool HasPermissions(string permissionName)
         {
-            if (Permissions == null || !Permissions.Any())
+            try
             {
-                Permissions = GetPermissions();
-            }
+                if (Permissions == null || !Permissions.Any())
+                {
+                    Permissions = GetPermissions();
+                }
 
-            return Permissions.Contains(permissionName);
+                return Permissions.Contains(permissionName);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public string GetRoles()

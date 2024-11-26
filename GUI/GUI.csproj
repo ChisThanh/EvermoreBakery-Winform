@@ -71,11 +71,29 @@
     <Compile Include="AccessManagement\Frm_AddPermission.Designer.cs">
       <DependentUpon>Frm_AddPermission.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccessManagement\Frm_AddPermissionRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessManagement\Frm_AddPermissionRole.Designer.cs">
+      <DependentUpon>Frm_AddPermissionRole.cs</DependentUpon>
+    </Compile>
     <Compile Include="Auth\Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Auth\Frm_Login.Designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\Frm_Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills\Frm_Bills.Designer.cs">
+      <DependentUpon>Frm_Bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\Frm_Bill_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills\Frm_Bill_Details.Designer.cs">
+      <DependentUpon>Frm_Bill_Details.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -83,16 +101,34 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductReview\Frm_ProductReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductReview\Frm_ProductReview.Designer.cs">
+      <DependentUpon>Frm_ProductReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AccessManagement\Frm_AddPermission.resx">
       <DependentUpon>Frm_AddPermission.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AccessManagement\Frm_AddPermissionRole.resx">
+      <DependentUpon>Frm_AddPermissionRole.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Auth\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bills\Frm_Bills.resx">
+      <DependentUpon>Frm_Bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\Frm_Bill_Details.resx">
+      <DependentUpon>Frm_Bill_Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductReview\Frm_ProductReview.resx">
+      <DependentUpon>Frm_ProductReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

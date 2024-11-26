@@ -206,6 +206,7 @@
     <Compile Include="coupon.cs" />
     <Compile Include="EvermoreBakeryContext.cs" />
     <Compile Include="permission.cs" />
+    <Compile Include="permission_role.cs" />
     <Compile Include="permission_user.cs" />
     <Compile Include="product.cs" />
     <Compile Include="product_interactions.cs" />

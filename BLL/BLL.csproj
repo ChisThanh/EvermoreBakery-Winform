@@ -67,9 +67,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL_AccessManagement.cs" />
     <Compile Include="BLL_Base.cs" />
     <Compile Include="BLL_Auth.cs" />
+    <Compile Include="BLL_Bills.cs" />
     <Compile Include="BLL_Permission.cs" />
+    <Compile Include="BLL_ProductReview.cs" />
+    <Compile Include="BLL_Products.cs" />
     <Compile Include="BLL_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using BLL;
 using DTO;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace GUI.AccessManagement
 {
     public partial class Frm_AddPermission : Form
     {
-        //BLL_Permission bll_Permission = new BLL_Permission(new DAL.DAL_Permission());
+        private BLL_Permission BLL_Permission = new BLL_Permission();
         public Frm_AddPermission()
         {
             InitializeComponent();
@@ -23,7 +24,54 @@ namespace GUI.AccessManagement
 
         private void Frm_AddPermission_Load(object sender, EventArgs e)
         {
-            
+            var list = BLL_Permission.GetList();
+            RenderUI(list, pnMain);
+        }
+
+        public static void RenderUI(List<permission> list, Panel panel)
+        {
+            panel.Controls.Clear();
+            var checkBoxWidth = 200; 
+            var horizontalSpacing = 10; 
+            var verticalSpacing = 30;  
+
+            var startTop = 10;  
+            var startLeft = 10;
+
+            int itemsPerRow = 3; 
+            int currentRow = 0;  
+
+            foreach (var item in list)
+            {
+                Guna2CheckBox guna2CheckBox = new Guna2CheckBox();
+                guna2CheckBox.Text = item.display_name;
+                guna2CheckBox.Tag = item.id;
+                guna2CheckBox.Checked = false;
+
+                guna2CheckBox.Top = startTop;  
+                guna2CheckBox.Left = startLeft + horizontalSpacing; 
+
+                if(item.isChecked) guna2CheckBox.Checked = true;
+
+                currentRow++;
+
+                if (currentRow == itemsPerRow)
+                {
+                    startTop += verticalSpacing;
+                    startLeft = 10;
+                    currentRow = 0;
+                }
+                else
+                {
+                    startLeft += checkBoxWidth + horizontalSpacing;
+                }
+
+                panel.Controls.Add(guna2CheckBox);
+            }
+        }
+
+        private void Guna2CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
         }
     }
 }

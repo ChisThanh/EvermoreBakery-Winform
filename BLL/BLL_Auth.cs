@@ -47,7 +47,7 @@ namespace BLL
             if (!isPasswordCorrect)
                 throw new Exception("Mật khẩu không đúng");
 
-            if (!user.HasRoles("admin") && !user.HasRoles("sadmin"))
+            if (!user.HasRoles("admin") && !user.HasRoles("sadmin") && !user.HasRoles("user"))
                 throw new Exception("Tài khoản không có quyền truy cập");
 
             return user;

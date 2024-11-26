@@ -10,14 +10,11 @@ namespace BLL
 {
     public class BLL_Permission : BLL_Base<permission>
     {
+        protected DAL_Permission _dalP;
         public BLL_Permission() : base()
         {
-            _dal = new DAL_Permission();
-        }
-
-        public List<permission> GetPermissionOnUser()
-        {
-            return ((DAL_Permission)_dal).GetPermissionOnUser();
+            _dalP = new DAL_Permission();
+            _dal = _dalP;
         }
     }
 

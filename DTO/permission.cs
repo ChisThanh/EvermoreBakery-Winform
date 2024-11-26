@@ -36,5 +36,9 @@ namespace DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<role> roles { get; set; }
+
+
+        [NotMapped]
+        public virtual bool isChecked { get; set; } = false;
     }
 }

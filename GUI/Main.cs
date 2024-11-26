@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DTO;
 using BLL;
 using GUI.Auth;
+using GUI.AccessManagement;
 
 namespace GUI
 {
@@ -17,6 +18,8 @@ namespace GUI
     {
         BLL_User bll_user = new BLL_User();
         Frm_Login loginForm = new Frm_Login();
+
+
         public Main()
         {
             InitializeComponent();
@@ -45,22 +48,23 @@ namespace GUI
 
         private void LoadData()
         {
-            // Chia nhỏ công việc ra các tiểu trình
-            BackgroundWorker worker = new BackgroundWorker();
-            worker.DoWork += (s, args) =>
-            {
-                // Tải dữ liệu từ cơ sở dữ liệu
-                var data = bll_user.GetList();
-                args.Result = data;
-            };
+            //// Chia nhỏ công việc ra các tiểu trình
+            //BackgroundWorker worker = new BackgroundWorker();
+            //worker.DoWork += (s, args) =>
+            //{
+            //    // Tải dữ liệu từ cơ sở dữ liệu
+            //    var data = bll_user.GetList();
+            //    args.Result = data;
+            //};
 
-            worker.RunWorkerCompleted += (s, args) =>
-            {
-                // Cập nhật giao diện người dùng
-                dataGridView1.DataSource = args.Result as List<user>;
-            };
+            //worker.RunWorkerCompleted += (s, args) =>
+            //{
+            //    // Cập nhật giao diện người dùng
+            //    dataGridView1.DataSource = args.Result as List<user>;
+            //};
 
-            worker.RunWorkerAsync();
+            //worker.RunWorkerAsync();
+
         }
 
         private void Logout()
@@ -71,5 +75,10 @@ namespace GUI
             loginForm.ShowDialog();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Frm_AddPermission frm = new Frm_AddPermission();
+            frm.ShowDialog();
+        }
     }
 }

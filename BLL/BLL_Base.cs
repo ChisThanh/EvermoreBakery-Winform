@@ -13,16 +13,20 @@ namespace BLL
     public class BLL_Base<TEntity> where TEntity : class
     {
         protected DAL_Base<TEntity> _dal;
-        public BLL_Base()
-        {
-        }
+        public BLL_Base(){}
 
         public virtual List<TEntity> GetList()
         {
             return _dal.GetAll();
         }
 
-        public virtual TEntity GetByID(int id)
+        public virtual async Task<List<TEntity>> GetListAsync()
+        {
+            return await _dal.GetAllAsync();
+        }
+
+
+        public virtual TEntity GetByID(long id)
         {
             return _dal.GetById(id);
         }
@@ -55,7 +59,7 @@ namespace BLL
             return _dal.Add(entity);
         }
 
-        public virtual TEntity Update(int id, TEntity entity)
+        public virtual TEntity Update(long id, TEntity entity)
         {
             return _dal.Update(id, entity);
         }
