@@ -27,5 +27,20 @@ namespace BLL
         {
             return dalAccessManagement.GetPermissionsByRoleId(roleId);
         }
+
+        public bool AddPermissionRole(long roleId, long permissionId)
+        {
+            return dalAccessManagement.AddPermissionRole(roleId, permissionId);
+        }
+
+        public bool DeletePermissionRole(long roleId, long permissionId)
+        {
+            return dalAccessManagement.DeletePermissionRole(roleId, permissionId);
+        }
+
+        public bool ChangeRoleUser(long userId, string roleName)
+        {
+            return dalAccessManagement.ChangeRoleUser(userId, roleName);
+        }
     }
 }

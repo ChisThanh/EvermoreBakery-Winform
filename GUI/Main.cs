@@ -77,7 +77,7 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Frm_AddPermission frm = new Frm_AddPermission();
+            Frm_AddPermissionUser frm = new Frm_AddPermissionUser();
             frm.ShowDialog();
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace GUI.AccessManagement
 {
-    partial class Frm_AddPermission
+    partial class Frm_ChangeRoleUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // pnMain
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(322, 547);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "Thêm";
+            this.pnMain.Location = new System.Drawing.Point(74, 140);
+            this.pnMain.Name = "pnMain";
+            this.pnMain.Size = new System.Drawing.Size(859, 394);
+            this.pnMain.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(128, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 16);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Người dùng";
             // 
             // txtUserName
             // 
@@ -61,44 +62,41 @@
             this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName.Location = new System.Drawing.Point(161, 32);
+            this.txtUserName.Location = new System.Drawing.Point(223, 54);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.PlaceholderText = "";
             this.txtUserName.SelectedText = "";
             this.txtUserName.Size = new System.Drawing.Size(229, 48);
-            this.txtUserName.TabIndex = 7;
+            this.txtUserName.TabIndex = 11;
             // 
-            // label1
+            // btnSave
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Người dùng";
+            this.btnSave.BorderRadius = 10;
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(384, 569);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(180, 45);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "Lưu";
             // 
-            // pnMain
-            // 
-            this.pnMain.Location = new System.Drawing.Point(12, 118);
-            this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(859, 394);
-            this.pnMain.TabIndex = 9;
-            // 
-            // Frm_AddPermission
+            // Frm_ChangeRoleUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 636);
+            this.ClientSize = new System.Drawing.Size(1258, 824);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.guna2Button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Frm_AddPermission";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_RolePermission";
+            this.Controls.Add(this.btnSave);
+            this.Name = "Frm_ChangeRoleUser";
+            this.Text = "Frm_ChangeRoleUser";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,9 +104,9 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox txtUserName;
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel pnMain;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserName;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
     }
 }

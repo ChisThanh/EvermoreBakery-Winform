@@ -24,8 +24,9 @@ namespace GUI
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new GUI.Bills.Frm_Bills());
             //Application.Run(new GUI.ProductReview.Frm_ProductReview());
-            //Application.Run(new Frm_AddPermission());
-            Application.Run(new Frm_AddPermissionRole());
+            //Application.Run(new Frm_AddPermissionUser());
+            //Application.Run(new Frm_AddPermissionRole());
+            Application.Run(new Frm_ChangeRoleUser());
             //Application.Run(new Main());
         }
     }

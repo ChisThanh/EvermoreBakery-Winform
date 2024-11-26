@@ -65,17 +65,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessManagement\Frm_AddPermission.cs">
+    <Compile Include="AccessManagement\Frm_AddPermissionUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccessManagement\Frm_AddPermission.Designer.cs">
-      <DependentUpon>Frm_AddPermission.cs</DependentUpon>
+    <Compile Include="AccessManagement\Frm_AddPermissionUser.Designer.cs">
+      <DependentUpon>Frm_AddPermissionUser.cs</DependentUpon>
     </Compile>
     <Compile Include="AccessManagement\Frm_AddPermissionRole.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AccessManagement\Frm_AddPermissionRole.Designer.cs">
       <DependentUpon>Frm_AddPermissionRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccessManagement\Frm_ChangeRoleUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessManagement\Frm_ChangeRoleUser.Designer.cs">
+      <DependentUpon>Frm_ChangeRoleUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Auth\Frm_Login.cs">
       <SubType>Form</SubType>
@@ -109,11 +115,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AccessManagement\Frm_AddPermission.resx">
-      <DependentUpon>Frm_AddPermission.cs</DependentUpon>
+    <EmbeddedResource Include="AccessManagement\Frm_AddPermissionUser.resx">
+      <DependentUpon>Frm_AddPermissionUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AccessManagement\Frm_AddPermissionRole.resx">
       <DependentUpon>Frm_AddPermissionRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccessManagement\Frm_ChangeRoleUser.resx">
+      <DependentUpon>Frm_ChangeRoleUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Auth\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>

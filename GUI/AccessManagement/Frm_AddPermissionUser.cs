@@ -13,10 +13,11 @@ using System.Windows.Forms;
 
 namespace GUI.AccessManagement
 {
-    public partial class Frm_AddPermission : Form
+    public partial class Frm_AddPermissionUser : Form
     {
         private BLL_Permission BLL_Permission = new BLL_Permission();
-        public Frm_AddPermission()
+        user _user = EvermoreBakeryContext.Instance.users.First();
+        public Frm_AddPermissionUser()
         {
             InitializeComponent();
             this.Load += Frm_AddPermission_Load;
@@ -26,6 +27,7 @@ namespace GUI.AccessManagement
         {
             var list = BLL_Permission.GetList();
             RenderUI(list, pnMain);
+            txtUserName.Text = _user.name;
         }
 
         public static void RenderUI(List<permission> list, Panel panel)
@@ -70,8 +72,6 @@ namespace GUI.AccessManagement
             }
         }
 
-        private void Guna2CheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-        }
+        
     }
 }
