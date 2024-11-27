@@ -16,5 +16,20 @@ namespace BLL
             _dalP = new DAL_Products();
             _dal = _dalP;
         }
+
+        public override List<product> GetList()
+        {
+            return _dal.GetAll();
+        }
+
+        public override async Task<List<product>> GetListAsync()
+        {
+            return await _dal.GetAllAsync();
+        }
+
+        public image GetImageByProduct(long productId)
+        {
+            return _dalP.GetImageByProduct(productId);
+        }
     }
 }

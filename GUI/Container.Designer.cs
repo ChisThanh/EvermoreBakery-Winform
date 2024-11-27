@@ -50,14 +50,15 @@
             this.lbl_Title = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Margin = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Header = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnl_Control = new Guna.UI2.WinForms.Guna2Panel();
             this.lbl_Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnl_DividerContent = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Content = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_Close = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btn_Maximize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btn_Minimize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btn_Logout = new Guna.UI2.WinForms.Guna2Button();
-            this.ptb_Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pbx_Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn_Account = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Satistic = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Invoice = new Guna.UI2.WinForms.Guna2Button();
@@ -65,7 +66,7 @@
             this.btn_Event = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Product = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Home = new Guna.UI2.WinForms.Guna2Button();
-            this.ptb_Logo = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pbx_Logo = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pnl_Sidebar.SuspendLayout();
             this.pnl_Footer.SuspendLayout();
             this.pnl_Account.SuspendLayout();
@@ -74,8 +75,9 @@
             this.pnl_Home.SuspendLayout();
             this.pnl_Logo.SuspendLayout();
             this.pnl_Header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_Avatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_Logo)).BeginInit();
+            this.pnl_Control.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Avatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // frm_Borderless
@@ -108,7 +110,7 @@
             // 
             this.pnl_Footer.Controls.Add(this.lbl_Role);
             this.pnl_Footer.Controls.Add(this.btn_Logout);
-            this.pnl_Footer.Controls.Add(this.ptb_Avatar);
+            this.pnl_Footer.Controls.Add(this.pbx_Avatar);
             this.pnl_Footer.Controls.Add(this.lbl_Name);
             this.pnl_Footer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnl_Footer.Location = new System.Drawing.Point(0, 750);
@@ -251,7 +253,7 @@
             // 
             // pnl_Logo
             // 
-            this.pnl_Logo.Controls.Add(this.ptb_Logo);
+            this.pnl_Logo.Controls.Add(this.pbx_Logo);
             this.pnl_Logo.Controls.Add(this.lbl_Title);
             this.pnl_Logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Logo.Location = new System.Drawing.Point(0, 0);
@@ -280,16 +282,25 @@
             // 
             // pnl_Header
             // 
-            this.pnl_Header.Controls.Add(this.btn_Close);
-            this.pnl_Header.Controls.Add(this.btn_Maximize);
-            this.pnl_Header.Controls.Add(this.btn_Minimize);
+            this.pnl_Header.Controls.Add(this.pnl_Control);
             this.pnl_Header.Controls.Add(this.lbl_Header);
-            this.pnl_Header.Controls.Add(this.guna2Panel2);
+            this.pnl_Header.Controls.Add(this.pnl_DividerContent);
             this.pnl_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Header.Location = new System.Drawing.Point(320, 0);
             this.pnl_Header.Name = "pnl_Header";
             this.pnl_Header.Size = new System.Drawing.Size(1480, 90);
             this.pnl_Header.TabIndex = 2;
+            // 
+            // pnl_Control
+            // 
+            this.pnl_Control.Controls.Add(this.btn_Close);
+            this.pnl_Control.Controls.Add(this.btn_Maximize);
+            this.pnl_Control.Controls.Add(this.btn_Minimize);
+            this.pnl_Control.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_Control.Location = new System.Drawing.Point(1280, 0);
+            this.pnl_Control.Name = "pnl_Control";
+            this.pnl_Control.Size = new System.Drawing.Size(200, 80);
+            this.pnl_Control.TabIndex = 0;
             // 
             // lbl_Header
             // 
@@ -302,14 +313,14 @@
             this.lbl_Header.TabIndex = 4;
             this.lbl_Header.Text = "HEADER";
             // 
-            // guna2Panel2
+            // pnl_DividerContent
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 80);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1480, 10);
-            this.guna2Panel2.TabIndex = 5;
+            this.pnl_DividerContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.pnl_DividerContent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_DividerContent.Location = new System.Drawing.Point(0, 80);
+            this.pnl_DividerContent.Name = "pnl_DividerContent";
+            this.pnl_DividerContent.Size = new System.Drawing.Size(1480, 10);
+            this.pnl_DividerContent.TabIndex = 5;
             // 
             // pnl_Content
             // 
@@ -323,58 +334,62 @@
             // 
             this.btn_Close.CheckedState.Image = global::GUI.Properties.Resources.close_red;
             this.btn_Close.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Close.HoverState.Image = global::GUI.Properties.Resources.close_red;
             this.btn_Close.HoverState.ImageSize = new System.Drawing.Size(32, 32);
             this.btn_Close.Image = global::GUI.Properties.Resources.close_primary;
             this.btn_Close.ImageOffset = new System.Drawing.Point(0, 0);
             this.btn_Close.ImageRotate = 0F;
             this.btn_Close.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Close.Location = new System.Drawing.Point(1436, 24);
+            this.btn_Close.Location = new System.Drawing.Point(122, 24);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.PressedState.Image = global::GUI.Properties.Resources.close_red;
             this.btn_Close.PressedState.ImageSize = new System.Drawing.Size(32, 32);
             this.btn_Close.Size = new System.Drawing.Size(32, 32);
-            this.btn_Close.TabIndex = 8;
+            this.btn_Close.TabIndex = 14;
             // 
             // btn_Maximize
             // 
             this.btn_Maximize.CheckedState.Image = global::GUI.Properties.Resources.maximize_gray;
             this.btn_Maximize.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Maximize.HoverState.Image = global::GUI.Properties.Resources.maximize_gray;
             this.btn_Maximize.HoverState.ImageSize = new System.Drawing.Size(32, 32);
             this.btn_Maximize.Image = global::GUI.Properties.Resources.maximize_primary;
             this.btn_Maximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.btn_Maximize.ImageRotate = 0F;
             this.btn_Maximize.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Maximize.Location = new System.Drawing.Point(1398, 24);
+            this.btn_Maximize.Location = new System.Drawing.Point(84, 24);
             this.btn_Maximize.Name = "btn_Maximize";
             this.btn_Maximize.PressedState.Image = global::GUI.Properties.Resources.maximize_gray;
             this.btn_Maximize.PressedState.ImageSize = new System.Drawing.Size(32, 32);
             this.btn_Maximize.Size = new System.Drawing.Size(32, 32);
-            this.btn_Maximize.TabIndex = 7;
+            this.btn_Maximize.TabIndex = 13;
             // 
             // btn_Minimize
             // 
             this.btn_Minimize.CheckedState.Image = global::GUI.Properties.Resources.minimize_gray;
             this.btn_Minimize.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Minimize.HoverState.Image = global::GUI.Properties.Resources.minimize_gray;
             this.btn_Minimize.HoverState.ImageSize = new System.Drawing.Size(32, 32);
             this.btn_Minimize.Image = global::GUI.Properties.Resources.minimize_primary;
             this.btn_Minimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.btn_Minimize.ImageRotate = 0F;
             this.btn_Minimize.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Minimize.Location = new System.Drawing.Point(1360, 24);
+            this.btn_Minimize.Location = new System.Drawing.Point(46, 24);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.PressedState.Image = global::GUI.Properties.Resources.minimize_gray;
             this.btn_Minimize.PressedState.ImageSize = new System.Drawing.Size(32, 32);
             this.btn_Minimize.Size = new System.Drawing.Size(32, 32);
-            this.btn_Minimize.TabIndex = 6;
+            this.btn_Minimize.TabIndex = 12;
             // 
             // btn_Logout
             // 
             this.btn_Logout.BorderColor = System.Drawing.Color.Red;
             this.btn_Logout.BorderRadius = 10;
             this.btn_Logout.BorderThickness = 2;
+            this.btn_Logout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Logout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Logout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Logout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -394,17 +409,17 @@
             this.btn_Logout.Text = "ĐĂNG XUẤT";
             this.btn_Logout.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // ptb_Avatar
+            // pbx_Avatar
             // 
-            this.ptb_Avatar.Image = global::GUI.Properties.Resources.CuteDog;
-            this.ptb_Avatar.ImageRotate = 0F;
-            this.ptb_Avatar.Location = new System.Drawing.Point(16, 12);
-            this.ptb_Avatar.Name = "ptb_Avatar";
-            this.ptb_Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ptb_Avatar.Size = new System.Drawing.Size(64, 64);
-            this.ptb_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_Avatar.TabIndex = 8;
-            this.ptb_Avatar.TabStop = false;
+            this.pbx_Avatar.Image = global::GUI.Properties.Resources.CuteDog;
+            this.pbx_Avatar.ImageRotate = 0F;
+            this.pbx_Avatar.Location = new System.Drawing.Point(16, 12);
+            this.pbx_Avatar.Name = "pbx_Avatar";
+            this.pbx_Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbx_Avatar.Size = new System.Drawing.Size(64, 64);
+            this.pbx_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_Avatar.TabIndex = 8;
+            this.pbx_Avatar.TabStop = false;
             // 
             // btn_Account
             // 
@@ -413,6 +428,7 @@
             this.btn_Account.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btn_Account.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
             this.btn_Account.CheckedState.Image = global::GUI.Properties.Resources.user_secondary;
+            this.btn_Account.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Account.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Account.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Account.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -441,6 +457,7 @@
             this.btn_Satistic.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btn_Satistic.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
             this.btn_Satistic.CheckedState.Image = global::GUI.Properties.Resources.statistic_secondary;
+            this.btn_Satistic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Satistic.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Satistic.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Satistic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -469,6 +486,7 @@
             this.btn_Invoice.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btn_Invoice.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
             this.btn_Invoice.CheckedState.Image = global::GUI.Properties.Resources.invoice_secondary;
+            this.btn_Invoice.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Invoice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Invoice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Invoice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -497,6 +515,7 @@
             this.btn_Ingredient.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btn_Ingredient.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
             this.btn_Ingredient.CheckedState.Image = global::GUI.Properties.Resources.flour_secondary;
+            this.btn_Ingredient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Ingredient.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Ingredient.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Ingredient.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -525,6 +544,7 @@
             this.btn_Event.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btn_Event.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
             this.btn_Event.CheckedState.Image = global::GUI.Properties.Resources.event_secondary;
+            this.btn_Event.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Event.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Event.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Event.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -553,6 +573,7 @@
             this.btn_Product.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btn_Product.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
             this.btn_Product.CheckedState.Image = global::GUI.Properties.Resources.cake_secondary;
+            this.btn_Product.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Product.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Product.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Product.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -581,6 +602,7 @@
             this.btn_Home.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btn_Home.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
             this.btn_Home.CheckedState.Image = global::GUI.Properties.Resources.home_secondary;
+            this.btn_Home.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -602,17 +624,17 @@
             this.btn_Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Home.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // ptb_Logo
+            // pbx_Logo
             // 
-            this.ptb_Logo.Image = global::GUI.Properties.Resources.square_logo;
-            this.ptb_Logo.ImageRotate = 0F;
-            this.ptb_Logo.Location = new System.Drawing.Point(12, 10);
-            this.ptb_Logo.Name = "ptb_Logo";
-            this.ptb_Logo.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ptb_Logo.Size = new System.Drawing.Size(64, 64);
-            this.ptb_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_Logo.TabIndex = 3;
-            this.ptb_Logo.TabStop = false;
+            this.pbx_Logo.Image = global::GUI.Properties.Resources.square_logo;
+            this.pbx_Logo.ImageRotate = 0F;
+            this.pbx_Logo.Location = new System.Drawing.Point(12, 10);
+            this.pbx_Logo.Name = "pbx_Logo";
+            this.pbx_Logo.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbx_Logo.Size = new System.Drawing.Size(64, 64);
+            this.pbx_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_Logo.TabIndex = 3;
+            this.pbx_Logo.TabStop = false;
             // 
             // frm_Container
             // 
@@ -643,8 +665,9 @@
             this.pnl_Logo.PerformLayout();
             this.pnl_Header.ResumeLayout(false);
             this.pnl_Header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_Avatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_Logo)).EndInit();
+            this.pnl_Control.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Avatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -654,7 +677,7 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm frm_Borderless;
         private Guna.UI2.WinForms.Guna2Panel pnl_Sidebar;
         private Guna.UI2.WinForms.Guna2Panel pnl_Logo;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox ptb_Logo;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbx_Logo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Title;
         private Guna.UI2.WinForms.Guna2Panel pnl_Divider1;
         private Guna.UI2.WinForms.Guna2Panel pnl_Home;
@@ -678,14 +701,15 @@
         private Guna.UI2.WinForms.Guna2Button btn_Logout;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Role;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Name;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox ptb_Avatar;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbx_Avatar;
         private Guna.UI2.WinForms.Guna2Panel pnl_Margin;
         private Guna.UI2.WinForms.Guna2Panel pnl_Header;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Header;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel pnl_DividerContent;
         private Guna.UI2.WinForms.Guna2Panel pnl_Content;
-        private Guna.UI2.WinForms.Guna2ImageButton btn_Minimize;
-        private Guna.UI2.WinForms.Guna2ImageButton btn_Maximize;
+        private Guna.UI2.WinForms.Guna2Panel pnl_Control;
         private Guna.UI2.WinForms.Guna2ImageButton btn_Close;
+        private Guna.UI2.WinForms.Guna2ImageButton btn_Maximize;
+        private Guna.UI2.WinForms.Guna2ImageButton btn_Minimize;
     }
 }

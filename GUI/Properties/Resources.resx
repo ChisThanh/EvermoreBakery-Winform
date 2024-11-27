@@ -118,85 +118,151 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="user_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="event_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\event_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimize_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="filter_indigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filter_indigo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delete_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="update_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="invoice_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\invoice_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maximize_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximize_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cake_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cake_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="event_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\event_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="update_yellow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update_yellow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maximize_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximize_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minus_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="statistic_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\statistic_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="invoice_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\invoice_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flour_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flour_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="event_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\event_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logout_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CuteDog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CuteDog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="filter_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filter_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="square_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\square_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="statistic_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\statistic_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flour_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flour_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maximize_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximize_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logout_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cake_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cake_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="heart_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistic_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistic_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insert_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insert_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insert_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insert_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_petal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart_petal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="update_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="square_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\square_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CuteDog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CuteDog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoice_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invoice_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistic_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistic_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flour_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flour_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flour_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flour_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xmark_tertiary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xmark_tertiary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reset_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minimize_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cake_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cake_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maximize_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_tertiary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_tertiary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="event_secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\event_secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xmark_primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xmark_primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reset_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

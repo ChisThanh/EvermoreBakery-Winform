@@ -37,6 +37,11 @@ namespace GUI
             btn_Close.Click += (s, e) => Close();
 
             btn_Maximize.Enabled = false;
+
+            UncheckButtons();
+            btn_Product.Checked = true;
+            lbl_Header.Text = "SẢN PHẨM";
+            OpenForm(new pnl_PaddingMiddle());
         }
 
         private void Btn_Account_Click(object sender, EventArgs e)
@@ -84,7 +89,7 @@ namespace GUI
             UncheckButtons();
             btn_Product.Checked = true;
             lbl_Header.Text = "SẢN PHẨM";
-            OpenForm(new frm_Product());
+            OpenForm(new pnl_PaddingMiddle());
         }
 
         public void OpenForm(Form form)

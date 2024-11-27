@@ -56,9 +56,11 @@
     <Compile Include="DAL_AccessManagement.cs" />
     <Compile Include="DAL_Base.cs" />
     <Compile Include="DAL_Bills.cs" />
+    <Compile Include="DAL_Categories.cs" />
     <Compile Include="DAL_Coupons.cs" />
     <Compile Include="DAL_Events.cs" />
-    <Compile Include="DAL_ingredients.cs" />
+    <Compile Include="DAL_Ingredients.cs" />
+    <Compile Include="DAL_Nutritions.cs" />
     <Compile Include="DAL_Permission.cs" />
     <Compile Include="DAL_ProductReview.cs" />
     <Compile Include="DAL_Products.cs" />
