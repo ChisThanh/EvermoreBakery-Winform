@@ -15,6 +15,7 @@ namespace GUI.Sales
         public frm_Ingredient()
         {
             InitializeComponent();
+
         }
     }
 }

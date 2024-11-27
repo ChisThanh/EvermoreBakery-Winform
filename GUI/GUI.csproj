@@ -188,6 +188,9 @@
     <EmbeddedResource Include="Sales\frm_Event.resx">
       <DependentUpon>frm_Event.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frm_Ingredient.resx">
+      <DependentUpon>frm_Ingredient.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include=".env" />
     <None Include=".env.example" />
     <None Include="packages.config" />
