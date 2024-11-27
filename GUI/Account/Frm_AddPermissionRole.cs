@@ -1,5 +1,6 @@
 ﻿using BLL;
 using DTO;
+using Guna.UI2.WinForms;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI.Profits
+namespace GUI.Account
 {
     public partial class Frm_AddPermissionRole : Form
     {
@@ -81,7 +82,7 @@ namespace GUI.Profits
                 isChecked = dataPerRole.Any(p2 => p2.id == p.id)
             }).ToList();
 
-            Frm_AddPermissionUser.RenderUI(dataAllPer, pnMain);
+            RenderUI(dataAllPer, pnMain);
         }
 
         private void GetCheckedIds()
@@ -97,6 +98,48 @@ namespace GUI.Profits
                         ids.Add((long)cb.Tag);
                     }
                 }
+            }
+        }
+
+        public static void RenderUI(List<permission> list, Panel panel)
+        {
+            panel.Controls.Clear();
+            var checkBoxWidth = 200;
+            var horizontalSpacing = 10;
+            var verticalSpacing = 30;
+
+            var startTop = 10;
+            var startLeft = 10;
+
+            int itemsPerRow = 3;
+            int currentRow = 0;
+
+            foreach (var item in list)
+            {
+                Guna2CheckBox guna2CheckBox = new Guna2CheckBox();
+                guna2CheckBox.Text = item.display_name;
+                guna2CheckBox.Tag = item.id;
+                guna2CheckBox.Checked = false;
+
+                guna2CheckBox.Top = startTop;
+                guna2CheckBox.Left = startLeft + horizontalSpacing;
+
+                if (item.isChecked) guna2CheckBox.Checked = true;
+
+                currentRow++;
+
+                if (currentRow == itemsPerRow)
+                {
+                    startTop += verticalSpacing;
+                    startLeft = 10;
+                    currentRow = 0;
+                }
+                else
+                {
+                    startLeft += checkBoxWidth + horizontalSpacing;
+                }
+
+                panel.Controls.Add(guna2CheckBox);
             }
         }
     }

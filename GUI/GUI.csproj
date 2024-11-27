@@ -83,22 +83,16 @@
     <Compile Include="Container.Designer.cs">
       <DependentUpon>Container.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profits\Frm_AddPermissionRole.cs">
+    <Compile Include="Account\Frm_AddPermissionRole.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profits\Frm_AddPermissionRole.Designer.cs">
+    <Compile Include="Account\Frm_AddPermissionRole.Designer.cs">
       <DependentUpon>Frm_AddPermissionRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profits\Frm_AddPermissionUser.cs">
+    <Compile Include="Account\Frm_ChangeRoleUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profits\Frm_AddPermissionUser.Designer.cs">
-      <DependentUpon>Frm_AddPermissionUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Profits\Frm_ChangeRoleUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Profits\Frm_ChangeRoleUser.Designer.cs">
+    <Compile Include="Account\Frm_ChangeRoleUser.Designer.cs">
       <DependentUpon>Frm_ChangeRoleUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Profits\frm_Invoice.cs">
@@ -160,13 +154,10 @@
     <EmbeddedResource Include="Container.resx">
       <DependentUpon>Container.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profits\Frm_AddPermissionUser.resx">
-      <DependentUpon>Frm_AddPermissionUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Profits\Frm_AddPermissionRole.resx">
+    <EmbeddedResource Include="Account\Frm_AddPermissionRole.resx">
       <DependentUpon>Frm_AddPermissionRole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profits\Frm_ChangeRoleUser.resx">
+    <EmbeddedResource Include="Account\Frm_ChangeRoleUser.resx">
       <DependentUpon>Frm_ChangeRoleUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profits\frm_Invoice.resx">
@@ -194,6 +185,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sales\frm_Event.resx">
+      <DependentUpon>frm_Event.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include=".env" />
     <None Include=".env.example" />
     <None Include="packages.config" />
