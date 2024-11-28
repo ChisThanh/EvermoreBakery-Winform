@@ -17,12 +17,18 @@ namespace GUI.Account
     {
         BLL_AccessManagement BLL_AccessManagement = new BLL_AccessManagement();
 
-        user _user = EvermoreBakeryContext.Instance.users.First();
+        user _user = null;
 
         string roleUser = "";
 
-        public Frm_ChangeRoleUser()
+        public event EventHandler RoleChanged;
+
+
+        public Frm_ChangeRoleUser(user __user = null)
         {
+            if(__user == null) __user = EvermoreBakeryContext.Instance.users.First();
+            _user = __user;
+
             InitializeComponent();
             this.Load += Frm_ChangeRoleUser_Load;
             txtUserName.Text = _user.name;
@@ -32,13 +38,23 @@ namespace GUI.Account
         private void BtnSave_Click(object sender, EventArgs e)
         {
             GetChecked();
+
+            if(roleUser == "")
+            {
+                MessageBox.Show("Vui lòng chọn quyền");
+                return;
+            }
+
             var check =  BLL_AccessManagement.ChangeRoleUser(_user.id, roleUser);
             if(!check)
             {
                 MessageBox.Show("Thay đổi quyền thất bại. Vui lòng liên hệ Anh Trai Làm Phần Này");
                 return;
             }
-            MessageBox.Show("Thay đổi quyền thành công");
+
+            RoleChanged?.Invoke(this, EventArgs.Empty);
+
+            this.Close();
         }
 
         private void Frm_ChangeRoleUser_Load(object sender, EventArgs e)
@@ -46,17 +62,18 @@ namespace GUI.Account
             var data = BLL_AccessManagement.GetRoleList();
 
             var roleUser = _user.GetRoles();
+
             if (roleUser != null)
             {
                 foreach (var item in data)
                 {
                     if (item.name == roleUser)
                         item.isChecked = true;
+                    else item.isChecked = false;
                 }
             }
 
             RenderUI(data, pnMain);
-
         }
 
         public static void RenderUI(List<role> list, Panel panel)

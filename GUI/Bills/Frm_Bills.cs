@@ -31,6 +31,7 @@ namespace GUI.Bills
             LoadData();
 
             dgvMain.CellClick += DgvMain_CellClick;
+            dgvMain.AllowUserToAddRows = false;
 
             cbxStatus.Items.Add("Chờ xác nhận");
             cbxStatus.Items.Add("Đang xử lý");
@@ -39,6 +40,12 @@ namespace GUI.Bills
             cbxStatus.Items.Add("Đã hủy");
             cbxStatus.SelectedIndex = 0;
             cbxStatus.SelectedValueChanged += CbxStatus_SelectedValueChanged;
+            btnLoadData.Click += BtnLoadData_Click;
+        }
+
+        private void BtnLoadData_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
 
         private void CbxStatus_SelectedValueChanged(object sender, EventArgs e)

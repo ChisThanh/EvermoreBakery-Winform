@@ -19,6 +19,8 @@ namespace GUI.Bills
             InitializeComponent();
             this._bill = _bill;
             this.Load += Frm_Bill_Details_Load;
+
+            dgvMain.AllowUserToAddRows = false;
         }
 
         private void Frm_Bill_Details_Load(object sender, EventArgs e)
@@ -29,7 +31,7 @@ namespace GUI.Bills
             txtPaymentStatus.Text = Frm_Bills.mapDataPaymentStatus( _bill.payment_status);
             txtStatus.Text = Frm_Bills.mapDataStatus(_bill.status);
             txtPaymentMethod.Text = Frm_Bills.mapDataPaymentMethod(_bill.payment_method);
-            txtCoupon.Text = _bill.created_at.ToString();
+            txtCoupon.Text = _bill.coupon?.code?.ToString() ?? "__";
             txtNote.Text = _bill.note;
             txtPhone.Text = _bill.bill_address.phone;
             txtAddress.Text = _bill.bill_address.street + " " + _bill.bill_address.ward + " " + _bill.bill_address.district + " " + _bill.bill_address.city;

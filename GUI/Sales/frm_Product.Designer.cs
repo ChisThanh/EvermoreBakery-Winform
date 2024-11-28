@@ -43,9 +43,7 @@
             this.pnl_MarginTop = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_MarginBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_ProductsContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_Filter = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_Products = new Guna.UI2.WinForms.Guna2Panel();
-            this.tbx_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnl_DividerContent = new Guna.UI2.WinForms.Guna2Panel();
             this.lbl_ProductsHeader = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_MarginMiddle = new Guna.UI2.WinForms.Guna2Panel();
@@ -53,24 +51,14 @@
             this.dgv_Nutritions = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgv_Nutritions_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_Nutritions_Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Reset = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_Quantity = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tbx_Quantity = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_Insert = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
-            this.tbx_Love = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_Love = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl_Image = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pbx_Image = new Guna.UI2.WinForms.Guna2PictureBox();
             this.chk_Display = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.lbl_Display = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_NutritionRemove = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_NutritionAdd = new Guna.UI2.WinForms.Guna2Button();
             this.tbx_Description = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_Description = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_IngredientRemove = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_IngredientAdd = new Guna.UI2.WinForms.Guna2Button();
             this.cbx_Category = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbl_Category = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbx_Nutrition = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -79,6 +67,7 @@
             this.cbx_Ingredient = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbl_Ingredient = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgv_Ingredients = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgv_Ingredients_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_Ingredients = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_HorizontalDivider = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Divider2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -88,12 +77,23 @@
             this.lbl_Name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Divider1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lbl_InformationHeader = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dgv_Ingredients_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Reset = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Insert = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
+            this.tbx_Love = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pbx_Image = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btn_NutritionRemove = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_NutritionAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_IngredientRemove = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_IngredientAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Filter = new Guna.UI2.WinForms.Guna2Button();
+            this.tbx_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnl_ProductsContainer.SuspendLayout();
             this.pnl_Information.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Nutritions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Ingredients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Image)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_MarginRight
@@ -144,31 +144,6 @@
             this.pnl_ProductsContainer.Size = new System.Drawing.Size(710, 770);
             this.pnl_ProductsContainer.TabIndex = 6;
             // 
-            // btn_Filter
-            // 
-            this.btn_Filter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
-            this.btn_Filter.BorderRadius = 10;
-            this.btn_Filter.BorderThickness = 2;
-            this.btn_Filter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Filter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Filter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Filter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Filter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Filter.FillColor = System.Drawing.Color.White;
-            this.btn_Filter.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Filter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
-            this.btn_Filter.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
-            this.btn_Filter.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
-            this.btn_Filter.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Filter.HoverState.Image = global::GUI.Properties.Resources.filter_white;
-            this.btn_Filter.Image = global::GUI.Properties.Resources.filter_indigo;
-            this.btn_Filter.Location = new System.Drawing.Point(336, 11);
-            this.btn_Filter.Name = "btn_Filter";
-            this.btn_Filter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
-            this.btn_Filter.Size = new System.Drawing.Size(98, 36);
-            this.btn_Filter.TabIndex = 41;
-            this.btn_Filter.Text = "Lọc";
-            // 
             // pnl_Products
             // 
             this.pnl_Products.AutoScroll = true;
@@ -176,38 +151,6 @@
             this.pnl_Products.Name = "pnl_Products";
             this.pnl_Products.Size = new System.Drawing.Size(690, 680);
             this.pnl_Products.TabIndex = 8;
-            // 
-            // tbx_Search
-            // 
-            this.tbx_Search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Search.BorderRadius = 10;
-            this.tbx_Search.BorderThickness = 2;
-            this.tbx_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Search.DefaultText = "";
-            this.tbx_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Search.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Search.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Search.IconLeft = global::GUI.Properties.Resources.search_primary;
-            this.tbx_Search.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.tbx_Search.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.tbx_Search.IconRight = global::GUI.Properties.Resources.xmark_primary;
-            this.tbx_Search.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.tbx_Search.IconRightOffset = new System.Drawing.Point(5, 0);
-            this.tbx_Search.Location = new System.Drawing.Point(441, 11);
-            this.tbx_Search.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Search.Name = "tbx_Search";
-            this.tbx_Search.PasswordChar = '\0';
-            this.tbx_Search.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Search.PlaceholderText = "Nhập tìm kiếm...";
-            this.tbx_Search.SelectedText = "";
-            this.tbx_Search.Size = new System.Drawing.Size(257, 36);
-            this.tbx_Search.TabIndex = 7;
-            this.tbx_Search.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // pnl_DividerContent
             // 
@@ -379,31 +322,6 @@
             this.dgv_Nutritions_Quantity.Name = "dgv_Nutritions_Quantity";
             this.dgv_Nutritions_Quantity.ReadOnly = true;
             // 
-            // btn_Reset
-            // 
-            this.btn_Reset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
-            this.btn_Reset.BorderRadius = 10;
-            this.btn_Reset.BorderThickness = 2;
-            this.btn_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Reset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Reset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Reset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Reset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Reset.FillColor = System.Drawing.Color.White;
-            this.btn_Reset.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
-            this.btn_Reset.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
-            this.btn_Reset.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
-            this.btn_Reset.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Reset.HoverState.Image = global::GUI.Properties.Resources.reset_white;
-            this.btn_Reset.Image = global::GUI.Properties.Resources.reset_blue;
-            this.btn_Reset.Location = new System.Drawing.Point(598, 11);
-            this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
-            this.btn_Reset.Size = new System.Drawing.Size(98, 36);
-            this.btn_Reset.TabIndex = 43;
-            this.btn_Reset.Text = "Mới";
-            // 
             // lbl_Quantity
             // 
             this.lbl_Quantity.BackColor = System.Drawing.Color.Transparent;
@@ -441,107 +359,6 @@
             this.tbx_Quantity.TabIndex = 41;
             this.tbx_Quantity.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // btn_Insert
-            // 
-            this.btn_Insert.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_Insert.BorderRadius = 10;
-            this.btn_Insert.BorderThickness = 2;
-            this.btn_Insert.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Insert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Insert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Insert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Insert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Insert.FillColor = System.Drawing.Color.White;
-            this.btn_Insert.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Insert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_Insert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_Insert.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_Insert.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Insert.HoverState.Image = global::GUI.Properties.Resources.insert_white;
-            this.btn_Insert.Image = global::GUI.Properties.Resources.insert_green;
-            this.btn_Insert.Location = new System.Drawing.Point(286, 11);
-            this.btn_Insert.Name = "btn_Insert";
-            this.btn_Insert.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_Insert.Size = new System.Drawing.Size(98, 36);
-            this.btn_Insert.TabIndex = 40;
-            this.btn_Insert.Text = "Thêm";
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_Delete.BorderRadius = 10;
-            this.btn_Delete.BorderThickness = 2;
-            this.btn_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Delete.FillColor = System.Drawing.Color.White;
-            this.btn_Delete.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_Delete.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_Delete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_Delete.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.HoverState.Image = global::GUI.Properties.Resources.delete_white;
-            this.btn_Delete.Image = global::GUI.Properties.Resources.delete_red;
-            this.btn_Delete.Location = new System.Drawing.Point(494, 11);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_Delete.Size = new System.Drawing.Size(98, 36);
-            this.btn_Delete.TabIndex = 39;
-            this.btn_Delete.Text = "Xóa";
-            // 
-            // btn_Update
-            // 
-            this.btn_Update.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
-            this.btn_Update.BorderRadius = 10;
-            this.btn_Update.BorderThickness = 2;
-            this.btn_Update.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Update.FillColor = System.Drawing.Color.White;
-            this.btn_Update.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
-            this.btn_Update.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
-            this.btn_Update.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
-            this.btn_Update.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Update.HoverState.Image = global::GUI.Properties.Resources.update_white;
-            this.btn_Update.Image = global::GUI.Properties.Resources.update_yellow1;
-            this.btn_Update.Location = new System.Drawing.Point(390, 11);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
-            this.btn_Update.Size = new System.Drawing.Size(98, 36);
-            this.btn_Update.TabIndex = 38;
-            this.btn_Update.Text = "Sửa";
-            // 
-            // tbx_Love
-            // 
-            this.tbx_Love.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Love.BorderRadius = 10;
-            this.tbx_Love.BorderThickness = 2;
-            this.tbx_Love.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tbx_Love.DefaultText = "";
-            this.tbx_Love.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(205)))), ((int)(((byte)(194)))));
-            this.tbx_Love.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(205)))), ((int)(((byte)(194)))));
-            this.tbx_Love.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Love.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Love.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(205)))), ((int)(((byte)(194)))));
-            this.tbx_Love.IconLeft = global::GUI.Properties.Resources.heart_primary;
-            this.tbx_Love.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.tbx_Love.Location = new System.Drawing.Point(513, 269);
-            this.tbx_Love.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Love.Name = "tbx_Love";
-            this.tbx_Love.PasswordChar = '\0';
-            this.tbx_Love.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Love.PlaceholderText = "";
-            this.tbx_Love.ReadOnly = true;
-            this.tbx_Love.SelectedText = "";
-            this.tbx_Love.Size = new System.Drawing.Size(183, 36);
-            this.tbx_Love.TabIndex = 9;
-            this.tbx_Love.TextOffset = new System.Drawing.Point(5, 0);
-            // 
             // lbl_Love
             // 
             this.lbl_Love.BackColor = System.Drawing.Color.Transparent;
@@ -563,19 +380,6 @@
             this.lbl_Image.Size = new System.Drawing.Size(75, 21);
             this.lbl_Image.TabIndex = 23;
             this.lbl_Image.Text = "Hình Ảnh";
-            // 
-            // pbx_Image
-            // 
-            this.pbx_Image.BackColor = System.Drawing.Color.White;
-            this.pbx_Image.BorderRadius = 20;
-            this.pbx_Image.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            this.pbx_Image.ImageRotate = 0F;
-            this.pbx_Image.Location = new System.Drawing.Point(17, 96);
-            this.pbx_Image.Name = "pbx_Image";
-            this.pbx_Image.Size = new System.Drawing.Size(200, 200);
-            this.pbx_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_Image.TabIndex = 37;
-            this.pbx_Image.TabStop = false;
             // 
             // chk_Display
             // 
@@ -603,56 +407,6 @@
             this.lbl_Display.Size = new System.Drawing.Size(84, 21);
             this.lbl_Display.TabIndex = 16;
             this.lbl_Display.Text = "Trưng Bày";
-            // 
-            // btn_NutritionRemove
-            // 
-            this.btn_NutritionRemove.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_NutritionRemove.BorderRadius = 10;
-            this.btn_NutritionRemove.BorderThickness = 2;
-            this.btn_NutritionRemove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_NutritionRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_NutritionRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_NutritionRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_NutritionRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_NutritionRemove.FillColor = System.Drawing.Color.White;
-            this.btn_NutritionRemove.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NutritionRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_NutritionRemove.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_NutritionRemove.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_NutritionRemove.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_NutritionRemove.HoverState.Image = global::GUI.Properties.Resources.minus_white;
-            this.btn_NutritionRemove.Image = global::GUI.Properties.Resources.minus_red;
-            this.btn_NutritionRemove.Location = new System.Drawing.Point(542, 722);
-            this.btn_NutritionRemove.Name = "btn_NutritionRemove";
-            this.btn_NutritionRemove.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_NutritionRemove.Size = new System.Drawing.Size(98, 36);
-            this.btn_NutritionRemove.TabIndex = 36;
-            this.btn_NutritionRemove.Text = "Bỏ";
-            // 
-            // btn_NutritionAdd
-            // 
-            this.btn_NutritionAdd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_NutritionAdd.BorderRadius = 10;
-            this.btn_NutritionAdd.BorderThickness = 2;
-            this.btn_NutritionAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_NutritionAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_NutritionAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_NutritionAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_NutritionAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_NutritionAdd.FillColor = System.Drawing.Color.White;
-            this.btn_NutritionAdd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NutritionAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_NutritionAdd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_NutritionAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_NutritionAdd.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_NutritionAdd.HoverState.Image = global::GUI.Properties.Resources.plus_white;
-            this.btn_NutritionAdd.Image = global::GUI.Properties.Resources.plus_green;
-            this.btn_NutritionAdd.Location = new System.Drawing.Point(438, 722);
-            this.btn_NutritionAdd.Name = "btn_NutritionAdd";
-            this.btn_NutritionAdd.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_NutritionAdd.Size = new System.Drawing.Size(98, 36);
-            this.btn_NutritionAdd.TabIndex = 35;
-            this.btn_NutritionAdd.Text = "Thêm";
             // 
             // tbx_Description
             // 
@@ -693,56 +447,6 @@
             this.lbl_Description.Size = new System.Drawing.Size(75, 40);
             this.lbl_Description.TabIndex = 17;
             this.lbl_Description.Text = "Mô Tả <br>Sản Phẩm";
-            // 
-            // btn_IngredientRemove
-            // 
-            this.btn_IngredientRemove.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_IngredientRemove.BorderRadius = 10;
-            this.btn_IngredientRemove.BorderThickness = 2;
-            this.btn_IngredientRemove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_IngredientRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_IngredientRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_IngredientRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_IngredientRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_IngredientRemove.FillColor = System.Drawing.Color.White;
-            this.btn_IngredientRemove.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_IngredientRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_IngredientRemove.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_IngredientRemove.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_IngredientRemove.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_IngredientRemove.HoverState.Image = global::GUI.Properties.Resources.minus_white;
-            this.btn_IngredientRemove.Image = global::GUI.Properties.Resources.minus_red;
-            this.btn_IngredientRemove.Location = new System.Drawing.Point(185, 722);
-            this.btn_IngredientRemove.Name = "btn_IngredientRemove";
-            this.btn_IngredientRemove.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_IngredientRemove.Size = new System.Drawing.Size(98, 36);
-            this.btn_IngredientRemove.TabIndex = 34;
-            this.btn_IngredientRemove.Text = "Bỏ";
-            // 
-            // btn_IngredientAdd
-            // 
-            this.btn_IngredientAdd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_IngredientAdd.BorderRadius = 10;
-            this.btn_IngredientAdd.BorderThickness = 2;
-            this.btn_IngredientAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_IngredientAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_IngredientAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_IngredientAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_IngredientAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_IngredientAdd.FillColor = System.Drawing.Color.White;
-            this.btn_IngredientAdd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_IngredientAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_IngredientAdd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_IngredientAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_IngredientAdd.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_IngredientAdd.HoverState.Image = global::GUI.Properties.Resources.plus_white;
-            this.btn_IngredientAdd.Image = global::GUI.Properties.Resources.plus_green;
-            this.btn_IngredientAdd.Location = new System.Drawing.Point(81, 722);
-            this.btn_IngredientAdd.Name = "btn_IngredientAdd";
-            this.btn_IngredientAdd.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
-            this.btn_IngredientAdd.Size = new System.Drawing.Size(98, 36);
-            this.btn_IngredientAdd.TabIndex = 33;
-            this.btn_IngredientAdd.Text = "Thêm";
             // 
             // cbx_Category
             // 
@@ -932,6 +636,13 @@
             this.dgv_Ingredients.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Ingredients.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // dgv_Ingredients_Name
+            // 
+            this.dgv_Ingredients_Name.DataPropertyName = "name";
+            this.dgv_Ingredients_Name.HeaderText = "Tên Nguyên Liệu";
+            this.dgv_Ingredients_Name.Name = "dgv_Ingredients_Name";
+            this.dgv_Ingredients_Name.ReadOnly = true;
+            // 
             // lbl_Ingredients
             // 
             this.lbl_Ingredients.BackColor = System.Drawing.Color.Transparent;
@@ -1052,12 +763,301 @@
             this.lbl_InformationHeader.TabIndex = 7;
             this.lbl_InformationHeader.Text = "THÔNG TIN SẢN PHẨM";
             // 
-            // dgv_Ingredients_Name
+            // btn_Reset
             // 
-            this.dgv_Ingredients_Name.DataPropertyName = "name";
-            this.dgv_Ingredients_Name.HeaderText = "Tên Nguyên Liệu";
-            this.dgv_Ingredients_Name.Name = "dgv_Ingredients_Name";
-            this.dgv_Ingredients_Name.ReadOnly = true;
+            this.btn_Reset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
+            this.btn_Reset.BorderRadius = 10;
+            this.btn_Reset.BorderThickness = 2;
+            this.btn_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Reset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Reset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Reset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Reset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Reset.FillColor = System.Drawing.Color.White;
+            this.btn_Reset.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
+            this.btn_Reset.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
+            this.btn_Reset.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
+            this.btn_Reset.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Reset.HoverState.Image = global::GUI.Properties.Resources.reset_white;
+            this.btn_Reset.Image = global::GUI.Properties.Resources.reset_blue;
+            this.btn_Reset.Location = new System.Drawing.Point(598, 11);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(152)))), ((int)(((byte)(209)))));
+            this.btn_Reset.Size = new System.Drawing.Size(98, 36);
+            this.btn_Reset.TabIndex = 43;
+            this.btn_Reset.Text = "Mới";
+            // 
+            // btn_Insert
+            // 
+            this.btn_Insert.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_Insert.BorderRadius = 10;
+            this.btn_Insert.BorderThickness = 2;
+            this.btn_Insert.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Insert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Insert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Insert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Insert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Insert.FillColor = System.Drawing.Color.White;
+            this.btn_Insert.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Insert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_Insert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_Insert.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_Insert.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Insert.HoverState.Image = global::GUI.Properties.Resources.insert_white;
+            this.btn_Insert.Image = global::GUI.Properties.Resources.insert_green;
+            this.btn_Insert.Location = new System.Drawing.Point(286, 11);
+            this.btn_Insert.Name = "btn_Insert";
+            this.btn_Insert.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_Insert.Size = new System.Drawing.Size(98, 36);
+            this.btn_Insert.TabIndex = 40;
+            this.btn_Insert.Text = "Thêm";
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_Delete.BorderRadius = 10;
+            this.btn_Delete.BorderThickness = 2;
+            this.btn_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Delete.FillColor = System.Drawing.Color.White;
+            this.btn_Delete.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_Delete.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_Delete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_Delete.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Delete.HoverState.Image = global::GUI.Properties.Resources.delete_white;
+            this.btn_Delete.Image = global::GUI.Properties.Resources.delete_red;
+            this.btn_Delete.Location = new System.Drawing.Point(494, 11);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_Delete.Size = new System.Drawing.Size(98, 36);
+            this.btn_Delete.TabIndex = 39;
+            this.btn_Delete.Text = "Xóa";
+            // 
+            // btn_Update
+            // 
+            this.btn_Update.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
+            this.btn_Update.BorderRadius = 10;
+            this.btn_Update.BorderThickness = 2;
+            this.btn_Update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Update.FillColor = System.Drawing.Color.White;
+            this.btn_Update.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
+            this.btn_Update.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
+            this.btn_Update.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
+            this.btn_Update.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Update.HoverState.Image = global::GUI.Properties.Resources.update_white;
+            this.btn_Update.Image = global::GUI.Properties.Resources.update_yellow1;
+            this.btn_Update.Location = new System.Drawing.Point(390, 11);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(8)))));
+            this.btn_Update.Size = new System.Drawing.Size(98, 36);
+            this.btn_Update.TabIndex = 38;
+            this.btn_Update.Text = "Sửa";
+            // 
+            // tbx_Love
+            // 
+            this.tbx_Love.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Love.BorderRadius = 10;
+            this.tbx_Love.BorderThickness = 2;
+            this.tbx_Love.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbx_Love.DefaultText = "";
+            this.tbx_Love.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(205)))), ((int)(((byte)(194)))));
+            this.tbx_Love.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(205)))), ((int)(((byte)(194)))));
+            this.tbx_Love.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Love.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Love.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(205)))), ((int)(((byte)(194)))));
+            this.tbx_Love.IconLeft = global::GUI.Properties.Resources.heart_primary;
+            this.tbx_Love.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.tbx_Love.Location = new System.Drawing.Point(513, 269);
+            this.tbx_Love.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Love.Name = "tbx_Love";
+            this.tbx_Love.PasswordChar = '\0';
+            this.tbx_Love.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Love.PlaceholderText = "";
+            this.tbx_Love.ReadOnly = true;
+            this.tbx_Love.SelectedText = "";
+            this.tbx_Love.Size = new System.Drawing.Size(183, 36);
+            this.tbx_Love.TabIndex = 9;
+            this.tbx_Love.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // pbx_Image
+            // 
+            this.pbx_Image.BackColor = System.Drawing.Color.White;
+            this.pbx_Image.BorderRadius = 20;
+            this.pbx_Image.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            this.pbx_Image.ImageRotate = 0F;
+            this.pbx_Image.Location = new System.Drawing.Point(17, 96);
+            this.pbx_Image.Name = "pbx_Image";
+            this.pbx_Image.Size = new System.Drawing.Size(200, 200);
+            this.pbx_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_Image.TabIndex = 37;
+            this.pbx_Image.TabStop = false;
+            // 
+            // btn_NutritionRemove
+            // 
+            this.btn_NutritionRemove.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_NutritionRemove.BorderRadius = 10;
+            this.btn_NutritionRemove.BorderThickness = 2;
+            this.btn_NutritionRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_NutritionRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_NutritionRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_NutritionRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_NutritionRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_NutritionRemove.FillColor = System.Drawing.Color.White;
+            this.btn_NutritionRemove.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NutritionRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_NutritionRemove.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_NutritionRemove.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_NutritionRemove.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_NutritionRemove.HoverState.Image = global::GUI.Properties.Resources.minus_white;
+            this.btn_NutritionRemove.Image = global::GUI.Properties.Resources.minus_red;
+            this.btn_NutritionRemove.Location = new System.Drawing.Point(542, 722);
+            this.btn_NutritionRemove.Name = "btn_NutritionRemove";
+            this.btn_NutritionRemove.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_NutritionRemove.Size = new System.Drawing.Size(98, 36);
+            this.btn_NutritionRemove.TabIndex = 36;
+            this.btn_NutritionRemove.Text = "Bỏ";
+            // 
+            // btn_NutritionAdd
+            // 
+            this.btn_NutritionAdd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_NutritionAdd.BorderRadius = 10;
+            this.btn_NutritionAdd.BorderThickness = 2;
+            this.btn_NutritionAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_NutritionAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_NutritionAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_NutritionAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_NutritionAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_NutritionAdd.FillColor = System.Drawing.Color.White;
+            this.btn_NutritionAdd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NutritionAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_NutritionAdd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_NutritionAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_NutritionAdd.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_NutritionAdd.HoverState.Image = global::GUI.Properties.Resources.plus_white;
+            this.btn_NutritionAdd.Image = global::GUI.Properties.Resources.plus_green;
+            this.btn_NutritionAdd.Location = new System.Drawing.Point(438, 722);
+            this.btn_NutritionAdd.Name = "btn_NutritionAdd";
+            this.btn_NutritionAdd.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_NutritionAdd.Size = new System.Drawing.Size(98, 36);
+            this.btn_NutritionAdd.TabIndex = 35;
+            this.btn_NutritionAdd.Text = "Thêm";
+            // 
+            // btn_IngredientRemove
+            // 
+            this.btn_IngredientRemove.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_IngredientRemove.BorderRadius = 10;
+            this.btn_IngredientRemove.BorderThickness = 2;
+            this.btn_IngredientRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_IngredientRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_IngredientRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_IngredientRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_IngredientRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_IngredientRemove.FillColor = System.Drawing.Color.White;
+            this.btn_IngredientRemove.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_IngredientRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_IngredientRemove.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_IngredientRemove.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_IngredientRemove.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_IngredientRemove.HoverState.Image = global::GUI.Properties.Resources.minus_white;
+            this.btn_IngredientRemove.Image = global::GUI.Properties.Resources.minus_red;
+            this.btn_IngredientRemove.Location = new System.Drawing.Point(185, 722);
+            this.btn_IngredientRemove.Name = "btn_IngredientRemove";
+            this.btn_IngredientRemove.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.btn_IngredientRemove.Size = new System.Drawing.Size(98, 36);
+            this.btn_IngredientRemove.TabIndex = 34;
+            this.btn_IngredientRemove.Text = "Bỏ";
+            // 
+            // btn_IngredientAdd
+            // 
+            this.btn_IngredientAdd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_IngredientAdd.BorderRadius = 10;
+            this.btn_IngredientAdd.BorderThickness = 2;
+            this.btn_IngredientAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_IngredientAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_IngredientAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_IngredientAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_IngredientAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_IngredientAdd.FillColor = System.Drawing.Color.White;
+            this.btn_IngredientAdd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_IngredientAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_IngredientAdd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_IngredientAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_IngredientAdd.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_IngredientAdd.HoverState.Image = global::GUI.Properties.Resources.plus_white;
+            this.btn_IngredientAdd.Image = global::GUI.Properties.Resources.plus_green;
+            this.btn_IngredientAdd.Location = new System.Drawing.Point(81, 722);
+            this.btn_IngredientAdd.Name = "btn_IngredientAdd";
+            this.btn_IngredientAdd.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(170)))), ((int)(((byte)(109)))));
+            this.btn_IngredientAdd.Size = new System.Drawing.Size(98, 36);
+            this.btn_IngredientAdd.TabIndex = 33;
+            this.btn_IngredientAdd.Text = "Thêm";
+            // 
+            // btn_Filter
+            // 
+            this.btn_Filter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
+            this.btn_Filter.BorderRadius = 10;
+            this.btn_Filter.BorderThickness = 2;
+            this.btn_Filter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Filter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Filter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Filter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Filter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Filter.FillColor = System.Drawing.Color.White;
+            this.btn_Filter.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Filter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
+            this.btn_Filter.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
+            this.btn_Filter.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
+            this.btn_Filter.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Filter.HoverState.Image = global::GUI.Properties.Resources.filter_white;
+            this.btn_Filter.Image = global::GUI.Properties.Resources.filter_indigo;
+            this.btn_Filter.Location = new System.Drawing.Point(336, 11);
+            this.btn_Filter.Name = "btn_Filter";
+            this.btn_Filter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
+            this.btn_Filter.Size = new System.Drawing.Size(98, 36);
+            this.btn_Filter.TabIndex = 41;
+            this.btn_Filter.Text = "Lọc";
+            // 
+            // tbx_Search
+            // 
+            this.tbx_Search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Search.BorderRadius = 10;
+            this.tbx_Search.BorderThickness = 2;
+            this.tbx_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Search.DefaultText = "";
+            this.tbx_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Search.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Search.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Search.IconLeft = global::GUI.Properties.Resources.search_primary;
+            this.tbx_Search.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.tbx_Search.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.tbx_Search.IconRight = global::GUI.Properties.Resources.xmark_primary;
+            this.tbx_Search.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.tbx_Search.IconRightOffset = new System.Drawing.Point(5, 0);
+            this.tbx_Search.Location = new System.Drawing.Point(441, 11);
+            this.tbx_Search.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Search.Name = "tbx_Search";
+            this.tbx_Search.PasswordChar = '\0';
+            this.tbx_Search.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Search.PlaceholderText = "Nhập tìm kiếm...";
+            this.tbx_Search.SelectedText = "";
+            this.tbx_Search.Size = new System.Drawing.Size(257, 36);
+            this.tbx_Search.TabIndex = 7;
+            this.tbx_Search.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // pnl_PaddingMiddle
             // 
@@ -1081,8 +1081,8 @@
             this.pnl_Information.ResumeLayout(false);
             this.pnl_Information.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Nutritions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Ingredients)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Image)).EndInit();
             this.ResumeLayout(false);
 
         }

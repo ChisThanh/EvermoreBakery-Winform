@@ -34,50 +34,50 @@
             this.pnl_Sidebar = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Footer = new Guna.UI2.WinForms.Guna2Panel();
             this.lbl_Role = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_Logout = new Guna.UI2.WinForms.Guna2Button();
+            this.pbx_Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lbl_Name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Account = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Account = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_Account = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Divider4 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Profits = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Satistic = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Invoice = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_Profits = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Divider3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Sales = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Ingredient = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Event = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Product = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_Sales = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Divider2 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Home = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Home = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_Divider1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Logo = new Guna.UI2.WinForms.Guna2Panel();
+            this.pbx_Logo = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lbl_Title = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Margin = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Header = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Control = new Guna.UI2.WinForms.Guna2Panel();
-            this.lbl_Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pnl_DividerContent = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnl_Content = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_Close = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btn_Maximize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btn_Minimize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btn_Logout = new Guna.UI2.WinForms.Guna2Button();
-            this.pbx_Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btn_Account = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Satistic = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Invoice = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Ingredient = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Event = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Product = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Home = new Guna.UI2.WinForms.Guna2Button();
-            this.pbx_Logo = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lbl_Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pnl_DividerContent = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnl_Content = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Sidebar.SuspendLayout();
             this.pnl_Footer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Avatar)).BeginInit();
             this.pnl_Account.SuspendLayout();
             this.pnl_Profits.SuspendLayout();
             this.pnl_Sales.SuspendLayout();
             this.pnl_Home.SuspendLayout();
             this.pnl_Logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Logo)).BeginInit();
             this.pnl_Header.SuspendLayout();
             this.pnl_Control.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Avatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // frm_Borderless
@@ -129,261 +129,6 @@
             this.lbl_Role.TabIndex = 10;
             this.lbl_Role.Text = "ROLE";
             // 
-            // lbl_Name
-            // 
-            this.lbl_Name.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Name.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
-            this.lbl_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Name.Location = new System.Drawing.Point(86, 42);
-            this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(83, 24);
-            this.lbl_Name.TabIndex = 9;
-            this.lbl_Name.Text = "USERNAME";
-            // 
-            // pnl_Account
-            // 
-            this.pnl_Account.Controls.Add(this.btn_Account);
-            this.pnl_Account.Controls.Add(this.lbl_Account);
-            this.pnl_Account.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Account.Location = new System.Drawing.Point(0, 510);
-            this.pnl_Account.Name = "pnl_Account";
-            this.pnl_Account.Size = new System.Drawing.Size(300, 90);
-            this.pnl_Account.TabIndex = 11;
-            // 
-            // lbl_Account
-            // 
-            this.lbl_Account.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Account.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
-            this.lbl_Account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Account.Location = new System.Drawing.Point(12, 6);
-            this.lbl_Account.Name = "lbl_Account";
-            this.lbl_Account.Size = new System.Drawing.Size(173, 24);
-            this.lbl_Account.TabIndex = 3;
-            this.lbl_Account.Text = "QUẢN LÝ TÀI KHOẢN";
-            // 
-            // pnl_Divider4
-            // 
-            this.pnl_Divider4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.pnl_Divider4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Divider4.Location = new System.Drawing.Point(0, 500);
-            this.pnl_Divider4.Name = "pnl_Divider4";
-            this.pnl_Divider4.Size = new System.Drawing.Size(300, 10);
-            this.pnl_Divider4.TabIndex = 10;
-            // 
-            // pnl_Profits
-            // 
-            this.pnl_Profits.Controls.Add(this.btn_Satistic);
-            this.pnl_Profits.Controls.Add(this.btn_Invoice);
-            this.pnl_Profits.Controls.Add(this.lbl_Profits);
-            this.pnl_Profits.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Profits.Location = new System.Drawing.Point(0, 360);
-            this.pnl_Profits.Name = "pnl_Profits";
-            this.pnl_Profits.Size = new System.Drawing.Size(300, 140);
-            this.pnl_Profits.TabIndex = 9;
-            // 
-            // lbl_Profits
-            // 
-            this.lbl_Profits.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Profits.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
-            this.lbl_Profits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Profits.Location = new System.Drawing.Point(12, 6);
-            this.lbl_Profits.Name = "lbl_Profits";
-            this.lbl_Profits.Size = new System.Drawing.Size(173, 24);
-            this.lbl_Profits.TabIndex = 3;
-            this.lbl_Profits.Text = "QUẢN LÝ DOANH THU";
-            // 
-            // pnl_Divider3
-            // 
-            this.pnl_Divider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.pnl_Divider3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Divider3.Location = new System.Drawing.Point(0, 350);
-            this.pnl_Divider3.Name = "pnl_Divider3";
-            this.pnl_Divider3.Size = new System.Drawing.Size(300, 10);
-            this.pnl_Divider3.TabIndex = 8;
-            // 
-            // pnl_Sales
-            // 
-            this.pnl_Sales.Controls.Add(this.btn_Ingredient);
-            this.pnl_Sales.Controls.Add(this.btn_Event);
-            this.pnl_Sales.Controls.Add(this.btn_Product);
-            this.pnl_Sales.Controls.Add(this.lbl_Sales);
-            this.pnl_Sales.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Sales.Location = new System.Drawing.Point(0, 160);
-            this.pnl_Sales.Name = "pnl_Sales";
-            this.pnl_Sales.Size = new System.Drawing.Size(300, 190);
-            this.pnl_Sales.TabIndex = 7;
-            // 
-            // lbl_Sales
-            // 
-            this.lbl_Sales.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Sales.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
-            this.lbl_Sales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Sales.Location = new System.Drawing.Point(12, 6);
-            this.lbl_Sales.Name = "lbl_Sales";
-            this.lbl_Sales.Size = new System.Drawing.Size(163, 24);
-            this.lbl_Sales.TabIndex = 3;
-            this.lbl_Sales.Text = "QUẢN LÝ BÁN HÀNG";
-            // 
-            // pnl_Divider2
-            // 
-            this.pnl_Divider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.pnl_Divider2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Divider2.Location = new System.Drawing.Point(0, 150);
-            this.pnl_Divider2.Name = "pnl_Divider2";
-            this.pnl_Divider2.Size = new System.Drawing.Size(300, 10);
-            this.pnl_Divider2.TabIndex = 6;
-            // 
-            // pnl_Home
-            // 
-            this.pnl_Home.Controls.Add(this.btn_Home);
-            this.pnl_Home.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Home.Location = new System.Drawing.Point(0, 90);
-            this.pnl_Home.Name = "pnl_Home";
-            this.pnl_Home.Size = new System.Drawing.Size(300, 60);
-            this.pnl_Home.TabIndex = 5;
-            // 
-            // pnl_Divider1
-            // 
-            this.pnl_Divider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.pnl_Divider1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Divider1.Location = new System.Drawing.Point(0, 80);
-            this.pnl_Divider1.Name = "pnl_Divider1";
-            this.pnl_Divider1.Size = new System.Drawing.Size(300, 10);
-            this.pnl_Divider1.TabIndex = 4;
-            // 
-            // pnl_Logo
-            // 
-            this.pnl_Logo.Controls.Add(this.pbx_Logo);
-            this.pnl_Logo.Controls.Add(this.lbl_Title);
-            this.pnl_Logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Logo.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Logo.Name = "pnl_Logo";
-            this.pnl_Logo.Size = new System.Drawing.Size(300, 80);
-            this.pnl_Logo.TabIndex = 3;
-            // 
-            // lbl_Title
-            // 
-            this.lbl_Title.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Title.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Title.Location = new System.Drawing.Point(82, 26);
-            this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(185, 30);
-            this.lbl_Title.TabIndex = 2;
-            this.lbl_Title.Text = "EVERMORE ADMIN";
-            // 
-            // pnl_Margin
-            // 
-            this.pnl_Margin.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_Margin.Location = new System.Drawing.Point(300, 0);
-            this.pnl_Margin.Name = "pnl_Margin";
-            this.pnl_Margin.Size = new System.Drawing.Size(20, 900);
-            this.pnl_Margin.TabIndex = 1;
-            // 
-            // pnl_Header
-            // 
-            this.pnl_Header.Controls.Add(this.pnl_Control);
-            this.pnl_Header.Controls.Add(this.lbl_Header);
-            this.pnl_Header.Controls.Add(this.pnl_DividerContent);
-            this.pnl_Header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Header.Location = new System.Drawing.Point(320, 0);
-            this.pnl_Header.Name = "pnl_Header";
-            this.pnl_Header.Size = new System.Drawing.Size(1480, 90);
-            this.pnl_Header.TabIndex = 2;
-            // 
-            // pnl_Control
-            // 
-            this.pnl_Control.Controls.Add(this.btn_Close);
-            this.pnl_Control.Controls.Add(this.btn_Maximize);
-            this.pnl_Control.Controls.Add(this.btn_Minimize);
-            this.pnl_Control.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_Control.Location = new System.Drawing.Point(1280, 0);
-            this.pnl_Control.Name = "pnl_Control";
-            this.pnl_Control.Size = new System.Drawing.Size(200, 80);
-            this.pnl_Control.TabIndex = 0;
-            // 
-            // lbl_Header
-            // 
-            this.lbl_Header.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Header.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Header.Location = new System.Drawing.Point(20, 26);
-            this.lbl_Header.Name = "lbl_Header";
-            this.lbl_Header.Size = new System.Drawing.Size(81, 30);
-            this.lbl_Header.TabIndex = 4;
-            this.lbl_Header.Text = "HEADER";
-            // 
-            // pnl_DividerContent
-            // 
-            this.pnl_DividerContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.pnl_DividerContent.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_DividerContent.Location = new System.Drawing.Point(0, 80);
-            this.pnl_DividerContent.Name = "pnl_DividerContent";
-            this.pnl_DividerContent.Size = new System.Drawing.Size(1480, 10);
-            this.pnl_DividerContent.TabIndex = 5;
-            // 
-            // pnl_Content
-            // 
-            this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Content.Location = new System.Drawing.Point(320, 90);
-            this.pnl_Content.Name = "pnl_Content";
-            this.pnl_Content.Size = new System.Drawing.Size(1480, 810);
-            this.pnl_Content.TabIndex = 3;
-            // 
-            // btn_Close
-            // 
-            this.btn_Close.CheckedState.Image = global::GUI.Properties.Resources.close_red;
-            this.btn_Close.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Close.HoverState.Image = global::GUI.Properties.Resources.close_red;
-            this.btn_Close.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Close.Image = global::GUI.Properties.Resources.close_primary;
-            this.btn_Close.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_Close.ImageRotate = 0F;
-            this.btn_Close.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Close.Location = new System.Drawing.Point(122, 24);
-            this.btn_Close.Name = "btn_Close";
-            this.btn_Close.PressedState.Image = global::GUI.Properties.Resources.close_red;
-            this.btn_Close.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Close.Size = new System.Drawing.Size(32, 32);
-            this.btn_Close.TabIndex = 14;
-            // 
-            // btn_Maximize
-            // 
-            this.btn_Maximize.CheckedState.Image = global::GUI.Properties.Resources.maximize_gray;
-            this.btn_Maximize.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Maximize.HoverState.Image = global::GUI.Properties.Resources.maximize_gray;
-            this.btn_Maximize.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Maximize.Image = global::GUI.Properties.Resources.maximize_primary;
-            this.btn_Maximize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_Maximize.ImageRotate = 0F;
-            this.btn_Maximize.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Maximize.Location = new System.Drawing.Point(84, 24);
-            this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.PressedState.Image = global::GUI.Properties.Resources.maximize_gray;
-            this.btn_Maximize.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Maximize.Size = new System.Drawing.Size(32, 32);
-            this.btn_Maximize.TabIndex = 13;
-            // 
-            // btn_Minimize
-            // 
-            this.btn_Minimize.CheckedState.Image = global::GUI.Properties.Resources.minimize_gray;
-            this.btn_Minimize.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Minimize.HoverState.Image = global::GUI.Properties.Resources.minimize_gray;
-            this.btn_Minimize.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Minimize.Image = global::GUI.Properties.Resources.minimize_primary;
-            this.btn_Minimize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_Minimize.ImageRotate = 0F;
-            this.btn_Minimize.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Minimize.Location = new System.Drawing.Point(46, 24);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.PressedState.Image = global::GUI.Properties.Resources.minimize_gray;
-            this.btn_Minimize.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btn_Minimize.Size = new System.Drawing.Size(32, 32);
-            this.btn_Minimize.TabIndex = 12;
-            // 
             // btn_Logout
             // 
             this.btn_Logout.BorderColor = System.Drawing.Color.Red;
@@ -421,6 +166,27 @@
             this.pbx_Avatar.TabIndex = 8;
             this.pbx_Avatar.TabStop = false;
             // 
+            // lbl_Name
+            // 
+            this.lbl_Name.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Name.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.lbl_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Name.Location = new System.Drawing.Point(86, 42);
+            this.lbl_Name.Name = "lbl_Name";
+            this.lbl_Name.Size = new System.Drawing.Size(83, 24);
+            this.lbl_Name.TabIndex = 9;
+            this.lbl_Name.Text = "USERNAME";
+            // 
+            // pnl_Account
+            // 
+            this.pnl_Account.Controls.Add(this.btn_Account);
+            this.pnl_Account.Controls.Add(this.lbl_Account);
+            this.pnl_Account.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Account.Location = new System.Drawing.Point(0, 510);
+            this.pnl_Account.Name = "pnl_Account";
+            this.pnl_Account.Size = new System.Drawing.Size(300, 90);
+            this.pnl_Account.TabIndex = 11;
+            // 
             // btn_Account
             // 
             this.btn_Account.BorderColor = System.Drawing.Color.Empty;
@@ -449,6 +215,37 @@
             this.btn_Account.Text = "TÀI KHOẢN";
             this.btn_Account.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Account.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // lbl_Account
+            // 
+            this.lbl_Account.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Account.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.lbl_Account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Account.Location = new System.Drawing.Point(12, 6);
+            this.lbl_Account.Name = "lbl_Account";
+            this.lbl_Account.Size = new System.Drawing.Size(173, 24);
+            this.lbl_Account.TabIndex = 3;
+            this.lbl_Account.Text = "QUẢN LÝ TÀI KHOẢN";
+            // 
+            // pnl_Divider4
+            // 
+            this.pnl_Divider4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.pnl_Divider4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Divider4.Location = new System.Drawing.Point(0, 500);
+            this.pnl_Divider4.Name = "pnl_Divider4";
+            this.pnl_Divider4.Size = new System.Drawing.Size(300, 10);
+            this.pnl_Divider4.TabIndex = 10;
+            // 
+            // pnl_Profits
+            // 
+            this.pnl_Profits.Controls.Add(this.btn_Satistic);
+            this.pnl_Profits.Controls.Add(this.btn_Invoice);
+            this.pnl_Profits.Controls.Add(this.lbl_Profits);
+            this.pnl_Profits.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Profits.Location = new System.Drawing.Point(0, 360);
+            this.pnl_Profits.Name = "pnl_Profits";
+            this.pnl_Profits.Size = new System.Drawing.Size(300, 140);
+            this.pnl_Profits.TabIndex = 9;
             // 
             // btn_Satistic
             // 
@@ -507,6 +304,38 @@
             this.btn_Invoice.Text = "HÓA ĐƠN";
             this.btn_Invoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Invoice.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // lbl_Profits
+            // 
+            this.lbl_Profits.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Profits.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.lbl_Profits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Profits.Location = new System.Drawing.Point(12, 6);
+            this.lbl_Profits.Name = "lbl_Profits";
+            this.lbl_Profits.Size = new System.Drawing.Size(173, 24);
+            this.lbl_Profits.TabIndex = 3;
+            this.lbl_Profits.Text = "QUẢN LÝ DOANH THU";
+            // 
+            // pnl_Divider3
+            // 
+            this.pnl_Divider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.pnl_Divider3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Divider3.Location = new System.Drawing.Point(0, 350);
+            this.pnl_Divider3.Name = "pnl_Divider3";
+            this.pnl_Divider3.Size = new System.Drawing.Size(300, 10);
+            this.pnl_Divider3.TabIndex = 8;
+            // 
+            // pnl_Sales
+            // 
+            this.pnl_Sales.Controls.Add(this.btn_Ingredient);
+            this.pnl_Sales.Controls.Add(this.btn_Event);
+            this.pnl_Sales.Controls.Add(this.btn_Product);
+            this.pnl_Sales.Controls.Add(this.lbl_Sales);
+            this.pnl_Sales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Sales.Location = new System.Drawing.Point(0, 160);
+            this.pnl_Sales.Name = "pnl_Sales";
+            this.pnl_Sales.Size = new System.Drawing.Size(300, 190);
+            this.pnl_Sales.TabIndex = 7;
             // 
             // btn_Ingredient
             // 
@@ -595,6 +424,35 @@
             this.btn_Product.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Product.TextOffset = new System.Drawing.Point(5, 0);
             // 
+            // lbl_Sales
+            // 
+            this.lbl_Sales.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Sales.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.lbl_Sales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Sales.Location = new System.Drawing.Point(12, 6);
+            this.lbl_Sales.Name = "lbl_Sales";
+            this.lbl_Sales.Size = new System.Drawing.Size(163, 24);
+            this.lbl_Sales.TabIndex = 3;
+            this.lbl_Sales.Text = "QUẢN LÝ BÁN HÀNG";
+            // 
+            // pnl_Divider2
+            // 
+            this.pnl_Divider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.pnl_Divider2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Divider2.Location = new System.Drawing.Point(0, 150);
+            this.pnl_Divider2.Name = "pnl_Divider2";
+            this.pnl_Divider2.Size = new System.Drawing.Size(300, 10);
+            this.pnl_Divider2.TabIndex = 6;
+            // 
+            // pnl_Home
+            // 
+            this.pnl_Home.Controls.Add(this.btn_Home);
+            this.pnl_Home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Home.Location = new System.Drawing.Point(0, 90);
+            this.pnl_Home.Name = "pnl_Home";
+            this.pnl_Home.Size = new System.Drawing.Size(300, 60);
+            this.pnl_Home.TabIndex = 5;
+            // 
             // btn_Home
             // 
             this.btn_Home.BorderColor = System.Drawing.Color.Empty;
@@ -624,6 +482,25 @@
             this.btn_Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Home.TextOffset = new System.Drawing.Point(5, 0);
             // 
+            // pnl_Divider1
+            // 
+            this.pnl_Divider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.pnl_Divider1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Divider1.Location = new System.Drawing.Point(0, 80);
+            this.pnl_Divider1.Name = "pnl_Divider1";
+            this.pnl_Divider1.Size = new System.Drawing.Size(300, 10);
+            this.pnl_Divider1.TabIndex = 4;
+            // 
+            // pnl_Logo
+            // 
+            this.pnl_Logo.Controls.Add(this.pbx_Logo);
+            this.pnl_Logo.Controls.Add(this.lbl_Title);
+            this.pnl_Logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Logo.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Logo.Name = "pnl_Logo";
+            this.pnl_Logo.Size = new System.Drawing.Size(300, 80);
+            this.pnl_Logo.TabIndex = 3;
+            // 
             // pbx_Logo
             // 
             this.pbx_Logo.Image = global::GUI.Properties.Resources.square_logo;
@@ -635,6 +512,129 @@
             this.pbx_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_Logo.TabIndex = 3;
             this.pbx_Logo.TabStop = false;
+            // 
+            // lbl_Title
+            // 
+            this.lbl_Title.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Title.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Title.Location = new System.Drawing.Point(82, 26);
+            this.lbl_Title.Name = "lbl_Title";
+            this.lbl_Title.Size = new System.Drawing.Size(185, 30);
+            this.lbl_Title.TabIndex = 2;
+            this.lbl_Title.Text = "EVERMORE ADMIN";
+            // 
+            // pnl_Margin
+            // 
+            this.pnl_Margin.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl_Margin.Location = new System.Drawing.Point(300, 0);
+            this.pnl_Margin.Name = "pnl_Margin";
+            this.pnl_Margin.Size = new System.Drawing.Size(20, 900);
+            this.pnl_Margin.TabIndex = 1;
+            // 
+            // pnl_Header
+            // 
+            this.pnl_Header.Controls.Add(this.pnl_Control);
+            this.pnl_Header.Controls.Add(this.lbl_Header);
+            this.pnl_Header.Controls.Add(this.pnl_DividerContent);
+            this.pnl_Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Header.Location = new System.Drawing.Point(320, 0);
+            this.pnl_Header.Name = "pnl_Header";
+            this.pnl_Header.Size = new System.Drawing.Size(1480, 90);
+            this.pnl_Header.TabIndex = 2;
+            // 
+            // pnl_Control
+            // 
+            this.pnl_Control.Controls.Add(this.btn_Close);
+            this.pnl_Control.Controls.Add(this.btn_Maximize);
+            this.pnl_Control.Controls.Add(this.btn_Minimize);
+            this.pnl_Control.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_Control.Location = new System.Drawing.Point(1280, 0);
+            this.pnl_Control.Name = "pnl_Control";
+            this.pnl_Control.Size = new System.Drawing.Size(200, 80);
+            this.pnl_Control.TabIndex = 0;
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.CheckedState.Image = global::GUI.Properties.Resources.close_red;
+            this.btn_Close.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Close.HoverState.Image = global::GUI.Properties.Resources.close_red;
+            this.btn_Close.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Close.Image = global::GUI.Properties.Resources.close_primary;
+            this.btn_Close.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_Close.ImageRotate = 0F;
+            this.btn_Close.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Close.Location = new System.Drawing.Point(122, 24);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.PressedState.Image = global::GUI.Properties.Resources.close_red;
+            this.btn_Close.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Close.Size = new System.Drawing.Size(32, 32);
+            this.btn_Close.TabIndex = 14;
+            // 
+            // btn_Maximize
+            // 
+            this.btn_Maximize.CheckedState.Image = global::GUI.Properties.Resources.maximize_gray;
+            this.btn_Maximize.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Maximize.HoverState.Image = global::GUI.Properties.Resources.maximize_gray;
+            this.btn_Maximize.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Maximize.Image = global::GUI.Properties.Resources.maximize_primary;
+            this.btn_Maximize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_Maximize.ImageRotate = 0F;
+            this.btn_Maximize.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Maximize.Location = new System.Drawing.Point(84, 24);
+            this.btn_Maximize.Name = "btn_Maximize";
+            this.btn_Maximize.PressedState.Image = global::GUI.Properties.Resources.maximize_gray;
+            this.btn_Maximize.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Maximize.Size = new System.Drawing.Size(32, 32);
+            this.btn_Maximize.TabIndex = 13;
+            // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.CheckedState.Image = global::GUI.Properties.Resources.minimize_gray;
+            this.btn_Minimize.CheckedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Minimize.HoverState.Image = global::GUI.Properties.Resources.minimize_gray;
+            this.btn_Minimize.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Minimize.Image = global::GUI.Properties.Resources.minimize_primary;
+            this.btn_Minimize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_Minimize.ImageRotate = 0F;
+            this.btn_Minimize.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Minimize.Location = new System.Drawing.Point(46, 24);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.PressedState.Image = global::GUI.Properties.Resources.minimize_gray;
+            this.btn_Minimize.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btn_Minimize.Size = new System.Drawing.Size(32, 32);
+            this.btn_Minimize.TabIndex = 12;
+            // 
+            // lbl_Header
+            // 
+            this.lbl_Header.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Header.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Header.Location = new System.Drawing.Point(20, 26);
+            this.lbl_Header.Name = "lbl_Header";
+            this.lbl_Header.Size = new System.Drawing.Size(81, 30);
+            this.lbl_Header.TabIndex = 4;
+            this.lbl_Header.Text = "HEADER";
+            // 
+            // pnl_DividerContent
+            // 
+            this.pnl_DividerContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.pnl_DividerContent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_DividerContent.Location = new System.Drawing.Point(0, 80);
+            this.pnl_DividerContent.Name = "pnl_DividerContent";
+            this.pnl_DividerContent.Size = new System.Drawing.Size(1480, 10);
+            this.pnl_DividerContent.TabIndex = 5;
+            // 
+            // pnl_Content
+            // 
+            this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Content.Location = new System.Drawing.Point(320, 90);
+            this.pnl_Content.Name = "pnl_Content";
+            this.pnl_Content.Size = new System.Drawing.Size(1480, 810);
+            this.pnl_Content.TabIndex = 3;
             // 
             // frm_Container
             // 
@@ -654,6 +654,7 @@
             this.pnl_Sidebar.ResumeLayout(false);
             this.pnl_Footer.ResumeLayout(false);
             this.pnl_Footer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Avatar)).EndInit();
             this.pnl_Account.ResumeLayout(false);
             this.pnl_Account.PerformLayout();
             this.pnl_Profits.ResumeLayout(false);
@@ -663,11 +664,10 @@
             this.pnl_Home.ResumeLayout(false);
             this.pnl_Logo.ResumeLayout(false);
             this.pnl_Logo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Logo)).EndInit();
             this.pnl_Header.ResumeLayout(false);
             this.pnl_Header.PerformLayout();
             this.pnl_Control.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Avatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Logo)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -14,7 +14,13 @@ namespace BLL
 
         public BLL_ProductReview() : base()
         {
-            _dal = new DAL_ProductReview();
+            _dalProductReview = new DAL_ProductReview();
+            _dal = _dalProductReview; 
+        }
+
+        public bool updateIsShow(long id, bool isShow)
+        {
+            return _dalProductReview.updateIsShow(id, isShow);
         }
     }
 }

@@ -151,6 +151,12 @@
     <Compile Include="Sales\frm_Product.Designer.cs">
       <DependentUpon>frm_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\frm_MUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frm_MUser.Designer.cs">
+      <DependentUpon>frm_MUser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Account\frm_Account.resx">
       <DependentUpon>frm_Account.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,11 +200,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sales\frm_Event.resx">
+      <DependentUpon>frm_Event.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\frm_Product.resx">
       <DependentUpon>frm_Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\frm_Ingredient.resx">
       <DependentUpon>frm_Ingredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frm_MUser.resx">
+      <DependentUpon>frm_MUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include=".env" />
     <None Include=".env.example" />

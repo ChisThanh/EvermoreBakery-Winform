@@ -118,9 +118,8 @@ namespace DAL
             {
                 var user = _context.users.Find(userId);
                 var role = _context.roles.Where(r => r.name == roleName).FirstOrDefault();
-                var roleUser = user.role_user.FirstOrDefault(ru => ru.role_id == role.id);
-                if (roleUser != null)
-                    user.role_user.Remove(roleUser);
+
+                user.role_user.Clear();
 
                 user.role_user.Add(new role_user { role = role, user_type = "App\\Models\\User" });
 

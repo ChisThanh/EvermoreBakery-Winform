@@ -19,7 +19,10 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frm_Container());
-            Application.Run(new GUI.Sales.frm_Event());
+            //Application.Run(new GUI.Sales.frm_Event());
+            //Application.Run(new GUI.Bills.Frm_Bills());
+            //Application.Run(new GUI.ProductReview.Frm_ProductReview());
+            Application.Run(new GUI.Users.frm_MUser());
         }
     }
 }
