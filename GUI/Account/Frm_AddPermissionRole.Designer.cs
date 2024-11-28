@@ -1,4 +1,4 @@
-﻿namespace GUI.Profits
+﻿namespace GUI.Account
 {
     partial class Frm_AddPermissionRole
     {
@@ -47,9 +47,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(133, 115);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 16);
+            this.label1.Size = new System.Drawing.Size(56, 20);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Quyền";
+            this.label1.Text = "Vai trò";
             // 
             // btnSave
             // 

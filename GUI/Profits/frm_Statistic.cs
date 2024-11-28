@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI.Profit
+namespace GUI.Profits
 {
     public partial class frm_Statistic : Form
     {

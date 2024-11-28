@@ -1,5 +1,5 @@
 ﻿using GUI.Account;
-using GUI.Profit;
+using GUI.Profits;
 using GUI.Sales;
 using Guna.UI2.WinForms;
 using System;

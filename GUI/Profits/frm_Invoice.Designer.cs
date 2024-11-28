@@ -1,4 +1,4 @@
-﻿namespace GUI.Profit
+﻿namespace GUI.Profits
 {
     partial class frm_Invoice
     {

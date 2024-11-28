@@ -71,9 +71,7 @@
     <Compile Include="BLL_Base.cs" />
     <Compile Include="BLL_Auth.cs" />
     <Compile Include="BLL_Bills.cs" />
-    <Compile Include="BLL_Categories.cs" />
-    <Compile Include="BLL_Ingredients.cs" />
-    <Compile Include="BLL_Nutritions.cs" />
+    <Compile Include="BLL_Events.cs" />
     <Compile Include="BLL_Permission.cs" />
     <Compile Include="BLL_ProductReview.cs" />
     <Compile Include="BLL_Products.cs" />
