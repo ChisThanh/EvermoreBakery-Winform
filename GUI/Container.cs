@@ -1,6 +1,8 @@
 ﻿using GUI.Account;
+using GUI.Bills;
 using GUI.Profits;
 using GUI.Sales;
+using GUI.Users;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -49,7 +51,9 @@ namespace GUI
             UncheckButtons();
             btn_Account.Checked = true;
             lbl_Header.Text = "TÀI KHOẢN";
-            OpenForm(new frm_Account());
+            //if(!Program.userAuth.HasPermissions("user-read")) MessageBox.Show("Bạn không có quyền thực hiện hành động này");
+            //else OpenForm(new frm_MUser());
+            OpenForm(new frm_MUser());
         }
 
         private void Btn_Satistic_Click(object sender, EventArgs e)
@@ -65,7 +69,9 @@ namespace GUI
             UncheckButtons();
             btn_Invoice.Checked = true;
             lbl_Header.Text = "HÓA ĐƠN";
-            OpenForm(new frm_Invoice());
+            //OpenForm(new frm_Invoice());
+            OpenForm(new Frm_Bills());
+
         }
 
         private void Btn_Ingredient_Click(object sender, EventArgs e)

@@ -158,7 +158,7 @@ namespace DAL
         }
 
 
-        public virtual bool Delete(int id)
+        public virtual bool Delete(long id)
         {
             var existingEntity = _context.Set<T>().Find(id);
             if (existingEntity == null)

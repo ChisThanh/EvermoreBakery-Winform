@@ -77,7 +77,8 @@
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMain.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvMain.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvMain.Location = new System.Drawing.Point(17, 241);
+            this.dgvMain.Location = new System.Drawing.Point(23, 297);
+            this.dgvMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvMain.Name = "dgvMain";
             this.dgvMain.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -91,7 +92,7 @@
             this.dgvMain.RowHeadersVisible = false;
             this.dgvMain.RowHeadersWidth = 51;
             this.dgvMain.RowTemplate.Height = 40;
-            this.dgvMain.Size = new System.Drawing.Size(868, 460);
+            this.dgvMain.Size = new System.Drawing.Size(1157, 566);
             this.dgvMain.TabIndex = 2;
             this.dgvMain.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvMain.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -125,9 +126,10 @@
             this.btnPerRole.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btnPerRole.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
             this.btnPerRole.ForeColor = System.Drawing.Color.White;
-            this.btnPerRole.Location = new System.Drawing.Point(12, 12);
+            this.btnPerRole.Location = new System.Drawing.Point(16, 15);
+            this.btnPerRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPerRole.Name = "btnPerRole";
-            this.btnPerRole.Size = new System.Drawing.Size(137, 36);
+            this.btnPerRole.Size = new System.Drawing.Size(183, 44);
             this.btnPerRole.TabIndex = 16;
             this.btnPerRole.Text = "Phân quyền";
             // 
@@ -146,14 +148,14 @@
             this.txtName.Font = new System.Drawing.Font("Consolas", 10F);
             this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.txtName.Location = new System.Drawing.Point(79, 76);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Location = new System.Drawing.Point(105, 94);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(345, 36);
+            this.txtName.Size = new System.Drawing.Size(460, 44);
             this.txtName.TabIndex = 17;
             this.txtName.TextOffset = new System.Drawing.Point(5, 0);
             // 
@@ -162,9 +164,10 @@
             this.lbl_Category.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Category.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Category.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Category.Location = new System.Drawing.Point(14, 84);
+            this.lbl_Category.Location = new System.Drawing.Point(19, 103);
+            this.lbl_Category.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl_Category.Name = "lbl_Category";
-            this.lbl_Category.Size = new System.Drawing.Size(39, 21);
+            this.lbl_Category.Size = new System.Drawing.Size(47, 25);
             this.lbl_Category.TabIndex = 22;
             this.lbl_Category.Text = "Tên:";
             // 
@@ -173,9 +176,10 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(14, 139);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(19, 171);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(57, 21);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(69, 25);
             this.guna2HtmlLabel1.TabIndex = 24;
             this.guna2HtmlLabel1.Text = "Email:";
             // 
@@ -194,14 +198,14 @@
             this.txtEmail.Font = new System.Drawing.Font("Consolas", 10F);
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.txtEmail.Location = new System.Drawing.Point(79, 131);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Location = new System.Drawing.Point(105, 161);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtEmail.PlaceholderText = "";
             this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(345, 36);
+            this.txtEmail.Size = new System.Drawing.Size(460, 44);
             this.txtEmail.TabIndex = 23;
             this.txtEmail.TextOffset = new System.Drawing.Point(5, 0);
             // 
@@ -215,9 +219,10 @@
             this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.btnAdd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(80, 181);
+            this.btnAdd.Location = new System.Drawing.Point(107, 223);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(127, 36);
+            this.btnAdd.Size = new System.Drawing.Size(169, 44);
             this.btnAdd.TabIndex = 25;
             this.btnAdd.Text = "Thêm";
             // 
@@ -236,9 +241,10 @@
             this.cbxRole.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
             this.cbxRole.ItemHeight = 30;
             this.cbxRole.ItemsAppearance.SelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.cbxRole.Location = new System.Drawing.Point(549, 76);
+            this.cbxRole.Location = new System.Drawing.Point(732, 94);
+            this.cbxRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxRole.Name = "cbxRole";
-            this.cbxRole.Size = new System.Drawing.Size(331, 36);
+            this.cbxRole.Size = new System.Drawing.Size(440, 36);
             this.cbxRole.TabIndex = 29;
             this.cbxRole.TextOffset = new System.Drawing.Point(5, 0);
             // 
@@ -247,9 +253,10 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(458, 84);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(611, 103);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(75, 21);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(91, 25);
             this.guna2HtmlLabel2.TabIndex = 30;
             this.guna2HtmlLabel2.Text = "Vai trò: ";
             // 
@@ -258,9 +265,10 @@
             this.lbl_InformationHeader.BackColor = System.Drawing.Color.Transparent;
             this.lbl_InformationHeader.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_InformationHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_InformationHeader.Location = new System.Drawing.Point(237, 12);
+            this.lbl_InformationHeader.Location = new System.Drawing.Point(316, 15);
+            this.lbl_InformationHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl_InformationHeader.Name = "lbl_InformationHeader";
-            this.lbl_InformationHeader.Size = new System.Drawing.Size(406, 30);
+            this.lbl_InformationHeader.Size = new System.Drawing.Size(499, 38);
             this.lbl_InformationHeader.TabIndex = 31;
             this.lbl_InformationHeader.Text = "QUẢN LÝ NGƯỜI DÙNG & PHÂN QUYỀN";
             // 
@@ -269,9 +277,10 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(458, 139);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(611, 171);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(84, 21);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(102, 25);
             this.guna2HtmlLabel4.TabIndex = 34;
             this.guna2HtmlLabel4.Text = "Mật khẩu:";
             // 
@@ -290,14 +299,14 @@
             this.txtPass.Font = new System.Drawing.Font("Consolas", 10F);
             this.txtPass.ForeColor = System.Drawing.Color.Black;
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.txtPass.Location = new System.Drawing.Point(549, 131);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPass.Location = new System.Drawing.Point(732, 161);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '\0';
             this.txtPass.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtPass.PlaceholderText = "";
             this.txtPass.SelectedText = "";
-            this.txtPass.Size = new System.Drawing.Size(331, 36);
+            this.txtPass.Size = new System.Drawing.Size(441, 44);
             this.txtPass.TabIndex = 33;
             this.txtPass.TextOffset = new System.Drawing.Point(5, 0);
             // 
@@ -306,17 +315,18 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(374, 209);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(499, 257);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(159, 26);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(185, 33);
             this.guna2HtmlLabel3.TabIndex = 32;
             this.guna2HtmlLabel3.Text = "DS NGƯỜI DÙNG";
             // 
             // frm_MUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 713);
+            this.ClientSize = new System.Drawing.Size(1204, 878);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -330,6 +340,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnPerRole);
             this.Controls.Add(this.dgvMain);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_MUser";
             this.Text = "frm_MUser";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();

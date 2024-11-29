@@ -64,7 +64,7 @@ namespace BLL
             return _dal.Update(id, entity);
         }
 
-        public virtual bool Delete(int id)
+        public virtual bool Delete(long id)
         {
             return _dal.Delete(id);
         }

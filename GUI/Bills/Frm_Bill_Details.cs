@@ -21,6 +21,12 @@ namespace GUI.Bills
             this.Load += Frm_Bill_Details_Load;
 
             dgvMain.AllowUserToAddRows = false;
+            btn_Close.Click += Btn_Close_Click;
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void Frm_Bill_Details_Load(object sender, EventArgs e)

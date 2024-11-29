@@ -10,6 +10,24 @@ namespace DAL
 {
     public class DAL_User : DAL_Base<user>
     {
+        public DAL_User() : base()
+        {
+        }
+
+        public bool Add(user user, long roleId)
+        {
+            try
+            {
+                _dto.Add(user);
+                _context.SaveChanges();
+                AddRoleToUser(user.id, roleId);
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
         public void AddRoleToUser(long userId, long roleId)
         {
             var userRole = new role_user

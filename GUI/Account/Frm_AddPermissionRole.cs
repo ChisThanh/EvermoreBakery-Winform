@@ -25,6 +25,12 @@ namespace GUI.Account
         {
             InitializeComponent();
             this.Load += Frm_AddPermissionRole_Load;
+            btn_Close.Click += Btn_Close_Click;
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void Frm_AddPermissionRole_Load(object sender, EventArgs e)

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Threading;
 
 namespace GUI.Bills
 {
@@ -20,6 +21,9 @@ namespace GUI.Bills
         int _status = 0;
         long _id = 0;
 
+        private CancellationTokenSource _cts;
+
+
         public Frm_Bills()
         {
             InitializeComponent();
@@ -28,7 +32,7 @@ namespace GUI.Bills
 
         private void Frm_Bills_Load(object sender, EventArgs e)
         {
-            LoadData();
+            //LoadData();
 
             dgvMain.CellClick += DgvMain_CellClick;
             dgvMain.AllowUserToAddRows = false;
@@ -41,6 +45,37 @@ namespace GUI.Bills
             cbxStatus.SelectedIndex = 0;
             cbxStatus.SelectedValueChanged += CbxStatus_SelectedValueChanged;
             btnLoadData.Click += BtnLoadData_Click;
+
+            StartAutoRefreshAsync();
+            this.FormClosing += Frm_Bills_FormClosing;
+        }
+
+        private void Frm_Bills_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StopAutoRefresh();
+        }
+
+        private async void StartAutoRefreshAsync()
+        {
+            _cts = new CancellationTokenSource();
+            try
+            {
+                while (!_cts.Token.IsCancellationRequested)
+                {
+                    LoadData();
+                    await Task.Delay(TimeSpan.FromSeconds(10), _cts.Token); 
+                }
+            }
+            catch (TaskCanceledException)
+            {
+                
+            }
+        }
+
+        private void StopAutoRefresh()
+        {
+            _cts?.Cancel(); 
+            _cts?.Dispose();
         }
 
         private void BtnLoadData_Click(object sender, EventArgs e)

@@ -33,6 +33,12 @@ namespace GUI.Account
             this.Load += Frm_ChangeRoleUser_Load;
             txtUserName.Text = _user.name;
             btnSave.Click += BtnSave_Click;
+            btn_Close.Click += Btn_Close_Click;
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
