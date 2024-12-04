@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +25,13 @@ namespace DAL
         public image GetImageByProduct(long productId)
         {
             return _context.images.Where(im => im.imageable_id == productId && im.imageable_type == "App\\Models\\Product").FirstOrDefault();
+        }
+
+        public async Task<product> AddAsync(product product)
+        {
+            _context.products.Add(product);
+            await _context.SaveChangesAsync();
+            return product;
         }
     }
 }

@@ -5,17 +5,29 @@ using System.Text;
 using System.Threading.Tasks;
 using DTO;
 using DAL;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BLL
 {
     public class BLL_Products : BLL_Base<product>
     {
-        protected DAL_Products _dalP; 
+        protected DAL_Products _dalP;
+        ApiClient apiClient = new ApiClient();
+
         public BLL_Products() :base()
         {
             _dalP = new DAL_Products();
             _dal = _dalP;
         }
+
+        public async Task<product> AddAsync(product entity)
+        {
+            var data = await _dalP.AddAsync(entity);
+            var text = entity.name + " " + entity.description;
+            string response = await apiClient.GenerateKeywordsAsync(data.id, text);
+            return data;
+        }
+
 
         public override List<product> GetList()
         {

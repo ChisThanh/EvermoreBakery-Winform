@@ -220,7 +220,7 @@ namespace GUI.Sales
                 description = tbx_Description.Text,
                 is_display = chk_Display.Checked,
             };
-            if (bllProducts.Add(product) != null)
+            if (bllProducts.AddAsync(product) != null)
             {
                 MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadProducts(bllProducts.GetList());
