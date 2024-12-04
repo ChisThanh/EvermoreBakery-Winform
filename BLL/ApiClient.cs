@@ -5,6 +5,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.IO;
 
 
 namespace BLL
@@ -34,6 +36,29 @@ namespace BLL
             catch (Exception ex)
             {
                 return $"Exception: {ex.Message}";
+            }
+        }
+
+        public async Task<bool> DownloadPdfAsync(string outputPath, string billId)
+        {
+            var url = baseUrl + "/api/v1/view-pdf-bill/" + billId;
+            using (var client = new HttpClient())
+            {
+                try
+                {
+                    var response = await client.GetAsync(url);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var content = await response.Content.ReadAsByteArrayAsync();
+                        File.WriteAllBytes(outputPath, content);
+                        return true;
+                    }
+                    return false;
+                }
+                catch (Exception ex)
+                {
+                    return false;
+                }
             }
         }
     }

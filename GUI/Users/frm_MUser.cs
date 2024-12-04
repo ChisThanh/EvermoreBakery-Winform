@@ -19,7 +19,7 @@ namespace GUI.Users
         BLL_AccessManagement _BLL_AccessManagement = new BLL_AccessManagement();
 
         user _user = null;
-        user _userAuth = EvermoreBakeryContext.Instance.users.First();
+        user _userAuth = Program.userAuth;
 
         long _id = 0;
 

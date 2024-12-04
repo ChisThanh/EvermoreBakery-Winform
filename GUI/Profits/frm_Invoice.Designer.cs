@@ -28,21 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_MarginTop = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_MarginBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_MarginRight = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_MarginMiddle = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_InvoiceDetails = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbl_Note = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_Phone = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.tbx_Note = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbx_Phone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbx_Delivery = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbl_Delivery = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.tbx_Address = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbl_Address = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.tbx_Total = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbl_Total = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_Coupon = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_Status2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.tbx_Coupon = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbx_Status2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbx_Method = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_Products = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_Reset = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_Method = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -62,21 +77,7 @@
             this.btn_Load = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_Invoice = new Guna.UI2.WinForms.Guna2Panel();
             this.lbl_BillsHeader = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbx_Method = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbx_Status2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbx_Coupon = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_Status2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_Coupon = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_Note = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_Phone = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbx_Note = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbx_Phone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbx_Delivery = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_Delivery = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbx_Address = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_Address = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tbx_Total = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_Total = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnPDF = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_InvoiceDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Products)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Bills)).BeginInit();
@@ -120,6 +121,7 @@
             this.pnl_InvoiceDetails.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.pnl_InvoiceDetails.BorderRadius = 20;
             this.pnl_InvoiceDetails.BorderThickness = 3;
+            this.pnl_InvoiceDetails.Controls.Add(this.btnPDF);
             this.pnl_InvoiceDetails.Controls.Add(this.lbl_Note);
             this.pnl_InvoiceDetails.Controls.Add(this.lbl_Phone);
             this.pnl_InvoiceDetails.Controls.Add(this.tbx_Note);
@@ -152,60 +154,345 @@
             this.pnl_InvoiceDetails.Size = new System.Drawing.Size(610, 770);
             this.pnl_InvoiceDetails.TabIndex = 14;
             // 
+            // lbl_Note
+            // 
+            this.lbl_Note.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Note.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Note.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Note.Location = new System.Drawing.Point(317, 253);
+            this.lbl_Note.Name = "lbl_Note";
+            this.lbl_Note.Size = new System.Drawing.Size(66, 21);
+            this.lbl_Note.TabIndex = 59;
+            this.lbl_Note.Text = "Ghi Chú";
+            // 
+            // lbl_Phone
+            // 
+            this.lbl_Phone.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Phone.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Phone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Phone.Location = new System.Drawing.Point(318, 209);
+            this.lbl_Phone.Name = "lbl_Phone";
+            this.lbl_Phone.Size = new System.Drawing.Size(93, 21);
+            this.lbl_Phone.TabIndex = 58;
+            this.lbl_Phone.Text = "Điện Thoại";
+            // 
+            // tbx_Note
+            // 
+            this.tbx_Note.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Note.BorderRadius = 10;
+            this.tbx_Note.BorderThickness = 2;
+            this.tbx_Note.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Note.DefaultText = "";
+            this.tbx_Note.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Note.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Note.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Note.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Note.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Note.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Note.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Note.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Note.Location = new System.Drawing.Point(418, 245);
+            this.tbx_Note.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Note.Name = "tbx_Note";
+            this.tbx_Note.PasswordChar = '\0';
+            this.tbx_Note.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Note.PlaceholderText = "";
+            this.tbx_Note.SelectedText = "";
+            this.tbx_Note.Size = new System.Drawing.Size(180, 36);
+            this.tbx_Note.TabIndex = 57;
+            this.tbx_Note.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // tbx_Phone
+            // 
+            this.tbx_Phone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Phone.BorderRadius = 10;
+            this.tbx_Phone.BorderThickness = 2;
+            this.tbx_Phone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Phone.DefaultText = "";
+            this.tbx_Phone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Phone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Phone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Phone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Phone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Phone.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Phone.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Phone.Location = new System.Drawing.Point(418, 201);
+            this.tbx_Phone.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Phone.Name = "tbx_Phone";
+            this.tbx_Phone.PasswordChar = '\0';
+            this.tbx_Phone.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Phone.PlaceholderText = "";
+            this.tbx_Phone.SelectedText = "";
+            this.tbx_Phone.Size = new System.Drawing.Size(180, 36);
+            this.tbx_Phone.TabIndex = 56;
+            this.tbx_Phone.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // tbx_Delivery
+            // 
+            this.tbx_Delivery.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Delivery.BorderRadius = 10;
+            this.tbx_Delivery.BorderThickness = 2;
+            this.tbx_Delivery.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Delivery.DefaultText = "";
+            this.tbx_Delivery.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Delivery.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Delivery.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Delivery.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Delivery.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Delivery.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Delivery.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Delivery.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Delivery.Location = new System.Drawing.Point(418, 157);
+            this.tbx_Delivery.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Delivery.Name = "tbx_Delivery";
+            this.tbx_Delivery.PasswordChar = '\0';
+            this.tbx_Delivery.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Delivery.PlaceholderText = "";
+            this.tbx_Delivery.SelectedText = "";
+            this.tbx_Delivery.Size = new System.Drawing.Size(180, 36);
+            this.tbx_Delivery.TabIndex = 55;
+            this.tbx_Delivery.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // lbl_Delivery
+            // 
+            this.lbl_Delivery.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Delivery.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Delivery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Delivery.Location = new System.Drawing.Point(318, 164);
+            this.lbl_Delivery.Name = "lbl_Delivery";
+            this.lbl_Delivery.Size = new System.Drawing.Size(84, 21);
+            this.lbl_Delivery.TabIndex = 54;
+            this.lbl_Delivery.Text = "Ngày Giao";
+            // 
+            // tbx_Address
+            // 
+            this.tbx_Address.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Address.BorderRadius = 10;
+            this.tbx_Address.BorderThickness = 2;
+            this.tbx_Address.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Address.DefaultText = "";
+            this.tbx_Address.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Address.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Address.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Address.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Address.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Address.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Address.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Address.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Address.Location = new System.Drawing.Point(418, 113);
+            this.tbx_Address.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Address.Name = "tbx_Address";
+            this.tbx_Address.PasswordChar = '\0';
+            this.tbx_Address.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Address.PlaceholderText = "";
+            this.tbx_Address.SelectedText = "";
+            this.tbx_Address.Size = new System.Drawing.Size(180, 36);
+            this.tbx_Address.TabIndex = 53;
+            this.tbx_Address.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // lbl_Address
+            // 
+            this.lbl_Address.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Address.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Address.Location = new System.Drawing.Point(318, 121);
+            this.lbl_Address.Name = "lbl_Address";
+            this.lbl_Address.Size = new System.Drawing.Size(66, 21);
+            this.lbl_Address.TabIndex = 52;
+            this.lbl_Address.Text = "Địa Chỉ";
+            // 
+            // tbx_Total
+            // 
+            this.tbx_Total.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Total.BorderRadius = 10;
+            this.tbx_Total.BorderThickness = 2;
+            this.tbx_Total.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Total.DefaultText = "";
+            this.tbx_Total.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Total.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Total.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Total.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Total.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Total.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Total.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Total.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Total.Location = new System.Drawing.Point(418, 69);
+            this.tbx_Total.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Total.Name = "tbx_Total";
+            this.tbx_Total.PasswordChar = '\0';
+            this.tbx_Total.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Total.PlaceholderText = "";
+            this.tbx_Total.SelectedText = "";
+            this.tbx_Total.Size = new System.Drawing.Size(180, 36);
+            this.tbx_Total.TabIndex = 51;
+            this.tbx_Total.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // lbl_Total
+            // 
+            this.lbl_Total.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Total.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Total.Location = new System.Drawing.Point(318, 77);
+            this.lbl_Total.Name = "lbl_Total";
+            this.lbl_Total.Size = new System.Drawing.Size(84, 21);
+            this.lbl_Total.TabIndex = 50;
+            this.lbl_Total.Text = "Tổng Tiền";
+            // 
+            // lbl_Coupon
+            // 
+            this.lbl_Coupon.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Coupon.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Coupon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Coupon.Location = new System.Drawing.Point(16, 253);
+            this.lbl_Coupon.Name = "lbl_Coupon";
+            this.lbl_Coupon.Size = new System.Drawing.Size(102, 21);
+            this.lbl_Coupon.TabIndex = 49;
+            this.lbl_Coupon.Text = "Mã Giảm Giá";
+            // 
+            // lbl_Status2
+            // 
+            this.lbl_Status2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Status2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Status2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.lbl_Status2.Location = new System.Drawing.Point(17, 209);
+            this.lbl_Status2.Name = "lbl_Status2";
+            this.lbl_Status2.Size = new System.Drawing.Size(93, 21);
+            this.lbl_Status2.TabIndex = 48;
+            this.lbl_Status2.Text = "Tình Trạng";
+            // 
+            // tbx_Coupon
+            // 
+            this.tbx_Coupon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Coupon.BorderRadius = 10;
+            this.tbx_Coupon.BorderThickness = 2;
+            this.tbx_Coupon.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Coupon.DefaultText = "";
+            this.tbx_Coupon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Coupon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Coupon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Coupon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Coupon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Coupon.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Coupon.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Coupon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Coupon.Location = new System.Drawing.Point(126, 245);
+            this.tbx_Coupon.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Coupon.Name = "tbx_Coupon";
+            this.tbx_Coupon.PasswordChar = '\0';
+            this.tbx_Coupon.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Coupon.PlaceholderText = "";
+            this.tbx_Coupon.SelectedText = "";
+            this.tbx_Coupon.Size = new System.Drawing.Size(180, 36);
+            this.tbx_Coupon.TabIndex = 47;
+            this.tbx_Coupon.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // tbx_Status2
+            // 
+            this.tbx_Status2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Status2.BorderRadius = 10;
+            this.tbx_Status2.BorderThickness = 2;
+            this.tbx_Status2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Status2.DefaultText = "";
+            this.tbx_Status2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Status2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Status2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Status2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Status2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Status2.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Status2.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Status2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Status2.Location = new System.Drawing.Point(126, 201);
+            this.tbx_Status2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Status2.Name = "tbx_Status2";
+            this.tbx_Status2.PasswordChar = '\0';
+            this.tbx_Status2.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Status2.PlaceholderText = "";
+            this.tbx_Status2.SelectedText = "";
+            this.tbx_Status2.Size = new System.Drawing.Size(180, 36);
+            this.tbx_Status2.TabIndex = 46;
+            this.tbx_Status2.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // tbx_Method
+            // 
+            this.tbx_Method.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.tbx_Method.BorderRadius = 10;
+            this.tbx_Method.BorderThickness = 2;
+            this.tbx_Method.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_Method.DefaultText = "";
+            this.tbx_Method.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_Method.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_Method.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Method.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_Method.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Method.Font = new System.Drawing.Font("Consolas", 10F);
+            this.tbx_Method.ForeColor = System.Drawing.Color.Black;
+            this.tbx_Method.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            this.tbx_Method.Location = new System.Drawing.Point(126, 157);
+            this.tbx_Method.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_Method.Name = "tbx_Method";
+            this.tbx_Method.PasswordChar = '\0';
+            this.tbx_Method.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_Method.PlaceholderText = "";
+            this.tbx_Method.SelectedText = "";
+            this.tbx_Method.Size = new System.Drawing.Size(180, 36);
+            this.tbx_Method.TabIndex = 45;
+            this.tbx_Method.TextOffset = new System.Drawing.Point(5, 0);
+            // 
             // dgv_Products
             // 
             this.dgv_Products.AllowUserToAddRows = false;
             this.dgv_Products.AllowUserToDeleteRows = false;
             this.dgv_Products.AllowUserToResizeColumns = false;
             this.dgv_Products.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_Products.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_Products.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Products.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Products.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Products.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Products.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Products.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Products.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Products.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Products.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.dgv_Products.Location = new System.Drawing.Point(16, 347);
             this.dgv_Products.MultiSelect = false;
             this.dgv_Products.Name = "dgv_Products";
             this.dgv_Products.ReadOnly = true;
             this.dgv_Products.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Products.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Products.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_Products.RowHeadersVisible = false;
             this.dgv_Products.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_Products.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_Products.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Products.RowTemplate.Height = 30;
             this.dgv_Products.Size = new System.Drawing.Size(578, 408);
             this.dgv_Products.TabIndex = 44;
@@ -454,54 +741,54 @@
             this.dgv_Bills.AllowUserToDeleteRows = false;
             this.dgv_Bills.AllowUserToResizeColumns = false;
             this.dgv_Bills.AllowUserToResizeRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_Bills.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_Bills.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_Bills.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Bills.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Bills.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Bills.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_Bills.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Bills.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Bills.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_Bills.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.dgv_Bills.Location = new System.Drawing.Point(12, 61);
             this.dgv_Bills.MultiSelect = false;
             this.dgv_Bills.Name = "dgv_Bills";
             this.dgv_Bills.ReadOnly = true;
             this.dgv_Bills.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Bills.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Bills.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_Bills.RowHeadersVisible = false;
             this.dgv_Bills.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_Bills.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_Bills.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_Bills.RowTemplate.Height = 30;
             this.dgv_Bills.Size = new System.Drawing.Size(788, 694);
             this.dgv_Bills.TabIndex = 27;
@@ -580,290 +867,30 @@
             this.lbl_BillsHeader.TabIndex = 0;
             this.lbl_BillsHeader.Text = "DANH SÁCH HÓA ĐƠN";
             // 
-            // tbx_Method
+            // btnPDF
             // 
-            this.tbx_Method.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Method.BorderRadius = 10;
-            this.tbx_Method.BorderThickness = 2;
-            this.tbx_Method.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Method.DefaultText = "";
-            this.tbx_Method.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Method.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Method.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Method.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Method.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Method.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Method.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Method.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Method.Location = new System.Drawing.Point(126, 157);
-            this.tbx_Method.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Method.Name = "tbx_Method";
-            this.tbx_Method.PasswordChar = '\0';
-            this.tbx_Method.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Method.PlaceholderText = "";
-            this.tbx_Method.SelectedText = "";
-            this.tbx_Method.Size = new System.Drawing.Size(180, 36);
-            this.tbx_Method.TabIndex = 45;
-            this.tbx_Method.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // tbx_Status2
-            // 
-            this.tbx_Status2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Status2.BorderRadius = 10;
-            this.tbx_Status2.BorderThickness = 2;
-            this.tbx_Status2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Status2.DefaultText = "";
-            this.tbx_Status2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Status2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Status2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Status2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Status2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Status2.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Status2.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Status2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Status2.Location = new System.Drawing.Point(126, 201);
-            this.tbx_Status2.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Status2.Name = "tbx_Status2";
-            this.tbx_Status2.PasswordChar = '\0';
-            this.tbx_Status2.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Status2.PlaceholderText = "";
-            this.tbx_Status2.SelectedText = "";
-            this.tbx_Status2.Size = new System.Drawing.Size(180, 36);
-            this.tbx_Status2.TabIndex = 46;
-            this.tbx_Status2.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // tbx_Coupon
-            // 
-            this.tbx_Coupon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Coupon.BorderRadius = 10;
-            this.tbx_Coupon.BorderThickness = 2;
-            this.tbx_Coupon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Coupon.DefaultText = "";
-            this.tbx_Coupon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Coupon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Coupon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Coupon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Coupon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Coupon.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Coupon.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Coupon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Coupon.Location = new System.Drawing.Point(126, 245);
-            this.tbx_Coupon.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Coupon.Name = "tbx_Coupon";
-            this.tbx_Coupon.PasswordChar = '\0';
-            this.tbx_Coupon.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Coupon.PlaceholderText = "";
-            this.tbx_Coupon.SelectedText = "";
-            this.tbx_Coupon.Size = new System.Drawing.Size(180, 36);
-            this.tbx_Coupon.TabIndex = 47;
-            this.tbx_Coupon.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // lbl_Status2
-            // 
-            this.lbl_Status2.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Status2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Status2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Status2.Location = new System.Drawing.Point(17, 209);
-            this.lbl_Status2.Name = "lbl_Status2";
-            this.lbl_Status2.Size = new System.Drawing.Size(93, 21);
-            this.lbl_Status2.TabIndex = 48;
-            this.lbl_Status2.Text = "Tình Trạng";
-            // 
-            // lbl_Coupon
-            // 
-            this.lbl_Coupon.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Coupon.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Coupon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Coupon.Location = new System.Drawing.Point(16, 253);
-            this.lbl_Coupon.Name = "lbl_Coupon";
-            this.lbl_Coupon.Size = new System.Drawing.Size(102, 21);
-            this.lbl_Coupon.TabIndex = 49;
-            this.lbl_Coupon.Text = "Mã Giảm Giá";
-            // 
-            // lbl_Note
-            // 
-            this.lbl_Note.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Note.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Note.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Note.Location = new System.Drawing.Point(317, 253);
-            this.lbl_Note.Name = "lbl_Note";
-            this.lbl_Note.Size = new System.Drawing.Size(66, 21);
-            this.lbl_Note.TabIndex = 59;
-            this.lbl_Note.Text = "Ghi Chú";
-            // 
-            // lbl_Phone
-            // 
-            this.lbl_Phone.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Phone.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Phone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Phone.Location = new System.Drawing.Point(318, 209);
-            this.lbl_Phone.Name = "lbl_Phone";
-            this.lbl_Phone.Size = new System.Drawing.Size(93, 21);
-            this.lbl_Phone.TabIndex = 58;
-            this.lbl_Phone.Text = "Điện Thoại";
-            // 
-            // tbx_Note
-            // 
-            this.tbx_Note.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Note.BorderRadius = 10;
-            this.tbx_Note.BorderThickness = 2;
-            this.tbx_Note.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Note.DefaultText = "";
-            this.tbx_Note.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Note.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Note.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Note.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Note.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Note.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Note.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Note.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Note.Location = new System.Drawing.Point(418, 245);
-            this.tbx_Note.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Note.Name = "tbx_Note";
-            this.tbx_Note.PasswordChar = '\0';
-            this.tbx_Note.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Note.PlaceholderText = "";
-            this.tbx_Note.SelectedText = "";
-            this.tbx_Note.Size = new System.Drawing.Size(180, 36);
-            this.tbx_Note.TabIndex = 57;
-            this.tbx_Note.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // tbx_Phone
-            // 
-            this.tbx_Phone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Phone.BorderRadius = 10;
-            this.tbx_Phone.BorderThickness = 2;
-            this.tbx_Phone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Phone.DefaultText = "";
-            this.tbx_Phone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Phone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Phone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Phone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Phone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Phone.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Phone.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Phone.Location = new System.Drawing.Point(418, 201);
-            this.tbx_Phone.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Phone.Name = "tbx_Phone";
-            this.tbx_Phone.PasswordChar = '\0';
-            this.tbx_Phone.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Phone.PlaceholderText = "";
-            this.tbx_Phone.SelectedText = "";
-            this.tbx_Phone.Size = new System.Drawing.Size(180, 36);
-            this.tbx_Phone.TabIndex = 56;
-            this.tbx_Phone.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // tbx_Delivery
-            // 
-            this.tbx_Delivery.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Delivery.BorderRadius = 10;
-            this.tbx_Delivery.BorderThickness = 2;
-            this.tbx_Delivery.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Delivery.DefaultText = "";
-            this.tbx_Delivery.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Delivery.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Delivery.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Delivery.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Delivery.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Delivery.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Delivery.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Delivery.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Delivery.Location = new System.Drawing.Point(418, 157);
-            this.tbx_Delivery.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Delivery.Name = "tbx_Delivery";
-            this.tbx_Delivery.PasswordChar = '\0';
-            this.tbx_Delivery.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Delivery.PlaceholderText = "";
-            this.tbx_Delivery.SelectedText = "";
-            this.tbx_Delivery.Size = new System.Drawing.Size(180, 36);
-            this.tbx_Delivery.TabIndex = 55;
-            this.tbx_Delivery.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // lbl_Delivery
-            // 
-            this.lbl_Delivery.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Delivery.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Delivery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Delivery.Location = new System.Drawing.Point(318, 164);
-            this.lbl_Delivery.Name = "lbl_Delivery";
-            this.lbl_Delivery.Size = new System.Drawing.Size(84, 21);
-            this.lbl_Delivery.TabIndex = 54;
-            this.lbl_Delivery.Text = "Ngày Giao";
-            // 
-            // tbx_Address
-            // 
-            this.tbx_Address.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Address.BorderRadius = 10;
-            this.tbx_Address.BorderThickness = 2;
-            this.tbx_Address.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Address.DefaultText = "";
-            this.tbx_Address.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Address.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Address.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Address.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Address.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Address.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Address.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Address.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Address.Location = new System.Drawing.Point(418, 113);
-            this.tbx_Address.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Address.Name = "tbx_Address";
-            this.tbx_Address.PasswordChar = '\0';
-            this.tbx_Address.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Address.PlaceholderText = "";
-            this.tbx_Address.SelectedText = "";
-            this.tbx_Address.Size = new System.Drawing.Size(180, 36);
-            this.tbx_Address.TabIndex = 53;
-            this.tbx_Address.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // lbl_Address
-            // 
-            this.lbl_Address.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Address.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Address.Location = new System.Drawing.Point(318, 121);
-            this.lbl_Address.Name = "lbl_Address";
-            this.lbl_Address.Size = new System.Drawing.Size(66, 21);
-            this.lbl_Address.TabIndex = 52;
-            this.lbl_Address.Text = "Địa Chỉ";
-            // 
-            // tbx_Total
-            // 
-            this.tbx_Total.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.tbx_Total.BorderRadius = 10;
-            this.tbx_Total.BorderThickness = 2;
-            this.tbx_Total.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_Total.DefaultText = "";
-            this.tbx_Total.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_Total.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_Total.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Total.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_Total.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Total.Font = new System.Drawing.Font("Consolas", 10F);
-            this.tbx_Total.ForeColor = System.Drawing.Color.Black;
-            this.tbx_Total.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(165)))), ((int)(((byte)(74)))));
-            this.tbx_Total.Location = new System.Drawing.Point(418, 69);
-            this.tbx_Total.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_Total.Name = "tbx_Total";
-            this.tbx_Total.PasswordChar = '\0';
-            this.tbx_Total.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_Total.PlaceholderText = "";
-            this.tbx_Total.SelectedText = "";
-            this.tbx_Total.Size = new System.Drawing.Size(180, 36);
-            this.tbx_Total.TabIndex = 51;
-            this.tbx_Total.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // lbl_Total
-            // 
-            this.lbl_Total.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Total.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.lbl_Total.Location = new System.Drawing.Point(318, 77);
-            this.lbl_Total.Name = "lbl_Total";
-            this.lbl_Total.Size = new System.Drawing.Size(84, 21);
-            this.lbl_Total.TabIndex = 50;
-            this.lbl_Total.Text = "Tổng Tiền";
+            this.btnPDF.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPDF.BorderRadius = 10;
+            this.btnPDF.BorderThickness = 2;
+            this.btnPDF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPDF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPDF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPDF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPDF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPDF.FillColor = System.Drawing.Color.White;
+            this.btnPDF.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPDF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPDF.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPDF.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnPDF.HoverState.Image = global::GUI.Properties.Resources.load_white;
+            this.btnPDF.Image = global::GUI.Properties.Resources.load_primary;
+            this.btnPDF.Location = new System.Drawing.Point(391, 12);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPDF.Size = new System.Drawing.Size(98, 36);
+            this.btnPDF.TabIndex = 42;
+            this.btnPDF.Text = "PDF";
             // 
             // frm_Invoice
             // 
@@ -930,5 +957,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Address;
         private Guna.UI2.WinForms.Guna2TextBox tbx_Total;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Total;
+        private Guna.UI2.WinForms.Guna2Button btnPDF;
     }
 }

@@ -160,6 +160,11 @@ namespace GUI.Sales
 
         private void Btn_Delete_Click(object sender, EventArgs e)
         {
+            if(Program.userAuth.HasPermissions("all-delete") == false)
+            {
+                MessageBox.Show("Bạn không có quyền thực hiện hành động này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (selectedProduct == null)
             {
                 MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -179,6 +184,12 @@ namespace GUI.Sales
 
         private void Btn_Update_Click(object sender, EventArgs e)
         {
+            if (Program.userAuth.HasPermissions("all-update") == false)
+            {
+                MessageBox.Show("Bạn không có quyền thực hiện hành động này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (selectedProduct == null)
             {
                 MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);

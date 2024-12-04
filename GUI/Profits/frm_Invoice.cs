@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -18,6 +19,8 @@ namespace GUI.Profits
     public partial class frm_Invoice : Form
     {
         protected BLL_Bills _BLL_Bills = new BLL_Bills();
+        protected ApiClient _apiClient = new ApiClient();
+
         bill _bill = null;
         int _status = 0;
         long _id = 0;
@@ -50,7 +53,30 @@ namespace GUI.Profits
             StartAutoRefreshAsync();
             FormClosing += (s, e1) => StopAutoRefresh();
             DesignTbx_BillId();
+            btnPDF.Click += BtnPDF_Click;
         }
+
+        private void BtnPDF_Click(object sender, EventArgs e)
+        {
+            if (_bill == null) return;
+
+            using (FolderBrowserDialog folderDialog = new FolderBrowserDialog())
+            {
+                folderDialog.Description = "Chọn thư mục để lưu file PDF";
+
+                if (folderDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string selectedFolder = folderDialog.SelectedPath;
+
+                    var path = Path.Combine(selectedFolder, $"Invoice_{DateTime.Now.ToString("MMddHHmmss")}.pdf");
+
+                    var result = _apiClient.DownloadPdfAsync(path, _bill.id.ToString());
+                    
+                    MessageBox.Show("Tạo file PDF thành công.");
+                }
+                else MessageBox.Show("Bạn chưa chọn thư mục để lưu file.");
+            }
+        } 
 
         private void Cbx_Status_SelectedValueChanged(object sender, EventArgs e)
         {

@@ -67,6 +67,7 @@
             this.lbl_Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_DividerContent = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Content = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnPreview = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_Sidebar.SuspendLayout();
             this.pnl_Footer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Avatar)).BeginInit();
@@ -182,7 +183,7 @@
             this.pnl_Account.Controls.Add(this.btn_Account);
             this.pnl_Account.Controls.Add(this.lbl_Account);
             this.pnl_Account.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Account.Location = new System.Drawing.Point(0, 510);
+            this.pnl_Account.Location = new System.Drawing.Point(0, 572);
             this.pnl_Account.Name = "pnl_Account";
             this.pnl_Account.Size = new System.Drawing.Size(300, 90);
             this.pnl_Account.TabIndex = 11;
@@ -231,7 +232,7 @@
             // 
             this.pnl_Divider4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.pnl_Divider4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Divider4.Location = new System.Drawing.Point(0, 500);
+            this.pnl_Divider4.Location = new System.Drawing.Point(0, 562);
             this.pnl_Divider4.Name = "pnl_Divider4";
             this.pnl_Divider4.Size = new System.Drawing.Size(300, 10);
             this.pnl_Divider4.TabIndex = 10;
@@ -242,9 +243,9 @@
             this.pnl_Profits.Controls.Add(this.btn_Invoice);
             this.pnl_Profits.Controls.Add(this.lbl_Profits);
             this.pnl_Profits.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Profits.Location = new System.Drawing.Point(0, 360);
+            this.pnl_Profits.Location = new System.Drawing.Point(0, 412);
             this.pnl_Profits.Name = "pnl_Profits";
-            this.pnl_Profits.Size = new System.Drawing.Size(300, 140);
+            this.pnl_Profits.Size = new System.Drawing.Size(300, 150);
             this.pnl_Profits.TabIndex = 9;
             // 
             // btn_Satistic
@@ -320,13 +321,14 @@
             // 
             this.pnl_Divider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
             this.pnl_Divider3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Divider3.Location = new System.Drawing.Point(0, 350);
+            this.pnl_Divider3.Location = new System.Drawing.Point(0, 402);
             this.pnl_Divider3.Name = "pnl_Divider3";
             this.pnl_Divider3.Size = new System.Drawing.Size(300, 10);
             this.pnl_Divider3.TabIndex = 8;
             // 
             // pnl_Sales
             // 
+            this.pnl_Sales.Controls.Add(this.btnPreview);
             this.pnl_Sales.Controls.Add(this.btn_Ingredient);
             this.pnl_Sales.Controls.Add(this.btn_Event);
             this.pnl_Sales.Controls.Add(this.btn_Product);
@@ -334,7 +336,7 @@
             this.pnl_Sales.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Sales.Location = new System.Drawing.Point(0, 160);
             this.pnl_Sales.Name = "pnl_Sales";
-            this.pnl_Sales.Size = new System.Drawing.Size(300, 190);
+            this.pnl_Sales.Size = new System.Drawing.Size(300, 242);
             this.pnl_Sales.TabIndex = 7;
             // 
             // btn_Ingredient
@@ -636,6 +638,35 @@
             this.pnl_Content.Size = new System.Drawing.Size(1480, 810);
             this.pnl_Content.TabIndex = 3;
             // 
+            // btnPreview
+            // 
+            this.btnPreview.BorderColor = System.Drawing.Color.Empty;
+            this.btnPreview.BorderRadius = 10;
+            this.btnPreview.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPreview.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            this.btnPreview.CheckedState.Image = global::GUI.Properties.Resources.flour_secondary;
+            this.btnPreview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPreview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPreview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPreview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPreview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPreview.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            this.btnPreview.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.btnPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPreview.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPreview.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            this.btnPreview.HoverState.Image = global::GUI.Properties.Resources.flour_secondary;
+            this.btnPreview.Image = global::GUI.Properties.Resources.flour_primary;
+            this.btnPreview.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPreview.Location = new System.Drawing.Point(12, 188);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPreview.Size = new System.Drawing.Size(273, 45);
+            this.btnPreview.TabIndex = 6;
+            this.btnPreview.Text = "ĐÁNH GIÁ";
+            this.btnPreview.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPreview.TextOffset = new System.Drawing.Point(5, 0);
+            // 
             // frm_Container
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -711,5 +742,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btn_Close;
         private Guna.UI2.WinForms.Guna2ImageButton btn_Maximize;
         private Guna.UI2.WinForms.Guna2ImageButton btn_Minimize;
+        private Guna.UI2.WinForms.Guna2Button btnPreview;
     }
 }
