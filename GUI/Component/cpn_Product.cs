@@ -36,10 +36,17 @@ namespace GUI.Component
         private async void Cpn_Product_Load(object sender, EventArgs e)
         {
             lbl_Product.Text = product.name;
-            string imageUrl = "http://web.chithanh.id.vn/storage/" + image.url;
-            await GetImageFromUrlAsync(imageUrl);
+            try
+            {
+                //string imageUrl = "http://web.chithanh.id.vn/storage/" + image.url;
+                //await GetImageFromUrlAsync(imageUrl);
 
-            if (trueImage != null) pbx_Image.Image = trueImage;
+                if (trueImage != null) pbx_Image.Image = trueImage;
+            }
+            catch
+            {
+                trueImage = null;
+            }
 
             pnl_Click.Click += (s, ec) => clicked?.Invoke(this, EventArgs.Empty);
             pnl_Click.MouseHover += (s, ec) =>

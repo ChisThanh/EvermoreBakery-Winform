@@ -40,10 +40,10 @@ namespace GUI
 
             btn_Maximize.Enabled = false;
 
-            UncheckButtons();
-            btn_Product.Checked = true;
-            lbl_Header.Text = "SẢN PHẨM";
-            OpenForm(new pnl_PaddingMiddle());
+            //UncheckButtons();
+            //btn_Product.Checked = true;
+            //lbl_Header.Text = "SẢN PHẨM";
+            //OpenForm(new pnl_PaddingMiddle());
         }
 
         private void Btn_Account_Click(object sender, EventArgs e)
@@ -69,9 +69,7 @@ namespace GUI
             UncheckButtons();
             btn_Invoice.Checked = true;
             lbl_Header.Text = "HÓA ĐƠN";
-            //OpenForm(new frm_Invoice());
-            OpenForm(new Frm_Bills());
-
+            OpenForm(new frm_Invoice());
         }
 
         private void Btn_Ingredient_Click(object sender, EventArgs e)
