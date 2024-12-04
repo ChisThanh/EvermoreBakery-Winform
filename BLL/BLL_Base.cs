@@ -79,7 +79,7 @@ namespace BLL
             return _dal.DeleteIds(ids);
         }
 
-        public virtual bool SoftDelete(int id)
+        public virtual bool SoftDelete(long id)
         {
             return _dal.SoftDelete(id);
         }

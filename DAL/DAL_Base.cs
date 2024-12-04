@@ -204,14 +204,14 @@ namespace DAL
             return true;
         }
 
-        public virtual bool SoftDelete(int id)
+        public virtual bool SoftDelete(long id, string property = "deleted_at")
         {
             var existingEntity = _context.Set<T>().Find(id);
             if (existingEntity == null)
                 return false;
 
             var entityType = existingEntity.GetType();
-            var deletedAtProperty = entityType.GetProperty("DeletedAt");
+            var deletedAtProperty = entityType.GetProperty(property);
             if (deletedAtProperty == null)
                 return false;
 

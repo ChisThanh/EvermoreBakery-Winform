@@ -15,7 +15,7 @@ namespace DAL
 
         public override List<product> GetAll()
         {
-            return _context.products.ToList();
+            return _context.products.Where(e => e.deleted_at == null).ToList();
         }
 
         public override async Task<List<product>> GetAllAsync()

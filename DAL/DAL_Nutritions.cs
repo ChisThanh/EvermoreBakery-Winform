@@ -33,5 +33,37 @@ namespace DAL
                         quantity = np.quantity
                     }).ToList<object>();
         }
+
+        public bool AddToProduct(long productId, long nutritionId, byte quantity)
+        {
+            var check = _context.nutrition_product.Where(np => np.product_id == productId && np.nutrition_id == nutritionId).FirstOrDefault();
+            if (check != null)
+                return false;
+
+            var npp = new nutrition_product
+            {
+                product_id = productId,
+                nutrition_id = nutritionId,
+                quantity = quantity
+            };
+            _context.nutrition_product.Add(npp);
+            _context.SaveChanges();
+            return true;
+        }
+
+        public bool DelToProduct(long productId, string nutritionName)
+        {
+            var nutrition = _context.nutritions.Where(nt => nt.name.Trim() == nutritionName.Trim()).FirstOrDefault();
+            if (nutrition == null)
+                return false;
+
+            var nutritionProduct = _context.nutrition_product.Where(np => np.product_id == productId && np.nutrition_id == nutrition.id).FirstOrDefault();
+            if (nutritionProduct == null)
+                return false;
+
+            _context.nutrition_product.Remove(nutritionProduct);
+            _context.SaveChanges();
+            return true;
+        }
     }
 }

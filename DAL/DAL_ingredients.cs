@@ -35,5 +35,36 @@ namespace DAL
                         name = ig.name
                     }).ToList<object>();
         }
+
+        public bool AddToProduct(long productId, long ingredientId)
+        {
+            var check = _context.ingredient_product.Where(ip => ip.product_id == productId && ip.ingredient_id == ingredientId).FirstOrDefault();
+            if (check != null)
+                return false;
+
+            var ipp = new ingredient_product
+            {
+                product_id = productId,
+                ingredient_id = ingredientId
+            };
+            _context.ingredient_product.Add(ipp);
+            _context.SaveChanges();
+            return true;
+        }
+
+        public bool DelToProduct(long productId, string ingredientName)
+        {
+            var ingredient = _context.ingredients.Where(ig => ig.name == ingredientName).FirstOrDefault();
+            if (ingredient == null)
+                return false;
+
+            var ipp = _context.ingredient_product.Where(ip => ip.product_id == productId && ip.ingredient_id == ingredient.id).FirstOrDefault();
+            if (ipp == null)
+                return false;
+
+            _context.ingredient_product.Remove(ipp);
+            _context.SaveChanges();
+            return true;
+        }
     }
 }

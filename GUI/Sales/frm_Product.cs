@@ -22,6 +22,9 @@ namespace GUI.Sales
         private BLL_Ingredients bllIngredients;
         private BLL_Nutritions bllNutritions;
 
+        string ingredientName = "";
+        string nutritionName = "";
+
         public pnl_PaddingMiddle()
         {
             InitializeComponent();
@@ -35,6 +38,197 @@ namespace GUI.Sales
             InitializeData();
 
             btn_Reset.Click += Btn_Reset_Click;
+            btn_Insert.Click += Btn_Insert_Click;
+            btn_Update.Click += Btn_Update_Click;
+            btn_Delete.Click += Btn_Delete_Click;
+            btn_IngredientAdd.Click += Btn_IngredientAdd_Click;
+            btn_NutritionAdd.Click += Btn_NutritionAdd_Click;
+            btn_IngredientRemove.Click += Btn_IngredientRemove_Click;
+            btn_NutritionRemove.Click += Btn_NutritionRemove_Click;
+        }
+
+        private void Btn_NutritionRemove_Click(object sender, EventArgs e)
+        {
+            if (selectedProduct == null)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(nutritionName))
+            {
+                MessageBox.Show("Vui lòng chọn dinh dưỡng cần xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var productId = selectedProduct.product.id;
+            if (bllNutritions.DelToProduct(productId, nutritionName))
+            {
+                MessageBox.Show("Xóa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadNutritionssByProduct(bllNutritions.GetByProduct(productId));
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại hỏi thằng nào làm ra cái này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void Btn_IngredientRemove_Click(object sender, EventArgs e)
+        {
+            if (selectedProduct == null)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(ingredientName))
+            {
+                MessageBox.Show("Vui lòng chọn nguyên liệu cần xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var productId = selectedProduct.product.id;
+            if (bllIngredients.DelToProduct(productId, ingredientName))
+            {
+                MessageBox.Show("Xóa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadIngredientsByProduct(bllIngredients.GetByProduct(productId));
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại hỏi thằng nào làm ra cái này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Btn_NutritionAdd_Click(object sender, EventArgs e)
+        {
+            if (selectedProduct == null)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cbx_Nutrition.SelectedIndex == 0)
+            {
+                MessageBox.Show("Vui lòng chọn dinh dưỡng cần thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var productId = selectedProduct.product.id;
+            var nutritionId = long.Parse(cbx_Nutrition.SelectedValue.ToString());
+            var quantity = byte.Parse(tbx_Quantity.Text);
+
+            if (bllNutritions.AddToProduct(productId, nutritionId, quantity))
+            {
+                MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadNutritionssByProduct(bllNutritions.GetByProduct(productId));
+            }
+            else
+            {
+                MessageBox.Show("Thêm Thất bại hỏi thằng nào làm ra cái này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Btn_IngredientAdd_Click(object sender, EventArgs e)
+        {
+            if (selectedProduct == null)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cbx_Ingredient.SelectedIndex == 0)
+            {
+                MessageBox.Show("Vui lòng chọn nguyên liệu cần thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            var productId = selectedProduct.product.id;
+            var ingredientId = long.Parse(cbx_Ingredient.SelectedValue.ToString());
+
+            if (bllIngredients.AddToProduct(productId, ingredientId))
+            {
+                MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadIngredientsByProduct(bllIngredients.GetByProduct(productId));
+            }
+            else
+            {
+                MessageBox.Show("Thêm Thất bại hỏi thằng nào làm ra cái này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Btn_Delete_Click(object sender, EventArgs e)
+        {
+            if (selectedProduct == null)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (bllProducts.SoftDelete(selectedProduct.product.id))
+            {
+                MessageBox.Show("Xóa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadProducts(bllProducts.GetList());
+            }
+            else
+            {
+                MessageBox.Show("Xóa Thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Btn_Update_Click(object sender, EventArgs e)
+        {
+            if (selectedProduct == null)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            product product = new product()
+            {
+                id = selectedProduct.product.id,
+                name = tbx_Name.Text,
+                slug = SlugHelper.ToSlug(tbx_Name.Text),
+                category_id = Convert.ToInt64(cbx_Category.SelectedValue),
+                price = long.Parse(tbx_Price.Text),
+                price_sale = long.Parse(tbx_Price.Text),
+                description = tbx_Description.Text,
+                is_display = chk_Display.Checked,
+            };
+            if (bllProducts.Update(product.id, product) != null)
+            {
+                MessageBox.Show("Cập nhật thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadProducts(bllProducts.GetList());
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật Thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void Btn_Insert_Click(object sender, EventArgs e)
+        {
+            product product = new product()
+            {
+                name = tbx_Name.Text,
+                slug = SlugHelper.ToSlug(tbx_Name.Text),
+                category_id = Convert.ToInt64(cbx_Category.SelectedValue),
+                price = long.Parse(tbx_Price.Text),
+                price_sale = long.Parse(tbx_Price.Text),
+                description = tbx_Description.Text,
+                is_display = chk_Display.Checked,
+            };
+            if (bllProducts.Add(product) != null)
+            {
+                MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadProducts(bllProducts.GetList());
+            }
+            else
+            {
+                MessageBox.Show("Thêm Thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Btn_Reset_Click(object sender, EventArgs e)
@@ -80,13 +274,35 @@ namespace GUI.Sales
         private void LoadIngredientsByProduct(List<object> ingredients)
         {
             dgv_Ingredients.DataSource = ingredients;
+            dgv_Ingredients.CellClick += Dgv_Ingredients_CellClick;
             DesignDgv_Ingredients();
+        }
+
+        
+
+        private void Dgv_Ingredients_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgv_Ingredients.Rows[e.RowIndex];
+                ingredientName = row.Cells["dgv_Ingredients_Name"].Value.ToString();
+            }
         }
 
         private void LoadNutritionssByProduct(List<object> nutritions)
         {
             dgv_Nutritions.DataSource = nutritions;
+            dgv_Nutritions.CellClick += Dgv_Nutritions_CellClick;
             DesignDgv_Nutritions();
+        }
+
+        private void Dgv_Nutritions_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgv_Nutritions.Rows[e.RowIndex];
+                nutritionName = row.Cells["dgv_Nutritions_Name"].Value.ToString();
+            }
         }
 
         private void LoadCategories(List<category> categories)

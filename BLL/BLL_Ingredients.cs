@@ -31,5 +31,15 @@ namespace BLL
         {
             return _dalI.GetByProduct(productId);
         }
+
+        public bool AddToProduct(long productId, long ingredientId)
+        {
+            return _dalI.AddToProduct(productId, ingredientId);
+        }
+
+        public bool DelToProduct(long productId, string ingredientName)
+        {
+            return _dalI.DelToProduct(productId, ingredientName);
+        }
     }
 }
