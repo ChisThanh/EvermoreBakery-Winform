@@ -18,8 +18,8 @@ namespace GUI.Auth
             InitializeComponent();
             btnSubmit.Click += BtnSubmit_Click;
 
-            txtAccount.Text = "sadmin@mail.com";
-            txtPassword.Text = "123";
+            tbx_Account.Text = "sadmin@mail.com";
+            tbx_Password.Text = "123";
         }
 
         private async void BtnSubmit_Click(object sender, EventArgs e)
@@ -65,11 +65,11 @@ namespace GUI.Auth
 
         private bool ValidateInputs()
         {
-            account = txtAccount.Text.Trim();
-            password = txtPassword.Text.Trim();
+            account = tbx_Account.Text.Trim();
+            password = tbx_Password.Text.Trim();
 
-            return ValidateField(txtAccount, account, "Tài khoản không được để trống") &&
-                   ValidateField(txtPassword, password, "Mật khẩu không được để trống");
+            return ValidateField(tbx_Account, account, "Tài khoản không được để trống") &&
+                   ValidateField(tbx_Password, password, "Mật khẩu không được để trống");
         }
 
         private bool ValidateField(Control control, string value, string errorMessage)
