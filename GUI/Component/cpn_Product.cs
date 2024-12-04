@@ -38,12 +38,19 @@ namespace GUI.Component
             lbl_Product.Text = product.name;
             try
             {
-                //string imageUrl = "http://web.chithanh.id.vn/storage/" + image.url;
-                //await GetImageFromUrlAsync(imageUrl);
+                if(image == null)
+                {
+                    trueImage = null;
+                }
+                else
+                {
+                    string imageUrl = "http://web.chithanh.id.vn/storage/" + image.url;
+                    await GetImageFromUrlAsync(imageUrl);
 
-                if (trueImage != null) pbx_Image.Image = trueImage;
+                    if (trueImage != null) pbx_Image.Image = trueImage;
+                }
             }
-            catch
+            catch (Exception ex)
             {
                 trueImage = null;
             }
