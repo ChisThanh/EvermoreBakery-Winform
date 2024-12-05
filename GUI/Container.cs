@@ -77,6 +77,8 @@ namespace GUI
         {
             frm_Login.Hide();
             this.Show();
+            lbl_Name.Text = Program.userAuth.name;
+            lbl_Role.Text = Program.userAuth.role_user.FirstOrDefault().role.name;
         }
 
         private void Btn_Account_Click(object sender, EventArgs e)

@@ -14,7 +14,8 @@ namespace BLL
     public class ApiClient
     {
         private static readonly HttpClient client = new HttpClient();
-        string baseUrl = "http://localhost:9090";
+        //string baseUrl = "http://localhost:9090";
+        string baseUrl = "http://web.chithanh.id.vn";
 
         public async Task<string> GenerateKeywordsAsync(long productId, string text)
         {

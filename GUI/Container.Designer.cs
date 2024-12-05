@@ -47,6 +47,7 @@
             this.lbl_Profits = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Divider3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Sales = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnPreview = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Ingredient = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Event = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Product = new Guna.UI2.WinForms.Guna2Button();
@@ -67,7 +68,6 @@
             this.lbl_Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_DividerContent = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_Content = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnPreview = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_Sidebar.SuspendLayout();
             this.pnl_Footer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Avatar)).BeginInit();
@@ -276,6 +276,7 @@
             this.btn_Satistic.Text = "THỐNG KÊ";
             this.btn_Satistic.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Satistic.TextOffset = new System.Drawing.Point(5, 0);
+            this.btn_Satistic.Visible = false;
             // 
             // btn_Invoice
             // 
@@ -338,6 +339,35 @@
             this.pnl_Sales.Name = "pnl_Sales";
             this.pnl_Sales.Size = new System.Drawing.Size(300, 242);
             this.pnl_Sales.TabIndex = 7;
+            // 
+            // btnPreview
+            // 
+            this.btnPreview.BorderColor = System.Drawing.Color.Empty;
+            this.btnPreview.BorderRadius = 10;
+            this.btnPreview.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPreview.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            this.btnPreview.CheckedState.Image = global::GUI.Properties.Resources.flour_secondary;
+            this.btnPreview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPreview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPreview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPreview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPreview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPreview.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            this.btnPreview.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.btnPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPreview.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPreview.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
+            this.btnPreview.HoverState.Image = global::GUI.Properties.Resources.flour_secondary;
+            this.btnPreview.Image = global::GUI.Properties.Resources.flour_primary;
+            this.btnPreview.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPreview.Location = new System.Drawing.Point(12, 188);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
+            this.btnPreview.Size = new System.Drawing.Size(273, 45);
+            this.btnPreview.TabIndex = 6;
+            this.btnPreview.Text = "ĐÁNH GIÁ";
+            this.btnPreview.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPreview.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // btn_Ingredient
             // 
@@ -637,35 +667,6 @@
             this.pnl_Content.Name = "pnl_Content";
             this.pnl_Content.Size = new System.Drawing.Size(1480, 810);
             this.pnl_Content.TabIndex = 3;
-            // 
-            // btnPreview
-            // 
-            this.btnPreview.BorderColor = System.Drawing.Color.Empty;
-            this.btnPreview.BorderRadius = 10;
-            this.btnPreview.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.btnPreview.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            this.btnPreview.CheckedState.Image = global::GUI.Properties.Resources.flour_secondary;
-            this.btnPreview.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPreview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPreview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPreview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPreview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPreview.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            this.btnPreview.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
-            this.btnPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.btnPreview.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.btnPreview.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(237)))));
-            this.btnPreview.HoverState.Image = global::GUI.Properties.Resources.flour_secondary;
-            this.btnPreview.Image = global::GUI.Properties.Resources.flour_primary;
-            this.btnPreview.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPreview.Location = new System.Drawing.Point(12, 188);
-            this.btnPreview.Name = "btnPreview";
-            this.btnPreview.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(28)))), ((int)(((byte)(13)))));
-            this.btnPreview.Size = new System.Drawing.Size(273, 45);
-            this.btnPreview.TabIndex = 6;
-            this.btnPreview.Text = "ĐÁNH GIÁ";
-            this.btnPreview.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPreview.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // frm_Container
             // 
